@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="View.Core.TopPage.Tab.在庫管理.後発品DataGrid"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    xmlns:Converter="clr-namespace:View.Core.共通.Converter;assembly=View"
+    xmlns:fxui="clr-namespace:SilverlightFX.UserInterface;assembly=SilverlightFX"
+    Width="Auto" Height="Auto">
+    <UserControl.Resources>
+
+        <Converter:GenericConverter x:Key="後発区分Converter"/>
+        <Converter:使用期限ForegroundConverter x:Key="使用期限ForegroundConverter"/>
+        <Converter:使用期限ShortDateConverter x:Key="使用期限ShortDateConverter"/>
+
+
+
+        <DataTemplate x:Name="Template店名">
+            <TextBlock Text="{Binding 店名}" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template先発品">
+            <TextBlock Text="{Binding 後発区分,Converter={StaticResource 後発区分Converter}}" FontSize="15" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template個別医薬品コード">
+            <TextBlock Text="{Binding 個別医薬品コード}" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template医薬品名">
+            <TextBlock Text="{Binding 医薬品名と名称２連結}" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp" VerticalAlignment="Center" />
+            <!--<TextBlock Text="{Binding 医薬品名}" MouseLeftButtonUp="TextBlock_MouseLeftButtonUp" VerticalAlignment="Center" />-->
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template在庫数">
+            <TextBlock Text="{Binding 在庫数}" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template使用期限">
+            <TextBlock Text="{Binding 使用期限,Converter={StaticResource 使用期限ShortDateConverter}}" Foreground="{Binding 使用期限, Converter={StaticResource 使用期限ForegroundConverter}}" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template薬価">
+            <TextBlock Text="{Binding 薬価}" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Templateメーカー">
+            <TextBlock Text="{Binding 製造会社}" VerticalAlignment="Center" />
+        </DataTemplate>
+
+        <DataTemplate x:Name="Template最終更新日時">
+            <TextBlock Text="{Binding 最終更新日時}"/>
+        </DataTemplate>
+
+
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot">
+        <data:DataGrid x:Name="name後発品DataGrid" AutoGenerateColumns="False">
+            <fxui:Interaction.Behaviors>
+                <fxui:MouseWheelScroll/>
+            </fxui:Interaction.Behaviors>
+            <data:DataGrid.Columns>
+                <data:DataGridTemplateColumn Header="店名" Width="100" CellTemplate="{StaticResource Template店名}" />
+                <data:DataGridTemplateColumn Header="先発品" Width="60" CellTemplate="{StaticResource Template先発品}" />
+                <data:DataGridTemplateColumn Header="個別医薬品コード" Width="120" CellTemplate="{StaticResource Template個別医薬品コード}" />
+                <data:DataGridTemplateColumn Header="医薬品名" Width="180" CellTemplate="{StaticResource Template医薬品名}" />
+                <data:DataGridTemplateColumn Header="在庫数" Width="80" CellTemplate="{StaticResource Template在庫数}" />
+                <data:DataGridTemplateColumn Header="使用期限" Width="100" CellTemplate="{StaticResource Template使用期限}" />
+                <data:DataGridTemplateColumn Header="薬価" Width="60" CellTemplate="{StaticResource Template薬価}" />
+                <data:DataGridTemplateColumn Header="メーカー" Width="140" CellTemplate="{StaticResource Templateメーカー}" />
+                <data:DataGridTemplateColumn Header="最終更新日時" Width="120" CellTemplate="{StaticResource Template最終更新日時}" />
+            </data:DataGrid.Columns>
+        </data:DataGrid>
+    </Grid>
+</UserControl>

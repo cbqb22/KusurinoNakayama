@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/ユーザー管理/UserManagement.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" />
+  <xs:element name="CreateNewUser実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Confidential" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="アクセス権限" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateNewUser実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" minOccurs="0" name="CreateNewUser実行Result" nillable="true" type="q1:CreateNewUser結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUser実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteUser実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" minOccurs="0" name="DeleteUser実行Result" nillable="true" type="q2:DeleteUser結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllUser情報取得実行">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllUser情報取得実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" minOccurs="0" name="AllUser情報取得実行Result" nillable="true" type="q3:ArrayOfAllUser情報取得結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllUser情報更新実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" minOccurs="0" name="list" nillable="true" type="q4:ArrayOfAllUser情報取得結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AllUser情報更新実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AllUser情報更新実行Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginUser情報更新実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86" minOccurs="0" name="lu" nillable="true" type="q5:AllUser情報取得結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginUser情報更新実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="LoginUser情報更新実行Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

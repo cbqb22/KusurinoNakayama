@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PharmacyTool.Web.Service.DAO.PharmacyTool.LoginCheck" CodeBehind="LoginCheck.svc.cs" Factory="PharmacyTool.Web.Service.DAO.PharmacyTool.LoginCheckServiceHostFactory" %>

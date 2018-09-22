@@ -1,0 +1,101 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PharmacyTool.Web.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServiceRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\</Value>
+    </Setting>
+    <Setting Name="UploadFileRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\資料\</Value>
+    </Setting>
+    <Setting Name="UploadFileRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\資料\</Value>
+    </Setting>
+    <Setting Name="在庫データUploadFileRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\在庫関連\</Value>
+    </Setting>
+    <Setting Name="在庫データUploadFileRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\在庫関連\</Value>
+    </Setting>
+    <Setting Name="掲示板データRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\掲示板\</Value>
+    </Setting>
+    <Setting Name="掲示板データRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\掲示板\</Value>
+    </Setting>
+    <Setting Name="Upload掲示板FileRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\掲示板資料\</Value>
+    </Setting>
+    <Setting Name="Upload掲示板FileRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\掲示板資料\</Value>
+    </Setting>
+    <Setting Name="ServerHttpRoot" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.my-world.me/</Value>
+    </Setting>
+    <Setting Name="DataSourceDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Data Source=(local);Initial Catalog=PharmacyTool;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="MEDISFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\在庫関連\MEDIS\MEDIS.TXT</Value>
+    </Setting>
+    <Setting Name="MEDISFilePathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\在庫関連\MEDIS\MEDIS.TXT</Value>
+    </Setting>
+    <Setting Name="TeropFilePath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\テロップ\Terop.dat</Value>
+    </Setting>
+    <Setting Name="TeropFilePathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\テロップ\Terop.dat</Value>
+    </Setting>
+    <Setting Name="TeropRootPath" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\my-world.me\httpdocs\PharmacyTool\ClientBin\テロップ\</Value>
+    </Setting>
+    <Setting Name="TeropRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\テロップ\</Value>
+    </Setting>
+    <Setting Name="ServiceRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\</Value>
+    </Setting>
+    <Setting Name="UploadFileRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\資料\</Value>
+    </Setting>
+    <Setting Name="在庫データUploadFileRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\在庫関連\</Value>
+    </Setting>
+    <Setting Name="Upload掲示板FileRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\掲示板資料\</Value>
+    </Setting>
+    <Setting Name="ServerHttpRootNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">http://www.kusurinonakayama.jp/</Value>
+    </Setting>
+    <Setting Name="MEDISFilePathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\在庫関連\MEDIS\MEDIS.TXT</Value>
+    </Setting>
+    <Setting Name="TeropFilePathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\テロップ\Terop.dat</Value>
+    </Setting>
+    <Setting Name="掲示板データRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\掲示板\</Value>
+    </Setting>
+    <Setting Name="TeropRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\テロップ\</Value>
+    </Setting>
+    <Setting Name="DataSourceNAKAYAMA" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=dwprdb01.dataweb.ne.jp;User ID=PTAdmin_NAKAYAMA;Password=nakayama01\$;Initial Catalog=PharmacyTool_NAKAYAMA&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=dwprdb01.dataweb.ne.jp;User ID=PTAdmin_NAKAYAMA;Password=nakayama01\$;Initial Catalog=PharmacyTool_NAKAYAMA</Value>
+    </Setting>
+    <Setting Name="DataSource" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Server=dwprdb01.dataweb.ne.jp;User ID=PTAdmin;Password=s3cure\$;Initial Catalog=PharmacyTool&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Server=dwprdb01.dataweb.ne.jp;User ID=PTAdmin;Password=s3cure\$;Initial Catalog=PharmacyTool</Value>
+    </Setting>
+    <Setting Name="SVCFolderPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\Service</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

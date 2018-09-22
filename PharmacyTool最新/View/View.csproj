@@ -1,0 +1,683 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{15C4FB35-A301-44BE-8DF9-AA91912C7796}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>View</RootNamespace>
+    <AssemblyName>View</AssemblyName>
+    <TargetFrameworkVersion>v3.0</TargetFrameworkVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>ja</SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>View.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>View.App</SilverlightAppEntry>
+    <TestPageFileName>TestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>
+    </LinkedServerProject>
+    <ExpressionBlendVersion>3.0.1938.0</ExpressionBlendVersion>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;NAKAYAMA;</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NAKAYAMA|AnyCPU'">
+    <OutputPath>bin\NAKAYAMA\</OutputPath>
+    <DefineConstants>TRACE;NAKAYAMA;</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoStdLib>true</NoStdLib>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <NoConfig>true</NoConfig>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Expression.Interactions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Windows.Controls.WatermarkedTextBox">
+      <HintPath>..\..\..\..\..\..\..\..\PharmacyTools\DLL\Microsoft.Windows.Controls.WatermarkedTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="SilverlightFX, Version=3.2.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows" />
+    <Reference Include="mscorlib" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\..\..\..\..\PharmacyTools\DLL\System.Windows.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Interactivity, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Control\AccessCounter.xaml.cs">
+      <DependentUpon>AccessCounter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Login\LoginCheckDialog.xaml.cs">
+      <DependentUpon>LoginCheckDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\TabItemControl.xaml.cs">
+      <DependentUpon>TabItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\シフト\表作成\シフト表作成.xaml.cs">
+      <DependentUpon>シフト表作成.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\不動品DataGrid.xaml.cs">
+      <DependentUpon>不動品DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\使用量DataGrid.xaml.cs">
+      <DependentUpon>使用量DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.xaml.cs">
+      <DependentUpon>在庫更新.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\在庫管理Frame.xaml.cs">
+      <DependentUpon>在庫管理Frame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\在庫管理TabItem.xaml.cs">
+      <DependentUpon>在庫管理TabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\後発品DataGrid.xaml.cs">
+      <DependentUpon>後発品DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\在庫管理\現在庫DataGrid.xaml.cs">
+      <DependentUpon>現在庫DataGrid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\メイン\ThreadSelector.xaml.cs">
+      <DependentUpon>ThreadSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\メイン\投稿フォーム.xaml.cs">
+      <DependentUpon>投稿フォーム.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\メイン\投稿返信セット.xaml.cs">
+      <DependentUpon>投稿返信セット.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\メイン\掲示板Frame.xaml.cs">
+      <DependentUpon>掲示板Frame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\メイン\返信セット.xaml.cs">
+      <DependentUpon>返信セット.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.xaml.cs">
+      <DependentUpon>スレッド追加ChildWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.xaml.cs">
+      <DependentUpon>投稿ChildWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\SubTabItemControl.xaml.cs">
+      <DependentUpon>SubTabItemControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.xaml.cs">
+      <DependentUpon>テロップ管理.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.xaml.cs">
+      <DependentUpon>その他TabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.xaml.cs">
+      <DependentUpon>ユーザー管理TabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.xaml.cs">
+      <DependentUpon>ログインユーザー更新.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.xaml.cs">
+      <DependentUpon>新規ユーザー作成.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.xaml.cs">
+      <DependentUpon>店舗名削除.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.xaml.cs">
+      <DependentUpon>新規店舗名作成.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.xaml.cs">
+      <DependentUpon>既存ユーザー更新.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.xaml.cs">
+      <DependentUpon>店舗管理TabItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\TopPage\Tab\資料\資料TreeView.xaml.cs">
+      <DependentUpon>資料TreeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\共通\Converter\DeleteButtonVisibilityConverter.cs" />
+    <Compile Include="Core\共通\Converter\GenericConverter.cs" />
+    <Compile Include="Core\共通\Converter\HomepageUrlConverter.cs" />
+    <Compile Include="Core\共通\Converter\ImageConverter.cs" />
+    <Compile Include="Core\共通\Converter\アクセスレベルConverter.cs" />
+    <Compile Include="Core\共通\Converter\使用期限ForegroundConverter.cs" />
+    <Compile Include="Core\共通\Converter\使用期限ShortDayConverter.cs" />
+    <Compile Include="Core\共通\Converter\削除フラグConverter.cs" />
+    <Compile Include="Core\共通\Converter\文字色Converter.cs" />
+    <Compile Include="Core\共通\Entity\アクセスレベルEnum.cs" />
+    <Compile Include="Core\共通\Event\UploadProgressChangedEventArgs.cs" />
+    <Compile Include="Core\共通\FileOperation\FileDownloader.cs" />
+    <Compile Include="Core\共通\FileOperation\FileUploader.cs" />
+    <Compile Include="Core\共通\MouseWheel\CustomMouseWheel.cs" />
+    <Compile Include="Core\共通\PageScope.cs" />
+    <Compile Include="Core\共通\Settings.cs" />
+    <Compile Include="Core\共通\SingletonInstances.cs" />
+    <Compile Include="Core\共通\UserControls\PageSelector.xaml.cs">
+      <DependentUpon>PageSelector.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Core\共通\UserControls\PharmacyToolTextBox.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool.店舗\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.File.Reader\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.File.TreeView\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.File.Writer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Common\GenericUtil.cs" />
+    <Compile Include="Util\Common\NotifyPropertyChangedBase.cs" />
+    <Compile Include="Util\Common\StringConverter.cs" />
+    <Compile Include="Util\Common\Tuple.cs" />
+    <Compile Include="Util\Common\UriBuilderBase.cs" />
+    <Compile Include="Util\ServiceUtil\Call\UserManagement.cs" />
+    <Compile Include="Util\ServiceUtil\Call\FileReader.cs" />
+    <Compile Include="Util\ServiceUtil\Call\LoginCheck.cs" />
+    <Compile Include="Util\ServiceUtil\ReferenceCreater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Core\Control\AccessCounter.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\Login\LoginCheckDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\TabItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\シフト\表作成\シフト表作成.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\不動品DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\使用量DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\在庫管理Frame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\在庫管理TabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\後発品DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\在庫管理\現在庫DataGrid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\メイン\ThreadSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\メイン\投稿フォーム.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\メイン\投稿返信セット.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\メイン\掲示板Frame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\メイン\返信セット.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\SubTabItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Core\TopPage\Tab\資料\資料TreeView.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Core\共通\UserControls\PageSelector.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement1.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\View.Service.DAO.PharmacyTool.アクセス数管理.アクセス数取得結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\UserManagement1.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\UserManagement3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\UserManagement31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\UserManagement32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\View.Service.DAO.PharmacyTool.ユーザー管理.AllUser情報取得結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\View.Service.DAO.PharmacyTool.ユーザー管理.CreateNewUser結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\View.Service.DAO.PharmacyTool.ユーザー管理.DeleteUser結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData1.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\View.Service.DAO.PharmacyTool.店舗.PT店舗名リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck1.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\View.Service.DAO.PharmacyTool.ログインチェック結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader1.wsdl" />
+    <None Include="Service References\Service.File.Reader\FileReader4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.ThreadTitlesEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.テロップ記事リターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.在庫MergeリターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.在庫リターンデータセットOf不動品データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.在庫リターンデータセットOf現在庫データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.在庫リターンデータセットOf薬局使用量データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.掲示板リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.掲示板記事修正確認Entity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.最終更新日時リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\View.Service.File.Reader.現在庫データ.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.TreeView\TreeViewManager1.wsdl" />
+    <None Include="Service References\Service.File.TreeView\TreeViewManager3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.TreeView\TreeViewManager31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.TreeView\TreeViewManager32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.TreeView\View.Service.File.TreeView.TreeViewItemData.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter.wsdl" />
+    <None Include="Service References\Service.File.Writer\FileWriter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter1.wsdl" />
+    <None Include="Service References\Service.File.Writer\FileWriter1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\View.Service.File.Writer.掲示板結果リターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Util\app.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\Service.DAO.PharmacyTool\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.Reader\configuration91.svcinfo" />
+    <None Include="Service References\Service.File.Reader\configuration.svcinfo" />
+    <None Include="Service References\Service.File.Reader\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.TreeView\configuration91.svcinfo" />
+    <None Include="Service References\Service.File.TreeView\configuration.svcinfo" />
+    <None Include="Service References\Service.File.TreeView\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.Writer\configuration91.svcinfo" />
+    <None Include="Service References\Service.File.Writer\configuration.svcinfo" />
+    <None Include="Service References\Service.File.Writer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter.disco" />
+    <None Include="Service References\Service.File.Reader\FileReader1.disco" />
+    <None Include="Service References\Service.File.TreeView\TreeViewManager1.disco" />
+    <None Include="Service References\Service.File.Writer\FileWriter1.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck1.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement1.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\UserManagement1.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData1.disco" />
+    <Content Include="ServiceReferences.ClientConfig" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BlendEmbeddedFont Include="Fonts\msgothic.ttc">
+      <IsSystemFont>True</IsSystemFont>
+      <All>True</All>
+      <AutoFill>True</AutoFill>
+      <Characters>
+      </Characters>
+      <Uppercase>True</Uppercase>
+      <Lowercase>True</Lowercase>
+      <Numbers>True</Numbers>
+      <Punctuation>True</Punctuation>
+    </BlendEmbeddedFont>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\" />
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool.ユーザー管理\" />
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool.店舗\" />
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool\" />
+    <WCFMetadataStorage Include="Service References\Service.File.Reader\" />
+    <WCFMetadataStorage Include="Service References\Service.File.TreeView\" />
+    <WCFMetadataStorage Include="Service References\Service.File.Writer\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\TopPage\Tab\在庫管理\在庫検索\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Expression\Blend\3.0\Silverlight\Microsoft.Expression.Blend.Silverlight.targets" />
+</Project>

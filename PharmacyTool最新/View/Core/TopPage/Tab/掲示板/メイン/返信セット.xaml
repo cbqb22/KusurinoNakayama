@@ -1,0 +1,46 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:converter="clr-namespace:View.Core.共通.Converter" x:Name="userControl"
+	mc:Ignorable="d"
+	x:Class="View.返信セット">
+    <UserControl.Resources>
+        <converter:HomepageUrlConverter x:Key="HomepageUrlConverter"/>
+        <converter:文字色Converter x:Key="文字色Converter"/>
+    </UserControl.Resources>
+
+    <Grid x:Name="LayoutRoot" UseLayoutRounding="True">
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    	</Grid.RowDefinitions>
+        <Grid x:Name="gdContent" HorizontalAlignment="Left" Grid.Row="2" Margin="80,0,0,8">
+        	<StackPanel x:Name="stpContent" VerticalAlignment="Top" Margin="0" d:LayoutOverrides="Width">
+                <TextBox x:Name="記事TextBlock" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center" Text="{Binding 記事, Mode=OneWay}" FontSize="12" Foreground="{Binding 文字色,Converter={StaticResource 文字色Converter},Mode=OneWay}" MaxWidth="1000" Background="{x:Null}" BorderBrush="{x:Null}"/>
+        		<StackPanel x:Name="stp添付画像" Margin="0,10,0,0"/>
+        	</StackPanel>
+        </Grid>
+        <Grid x:Name="gdHeader" Grid.Row="1" Margin="0,2,0,8">
+        	<StackPanel x:Name="stpHeader" Margin="0" VerticalAlignment="Center" Orientation="Horizontal" d:LayoutOverrides="Width">
+        		<TextBlock x:Name="NoTextBlock" Margin="20,0" VerticalAlignment="Center" Text="{Binding No, Mode=OneWay}" TextWrapping="Wrap" FontSize="14.667" Foreground="#FF1B35ED"/>
+        		<TextBlock x:Name="タイトル" Margin="0,0,20,0" VerticalAlignment="Center" TextWrapping="Wrap" Text="{Binding Title, Mode=OneWay}" FontSize="14.667" Foreground="#FFC46D14"/>
+        		<TextBlock x:Name="投稿者TitleTextBlock" Text="投稿者名:" TextWrapping="Wrap" FontSize="12" Margin="0,0,10,0" VerticalAlignment="Center"/>
+        		<HyperlinkButton x:Name="投稿者HyperlinkButton" Margin="0,0,20,0" Content="{Binding 投稿者名, Mode=OneWay}" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Black" NavigateUri="{Binding Email}" TargetName="" />
+        		<TextBlock x:Name="投稿日TitleTextBlock" Text="投稿日:" TextWrapping="Wrap" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="12"/>
+        		<TextBlock x:Name="投稿日TextBlock" Margin="0,0,20,0" VerticalAlignment="Center" Text="{Binding 投稿日, Mode=OneWay}" TextWrapping="Wrap" FontSize="12"/>
+        		<HyperlinkButton Margin="0,0,20,0" VerticalAlignment="Center" NavigateUri="{Binding HomepageUrl, Mode=OneWay}" TargetName="_blank" Visibility="{Binding HomepageUrl, Converter={StaticResource HomepageUrlConverter}, Mode=OneWay}">
+        			<Image Source="/etc/Icon/homepage.png" Width="16" Height="16" />
+        		</HyperlinkButton>
+                <Button x:Name="bt削除" VerticalAlignment="Center" Width="60" Content="記事を削除" Margin="0,0,20,0" Click="bt削除_Click" />
+            </StackPanel>
+        </Grid>
+        <Grid x:Name="gdBorder" Margin="0,0,0,8">
+        	<Border Height="3" Margin="0" VerticalAlignment="Top" Background="#FF9C9595" BorderBrush="#FFFAFAFA" BorderThickness="1"/>
+        </Grid>
+
+
+	</Grid>
+</UserControl>

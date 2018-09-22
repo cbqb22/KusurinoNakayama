@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PharmacyToolMobile</RootNamespace>
+    <AssemblyName>PharmacyToolMobile</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;NAKAYAMA;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;NAKAYAMA;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Icon\book1.png" />
+    <Content Include="Images\Icon\cross.png" />
+    <Content Include="Images\Icon\doc.png" />
+    <Content Include="Images\Icon\exclame.png" />
+    <Content Include="Images\Icon\folder1.png" />
+    <Content Include="Images\Icon\folder2.png" />
+    <Content Include="Images\Icon\home.png" />
+    <Content Include="Images\Icon\homepage.png" />
+    <Content Include="Images\Icon\kinds1.png" />
+    <Content Include="Images\Icon\pdf.png" />
+    <Content Include="Images\Icon\ppt.png" />
+    <Content Include="Images\Icon\txt.png" />
+    <Content Include="Images\Icon\xls.png" />
+    <Content Include="Images\square\brown.png" />
+    <Content Include="Images\square\green.png" />
+    <Content Include="Images\square\red.png" />
+    <Content Include="Pages\Login.aspx" />
+    <Content Include="Pages\在庫管理\StockManagement.aspx" />
+    <Content Include="Pages\掲示板\BBS.aspx" />
+    <Content Include="Pages\掲示板\Contributer.aspx" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\PharmacyToolMobile.Service.DAO.PharmacyTool.アクセス数管理.アクセス数取得結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\PharmacyToolMobile.Service.DAO.PharmacyTool.店舗.PT店舗名リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData1.wsdl" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool\PharmacyToolMobile.Service.DAO.PharmacyTool.ログインチェック結果.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\configuration91.svcinfo" />
+    <None Include="Service References\Service.File.Reader\configuration.svcinfo" />
+    <None Include="Service References\Service.File.Reader\FileReader.wsdl" />
+    <None Include="Service References\Service.File.Reader\FileReader.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader1.wsdl" />
+    <None Include="Service References\Service.File.Reader\FileReader1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.ThreadTitlesEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.テロップ記事リターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.在庫MergeリターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.在庫リターンデータセットOf不動品データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.在庫リターンデータセットOf現在庫データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.在庫リターンデータセットOf薬局使用量データZYtYGqK_P.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.掲示板リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.掲示板記事修正確認Entity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.最終更新日時リターンデータセット.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\PharmacyToolMobile.Service.File.Reader.現在庫データ.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Reader\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.Writer\configuration91.svcinfo" />
+    <None Include="Service References\Service.File.Writer\configuration.svcinfo" />
+    <None Include="Service References\Service.File.Writer\FileWriter.wsdl" />
+    <None Include="Service References\Service.File.Writer\FileWriter.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\FileWriter3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Service.File.Writer\PharmacyToolMobile.Service.File.Writer.掲示板結果リターンEntity.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Service.File.Writer\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.店舗\StoreData1.disco" />
+    <None Include="Service References\Service.File.Reader\FileReader1.disco" />
+    <None Include="Service References\Service.File.Writer\FileWriter.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool\LoginCheck.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\AccessManagement.disco" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\configuration91.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\configuration.svcinfo" />
+    <None Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\Service.File.Reader\FileReader.disco" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Custom\ダウンロード用LinkButton.cs" />
+    <Compile Include="Controls\Custom\返信用Button.cs" />
+    <Compile Include="Entity\MessageShowEntity.cs" />
+    <Compile Include="Pages\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\在庫管理\StockManagement.aspx.cs">
+      <DependentUpon>StockManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\在庫管理\StockManagement.aspx.designer.cs">
+      <DependentUpon>StockManagement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\掲示板\BBS.aspx.cs">
+      <DependentUpon>BBS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\掲示板\BBS.aspx.designer.cs">
+      <DependentUpon>BBS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\掲示板\Contributer.aspx.cs">
+      <DependentUpon>Contributer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\掲示板\Contributer.aspx.designer.cs">
+      <DependentUpon>Contributer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.DAO.PharmacyTool.店舗\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.File.Reader\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Service.File.Writer\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Util\Common\GenericUtil.cs" />
+    <Compile Include="Util\Common\NotifyPropertyChangedBase.cs" />
+    <Compile Include="Util\Common\Tuple.cs" />
+    <Compile Include="Util\ServiceUtil\ReferenceCreater.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool.アクセス数管理\" />
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool\" />
+    <WCFMetadataStorage Include="Service References\Service.DAO.PharmacyTool.店舗\" />
+    <WCFMetadataStorage Include="Service References\Service.File.Reader\" />
+    <WCFMetadataStorage Include="Service References\Service.File.Writer\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49176</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

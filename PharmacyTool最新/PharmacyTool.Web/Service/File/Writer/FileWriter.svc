@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PharmacyTool.Web.Service.File.Writer.FileWriter" CodeBehind="FileWriter.svc.cs" Factory="PharmacyTool.Web.Service.File.Writer.FileWriterServiceHostFactory" %>

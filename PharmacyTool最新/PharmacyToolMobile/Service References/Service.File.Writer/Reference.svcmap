@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8c19f3c-fce1-4354-9592-e21d733327cc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FileWriter.disco" MetadataType="Disco" ID="030e7e6f-3504-4ea8-8e19-f1e93ea74a99" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?disco" />
+    <MetadataFile FileName="FileWriter1.xsd" MetadataType="Schema" ID="5b25c47e-c98a-42b8-a03a-2948fd3b3267" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd2" />
+    <MetadataFile FileName="FileWriter.wsdl" MetadataType="Wsdl" ID="324e37ad-9f93-4e35-b925-20f06011c9f2" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?wsdl" />
+    <MetadataFile FileName="FileWriter2.xsd" MetadataType="Schema" ID="9937b5f7-c405-41b5-aef0-393114f6c914" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd3" />
+    <MetadataFile FileName="FileWriter3.xsd" MetadataType="Schema" ID="660d74b3-6679-4f28-a956-a742d8e857af" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd0" />
+    <MetadataFile FileName="FileWriter.xsd" MetadataType="Schema" ID="7c47b271-0f18-43b3-8c6f-800def2a2a68" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

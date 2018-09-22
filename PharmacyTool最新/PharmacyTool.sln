@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View", "View\View.csproj", "{15C4FB35-A301-44BE-8DF9-AA91912C7796}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C} = {7B2403B0-0422-410A-90A9-CFA1EEC35A6C}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyTool.Web", "PharmacyTool.Web\PharmacyTool.Web.csproj", "{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PharmacyToolMobile", "PharmacyToolMobile\PharmacyToolMobile.csproj", "{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C} = {7B2403B0-0422-410A-90A9-CFA1EEC35A6C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		NAKAYAMA|Any CPU = NAKAYAMA|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.NAKAYAMA|Any CPU.ActiveCfg = NAKAYAMA|Any CPU
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.NAKAYAMA|Any CPU.Build.0 = NAKAYAMA|Any CPU
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C4FB35-A301-44BE-8DF9-AA91912C7796}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.NAKAYAMA|Any CPU.ActiveCfg = NAKAYAMA|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.NAKAYAMA|Any CPU.Build.0 = NAKAYAMA|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.NAKAYAMA|Any CPU.ActiveCfg = Release|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.NAKAYAMA|Any CPU.Build.0 = Release|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86AC5FA3-0A8A-4D21-81BC-805557EDA64F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

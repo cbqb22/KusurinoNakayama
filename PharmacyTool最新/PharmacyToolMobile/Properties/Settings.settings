@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PharmacyToolMobile.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Upload掲示板FileRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\掲示板資料\</Value>
+    </Setting>
+    <Setting Name="掲示板データRootPathNAKAYAMA" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\inetpub\vhosts\kusurinonakayama.jp\httpdocs\PharmacyTool\ClientBin\掲示板\</Value>
+    </Setting>
+    <Setting Name="掲示板データRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\掲示板\</Value>
+    </Setting>
+    <Setting Name="Upload掲示板FileRootPathDEBUG" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">C:\PharmacyTools\ClientBin\掲示板資料\</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

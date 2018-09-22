@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:simpleType name="ディレクトリ操作モード">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Create" />
+      <xs:enumeration value="Delete" />
+      <xs:enumeration value="Rename" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ディレクトリ操作モード" nillable="true" type="tns:ディレクトリ操作モード" />
+  <xs:simpleType name="タイプ">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ディレクトリ" />
+      <xs:enumeration value="ファイル" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="タイプ" nillable="true" type="tns:タイプ" />
+  <xs:simpleType name="掲示板書込タイプ">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="新規投稿" />
+      <xs:enumeration value="記事修正" />
+      <xs:enumeration value="返信投稿" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="掲示板書込タイプ" nillable="true" type="tns:掲示板書込タイプ" />
+  <xs:simpleType name="文字色">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="赤" />
+      <xs:enumeration value="茶色" />
+      <xs:enumeration value="緑" />
+      <xs:enumeration value="青" />
+      <xs:enumeration value="紫" />
+      <xs:enumeration value="ピンク" />
+      <xs:enumeration value="オレンジ" />
+      <xs:enumeration value="黒" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="文字色" nillable="true" type="tns:文字色" />
+  <xs:complexType name="掲示板結果リターンEntity">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="エラーメッセージ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="書込みカテゴリ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="書込み記事No" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="書込成功か" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="掲示板結果リターンEntity" nillable="true" type="tns:掲示板結果リターンEntity" />
+  <xs:simpleType name="画像種類Enum">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="画像なし">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">-1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="home">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">0</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="book1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">1</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="kinds1">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">2</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="folder2">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">3</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="cross">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">4</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+      <xs:enumeration value="exclame">
+        <xs:annotation>
+          <xs:appinfo>
+            <EnumerationValue xmlns="http://schemas.microsoft.com/2003/10/Serialization/">5</EnumerationValue>
+          </xs:appinfo>
+        </xs:annotation>
+      </xs:enumeration>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="画像種類Enum" nillable="true" type="tns:画像種類Enum" />
+  <xs:simpleType name="スレッド操作タイプ">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="新規" />
+      <xs:enumeration value="修正" />
+      <xs:enumeration value="削除" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="スレッド操作タイプ" nillable="true" type="tns:スレッド操作タイプ" />
+</xs:schema>

@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7B2403B0-0422-410A-90A9-CFA1EEC35A6C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PharmacyTool.Web</RootNamespace>
+    <AssemblyName>PharmacyTool.Web</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <SilverlightApplicationList>{15C4FB35-A301-44BE-8DF9-AA91912C7796}|..\View\View.csproj|ClientBin|False</SilverlightApplicationList>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;NAKAYAMA;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NAKAYAMA|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE;NAKAYAMA;</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Data.Services" />
+    <Reference Include="System.Data.Services.Client" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ClientBin\etc\Icon\cross.png" />
+    <Content Include="ClientBin\etc\Icon\doc.png" />
+    <Content Include="ClientBin\etc\Icon\exclame.png" />
+    <Content Include="ClientBin\etc\Icon\folder1.png" />
+    <Content Include="ClientBin\etc\Icon\folder2.png" />
+    <Content Include="ClientBin\etc\Icon\homepage.png" />
+    <Content Include="ClientBin\etc\Icon\pdf.png" />
+    <Content Include="ClientBin\etc\Icon\ppt.png" />
+    <Content Include="ClientBin\etc\Icon\txt.png" />
+    <Content Include="ClientBin\etc\Icon\xls.png" />
+    <Content Include="Service\DAO\PharmacyTool\LoginCheck.svc" />
+    <Content Include="Service\DAO\PharmacyTool\アクセス数管理\AccessManagement.svc" />
+    <Content Include="Service\DAO\PharmacyTool\ユーザー管理\UserManagement.svc" />
+    <Content Include="Service\File\Reader\FileReader.svc" />
+    <Content Include="Service\File\TreeView\TreeViewManager.svc" />
+    <Content Include="Service\File\Writer\FileWriter.svc" />
+    <Content Include="Silverlight.js" />
+    <Content Include="TopPage.aspx" />
+    <Content Include="TopPage.html" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\FileUploadProcess.cs" />
+    <Compile Include="DAO\PharmacyTool\ユーザー管理.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ユーザー管理.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="GenericHandler\FileUpload.ashx.cs">
+      <DependentUpon>FileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericHandler\ServerSVCFolderRefresh.ashx.cs">
+      <DependentUpon>ServerSVCFolderRefresh.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericHandler\在庫データFileUpload.ashx.cs">
+      <DependentUpon>在庫データFileUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Service\DAO\PharmacyTool\ILoginCheck.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\LoginCheck.svc.cs">
+      <DependentUpon>LoginCheck.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\DAO\PharmacyTool\LoginCheckServiceHostFactory.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\アクセス数管理\AccessManagement.svc.cs">
+      <DependentUpon>AccessManagement.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\DAO\PharmacyTool\アクセス数管理\AccessManagementServiceHostFactory.cs.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\アクセス数管理\IAccessManagement.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\ユーザー管理\UserManagement.svc.cs">
+      <DependentUpon>UserManagement.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\DAO\PharmacyTool\ユーザー管理\UserManagementServiceHostFactory.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\ユーザー管理\IUserManagement.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\店舗\IStoreData.cs" />
+    <Compile Include="Service\DAO\PharmacyTool\店舗\StoreData.svc.cs">
+      <DependentUpon>StoreData.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\DAO\PharmacyTool\店舗\StoreDataServiceHostFactory.cs" />
+    <Compile Include="Service\File\Reader\FileReader.svc.cs">
+      <DependentUpon>FileReader.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\File\Reader\FileReaderServiceHostFactory.cs" />
+    <Compile Include="Service\File\Reader\IFileReader.cs" />
+    <Compile Include="Service\File\TreeView\ITreeViewManager.cs" />
+    <Compile Include="Service\File\TreeView\TreeViewManager.svc.cs">
+      <DependentUpon>TreeViewManager.svc</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Service\File\TreeView\TreeViewManagerServiceHostFactory.cs" />
+    <Compile Include="Service\File\Writer\FileWriter.svc.cs">
+      <DependentUpon>FileWriter.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Service\File\Writer\FileWriterServiceHostFactory.cs" />
+    <Compile Include="Service\File\Writer\IFileWriter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DAO\PharmacyTool\ユーザー管理.xsc">
+      <DependentUpon>ユーザー管理.xsd</DependentUpon>
+    </None>
+    <None Include="DAO\PharmacyTool\ユーザー管理.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ユーザー管理.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DAO\PharmacyTool\ユーザー管理.xss">
+      <DependentUpon>ユーザー管理.xsd</DependentUpon>
+    </None>
+    <Content Include="ClientBin\etc\Icon\book1.png" />
+    <Content Include="ClientBin\etc\Icon\home.png" />
+    <Content Include="ClientBin\etc\Icon\kinds1.png" />
+    <Content Include="ClientBin\etc\Icon\nakayamalogo.png" />
+    <Content Include="ClientBin\View.xap" />
+    <Content Include="GenericHandler\在庫データFileUpload.ashx" />
+    <Content Include="Service\DAO\PharmacyTool\店舗\StoreData.svc" />
+    <Content Include="GenericHandler\FileUpload.ashx" />
+    <Content Include="GenericHandler\ServerSVCFolderRefresh.ashx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>56305</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/PharmacyTool.Web</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

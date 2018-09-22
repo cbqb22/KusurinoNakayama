@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="faa9f80b-4205-42a8-84ca-9da1812038cd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="StoreData1.disco" MetadataType="Disco" ID="f0e227fe-035f-48c6-af45-4c64e386aec6" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?disco" />
+    <MetadataFile FileName="StoreData1.wsdl" MetadataType="Wsdl" ID="b4a90300-9844-4730-98c2-f19956f09e82" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?wsdl" />
+    <MetadataFile FileName="StoreData3.xsd" MetadataType="Schema" ID="4037243d-80bb-433e-9ba0-4dcc2f2dcfa7" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?xsd=xsd1" />
+    <MetadataFile FileName="StoreData31.xsd" MetadataType="Schema" ID="d0227a9d-3a93-43a0-8ab0-1bdba343dadf" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?xsd=xsd2" />
+    <MetadataFile FileName="StoreData32.xsd" MetadataType="Schema" ID="607dd812-6158-4065-ab6f-c46e33f9bcc2" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

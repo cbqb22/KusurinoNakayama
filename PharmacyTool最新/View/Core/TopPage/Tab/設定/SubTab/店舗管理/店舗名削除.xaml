@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="View.Core.TopPage.Tab.設定.SubTab.店舗管理.店舗名削除"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Margin="27,29,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+    <Grid x:Name="LayoutRoot" Height="230" Width="432" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="27,29,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto" MinHeight="194"/>
+        </Grid.RowDefinitions>
+        <Rectangle Fill="White" Stroke="Black" Margin="0,-1,28,21" Grid.Row="1"/>
+        <Grid x:Name="gdContents" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="gd店舗リスト" HorizontalAlignment="Left" Margin="0,40,0,0" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="tbl登録店舗名" Margin="20,0,0,0" FontSize="16" FontWeight="Bold" Text="削除店舗名:" TextWrapping="Wrap" d:LayoutOverrides="Width, Height"/>
+                <ComboBox x:Name="cmb削除店舗名" Margin="10,0,0,4" Grid.Column="1" Height="24" Width="250" SelectedIndex="-1"/>
+            </Grid>
+            <Grid x:Name="gdボタン" HorizontalAlignment="Right" Margin="0,40,0,0" VerticalAlignment="Top" Grid.Row="1">
+                <StackPanel x:Name="stpButtons" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                    <Button x:Name="bt削除" Width="75" Content="削除" Click="bt削除_Click" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+        <Grid x:Name="gdTitle" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <TextBlock x:Name="tblTitle" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom" Text="店舗名削除" TextWrapping="Wrap" FontSize="16" Foreground="Red" TextDecorations="Underline" FontWeight="Bold"/>
+        </Grid>
+    </Grid>
+</UserControl>

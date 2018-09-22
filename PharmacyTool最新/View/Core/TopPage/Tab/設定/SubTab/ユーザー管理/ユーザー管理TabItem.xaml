@@ -1,0 +1,33 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+    xmlns:User="clr-namespace:View.Core.TopPage.Tab.設定.SubTab.ユーザー管理"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="View.Core.TopPage.Tab.設定.SubTab.ユーザー管理.ユーザー管理TabItem"
+    Width="Auto" Height="Auto" mc:Ignorable="d">
+    <UserControl.Resources>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <controls:TabControl>
+            <controls:TabItem Header="   新  規  " x:Name="新規TabItem" FontWeight="Bold" Cursor="Hand">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <User:新規ユーザー作成 x:Name="uc新規ユーザー作成"/>
+                </ScrollViewer>
+            </controls:TabItem>
+
+            <controls:TabItem Header=" 更  新 " x:Name="更新_管理者TabItem" FontWeight="Bold" Cursor="Hand">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <User:既存ユーザー更新 x:Name="uc既存ユーザー更新"/>
+                </ScrollViewer>
+            </controls:TabItem>
+
+            <controls:TabItem Header="  更  新  " x:Name="更新TabItem" FontWeight="Bold" Cursor="Hand">
+                <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                    <User:ログインユーザー更新 x:Name="ucログインユーザー更新"/>
+                </ScrollViewer>
+            </controls:TabItem>
+
+        </controls:TabControl>
+    </Grid>
+</UserControl>

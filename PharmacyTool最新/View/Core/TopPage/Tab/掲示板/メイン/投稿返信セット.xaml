@@ -1,0 +1,43 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:converter="clr-namespace:View.Core.共通.Converter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="View.Core.TopPage.Tab.掲示板.メイン.投稿返信セット" 
+    Width="Auto" mc:Ignorable="d" d:DesignHeight="213" MinWidth="410">
+    <UserControl.Resources>
+        <converter:HomepageUrlConverter x:Key="HomepageUrlConverter"/>
+        <converter:文字色Converter x:Key="文字色Converter"/>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White" d:LayoutOverrides="VerticalMargin" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto">
+        <Border BorderThickness="1" BorderBrush="Black" OpacityMask="#FFDDD2D2" >
+            <Border.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFF6E8FA"/>
+                    <GradientStop Color="White" Offset="1"/>
+                    <GradientStop Color="#FFF4EAF8" Offset="0.508"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <StackPanel x:Name="stp投稿返信セット" Orientation="Vertical" VerticalAlignment="Top" Height="Auto" Margin="0,10,0,0">
+            <StackPanel x:Name="stpHeader" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBlock x:Name="NoTextBlock" Margin="20,0" Text="{Binding No, Mode=OneWay}" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" TextDecorations="Underline" OpacityMask="White" Foreground="#FF1512F7"/>
+                <TextBlock x:Name="タイトル" Margin="0,0,20,0" TextWrapping="Wrap" Text="{Binding Title, Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="16" FontWeight="Bold" FontFamily="/View;Component/Fonts/Fonts.zip#ＭＳ ゴシック" Foreground="#FFF132E3"/>
+                <TextBlock x:Name="投稿者名TitleTextBlock" Text="投稿者名:" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0" FontSize="12.667"/>
+                <!-- TextBlock x:Name="投稿者TextBlock" Margin="0,0,20,0" TextWrapping="Wrap" Text="{Binding 投稿者名, Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13.333" FontWeight="Bold"/-->
+                <HyperlinkButton x:Name="投稿者HyperlinkButton" Margin="0,0,20,0" Content="{Binding 投稿者名, Mode=OneWay}" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Foreground="Black" NavigateUri="{Binding Email}" TargetName="" />
+                <TextBlock x:Name="投稿日TitleTextBlock" Text="投稿日:" TextWrapping="Wrap" FontSize="12.667" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0,0,10,0"/>
+                <TextBlock x:Name="投稿日TextBlock" Margin="0,0,20,0" Text="{Binding 投稿日, Mode=OneWay}" TextWrapping="Wrap" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="13.333" FontWeight="Bold"/>
+                <HyperlinkButton x:Name="hylURL" Margin="0,0,20,0" HorizontalAlignment="Left" VerticalAlignment="Center" NavigateUri="{Binding HomepageUrl, Mode=OneWay}" TargetName="_blank" Visibility="{Binding HomepageUrl, Converter={StaticResource HomepageUrlConverter}, Mode=OneWay}">
+                	<Image Source="/etc/Icon/homepage.png" Width="16" Height="16" />
+                </HyperlinkButton>
+                <Button x:Name="bt返信" VerticalAlignment="Center" Width="45" Content="返信" HorizontalAlignment="Left" Margin="0,0,20,0" Click="返信Button_Click"/>
+                <Button x:Name="bt削除" VerticalAlignment="Center" Width="60" Content="記事を削除" HorizontalAlignment="Left" Margin="0,0,20,0" Click="bt削除_Click" />
+            </StackPanel>
+            <StackPanel x:Name="stpContents" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="131,0,0,10">
+                <TextBox x:Name="記事TextBlock" TextWrapping="Wrap" Text="{Binding 記事, Mode=OneWay}" FontSize="13.333" HorizontalAlignment="Left" Foreground="{Binding 文字色,Converter={StaticResource 文字色Converter},Mode=OneWay}" Margin="0,0,10,0" BorderBrush="{x:Null}" Background="{x:Null}" />
+                <StackPanel x:Name="stp添付画像" Margin="0,5,0,0" HorizontalAlignment="Left"/>
+            </StackPanel>
+            <StackPanel x:Name="stp返信セット" Orientation="Vertical" HorizontalAlignment="Left" Margin="92,0,0,0" VerticalAlignment="Top"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

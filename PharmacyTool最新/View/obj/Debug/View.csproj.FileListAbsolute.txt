@@ -1,0 +1,459 @@
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\View.dll.config
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\View.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\View.pdb
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\AppManifest.xaml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\View.xap
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\TestPage.html
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\Microsoft.Windows.Controls.WatermarkedTextBox.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\SilverlightFX.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Toolkit.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Data.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\App.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\Control\AccessCounter.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\Login\LoginCheckDialog.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\TabItemControl.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\シフト\表作成\シフト表作成.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\不動品DataGrid.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\使用量DataGrid.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理Frame.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理TabItem.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\後発品DataGrid.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\在庫管理\現在庫DataGrid.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\ThreadSelector.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿フォーム.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿返信セット.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\掲示板Frame.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\返信セット.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\SubTabItemControl.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\TopPage\Tab\資料\資料TreeView.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\Core\共通\UserControls\PageSelector.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\MainPage.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\View.g.resources
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\View.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\View.pdb
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\obj\Debug\XapCacheFile.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\View\Bin\Debug\System.Windows.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\View.dll.config
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\AppManifest.xaml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\View.xap
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\TestPage.html
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Interactivity.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\System.Windows.Interactivity.xml
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\en\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\Microsoft.Expression.Interactions.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\de\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\en\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\es\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\fr\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\it\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ja\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\ko\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hans\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\Bin\Debug\zh-Hant\System.Windows.Interactivity.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\App.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\Control\AccessCounter.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\Login\LoginCheckDialog.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\TabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\シフト\表作成\シフト表作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\不動品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\使用量DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\後発品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\現在庫DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\ThreadSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿フォーム.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\掲示板Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\SubTabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\TopPage\Tab\資料\資料TreeView.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\Core\共通\UserControls\PageSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\MainPage.g.cs
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\View.g.resources
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\View\obj\Debug\XapCacheFile.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\View.dll.config
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\AppManifest.xaml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\View.xap
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\TestPage.html
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\System.Windows.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\View.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\App.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\Control\AccessCounter.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\Login\LoginCheckDialog.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\TabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\シフト\表作成\シフト表作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\不動品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\使用量DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\後発品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\在庫管理\現在庫DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\ThreadSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿フォーム.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\掲示板Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\SubTabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\TopPage\Tab\資料\資料TreeView.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\Core\共通\UserControls\PageSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\MainPage.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\View.g.resources
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\View\obj\Debug\XapCacheFile.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\View.dll.config
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\AppManifest.xaml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\View.xap
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\TestPage.html
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.ComponentModel.DataAnnotations.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Data.Input.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Navigation.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Data.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.ComponentModel.DataAnnotations.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Data.Input.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Controls.Navigation.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\System.Windows.Data.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.ComponentModel.DataAnnotations.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Data.Input.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.Windows.Controls.Navigation.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\de\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\es\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\fr\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\it\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ja\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\ko\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hans\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\Bin\Debug\zh-Hant\System.Windows.Data.resources.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\App.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\Control\AccessCounter.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\Login\LoginCheckDialog.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\TabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\シフト\表作成\シフト表作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\不動品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\使用量DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫更新\在庫更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\在庫管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\後発品DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\在庫管理\現在庫DataGrid.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\ThreadSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿フォーム.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\投稿返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\掲示板Frame.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\メイン\返信セット.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\スレッド追加ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\掲示板\子画面\投稿ChildWindow.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\SubTabItemControl.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\テロップ管理.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\その他\その他TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ユーザー管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\ログインユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\新規ユーザー作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗名削除.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\新規店舗名作成.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\ユーザー管理\既存ユーザー更新.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\設定\SubTab\店舗管理\店舗管理TabItem.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\TopPage\Tab\資料\資料TreeView.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\Core\共通\UserControls\PageSelector.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\MainPage.g.cs
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\View.g.resources
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\View.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\View.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\XapCacheFile.xml
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\View\obj\Debug\View.csprojResolveAssemblyReference.cache

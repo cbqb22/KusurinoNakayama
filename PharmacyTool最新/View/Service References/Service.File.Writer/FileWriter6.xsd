@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" />
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="FileWriter実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SendPath" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="mode" type="q1:ディレクトリ操作モード" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="type" type="q2:タイプ" />
+        <xs:element minOccurs="0" name="NewName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileWriter実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FileWriter実行Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="掲示板データ書込">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="カテゴリ名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="タイトル" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="投稿者" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="記事" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="タイプ" type="q3:掲示板書込タイプ" />
+        <xs:element minOccurs="0" name="記事No" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="HomepageUrl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+        <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="添付画像パスリスト" nillable="true" type="q4:ArrayOfstring" />
+        <xs:element minOccurs="0" name="暗証キー" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="文字色" type="q5:文字色" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="掲示板データ書込Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="掲示板データ書込Result" nillable="true" type="q6:掲示板結果リターンEntity" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="掲示板データ削除">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="カテゴリ名" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="記事No" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="暗証キー" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="管理者か" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="掲示板データ削除Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="掲示板データ削除Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteThreadTitles">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InputThreadName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="画像種類" type="q7:画像種類Enum" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Writer" minOccurs="0" name="操作タイプ" type="q8:スレッド操作タイプ" />
+        <xs:element minOccurs="0" name="SourceName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="WriteThreadTitlesResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="WriteThreadTitlesResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="テロップ変更実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="テロップ記事" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="テロップ変更実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="テロップ変更実行Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

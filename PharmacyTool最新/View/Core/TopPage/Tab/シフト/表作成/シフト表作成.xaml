@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="View.Core.TopPage.Tab.シフト.表作成.シフト表作成"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    Width="Auto" Height="Auto">
+    <UserControl.Resources>
+
+        <DataTemplate x:Name="Summary1">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary2">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム２}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary3">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム３}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary4">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム４}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary5">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム５}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary6">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム６}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary7">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム７}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary8">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム８}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary9">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム９}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary10">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１０}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary11">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１１}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary12">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１２}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary13">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１３}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary14">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１４}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary15">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１５}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary16">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１６}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary17">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１７}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary18">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１８}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary19">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム１９}" />
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Name="Summary20">
+            <Grid Background="White" >
+                <TextBox Text="{Binding カラム２０}" />
+            </Grid>
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White">
+        <StackPanel x:Name="stackpanel1"></StackPanel>
+    </Grid>
+</UserControl>

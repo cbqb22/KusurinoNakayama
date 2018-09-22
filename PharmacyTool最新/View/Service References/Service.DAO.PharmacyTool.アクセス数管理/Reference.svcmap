@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="63b44506-c3e5-4228-8795-7b2e76b3b2e3" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AccessManagement3.xsd" MetadataType="Schema" ID="cc846a26-e28f-466e-b33a-5e719548a29b" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc?xsd=xsd2" />
+    <MetadataFile FileName="AccessManagement31.xsd" MetadataType="Schema" ID="a2682458-6b05-4b11-a8c8-ab0b4d53683e" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc?xsd=xsd0" />
+    <MetadataFile FileName="AccessManagement1.wsdl" MetadataType="Wsdl" ID="1255873b-0308-45eb-bdc0-3a78fd1b678d" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc?wsdl" />
+    <MetadataFile FileName="AccessManagement32.xsd" MetadataType="Schema" ID="cccb6c61-c1bd-4de1-a50c-9cd5e01cc16a" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc?xsd=xsd1" />
+    <MetadataFile FileName="AccessManagement1.disco" MetadataType="Disco" ID="47a495f4-0600-45f8-b3fb-8990008cbe1b" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/アクセス数管理/AccessManagement.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

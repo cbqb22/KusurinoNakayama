@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FileReader" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.Reader" />
+      <xsd:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFileReader_OpenCSV_InputMessage">
+    <wsdl:part name="parameters" element="tns:OpenCSV" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_OpenCSV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OpenCSVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open使用量CSV_InputMessage">
+    <wsdl:part name="parameters" element="tns:Open使用量CSV" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open使用量CSV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Open使用量CSVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open使用量2CSV_InputMessage">
+    <wsdl:part name="parameters" element="tns:Open使用量2CSV" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open使用量2CSV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Open使用量2CSVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open不動品CSV_InputMessage">
+    <wsdl:part name="parameters" element="tns:Open不動品CSV" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open不動品CSV_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Open不動品CSVResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Get現在庫検索データ_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get現在庫検索データ" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Get現在庫検索データ_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get現在庫検索データResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Get後発品検索データ_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get後発品検索データ" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Get後発品検索データ_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get後発品検索データResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open掲示板データ_InputMessage">
+    <wsdl:part name="parameters" element="tns:Open掲示板データ" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open掲示板データ_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Open掲示板データResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open掲示板データキーワード検索_InputMessage">
+    <wsdl:part name="parameters" element="tns:Open掲示板データキーワード検索" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_Open掲示板データキーワード検索_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Open掲示板データキーワード検索Response" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_掲示板記事修正確認チェック_InputMessage">
+    <wsdl:part name="parameters" element="tns:掲示板記事修正確認チェック" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_掲示板記事修正確認チェック_OutputMessage">
+    <wsdl:part name="parameters" element="tns:掲示板記事修正確認チェックResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_GetThreadTitles_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetThreadTitles" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_GetThreadTitles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetThreadTitlesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_テロップ記事読み込み_InputMessage">
+    <wsdl:part name="parameters" element="tns:テロップ記事読み込み" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_テロップ記事読み込み_OutputMessage">
+    <wsdl:part name="parameters" element="tns:テロップ記事読み込みResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_DoMerge_InputMessage">
+    <wsdl:part name="parameters" element="tns:DoMerge" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_DoMerge_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DoMergeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_GetMEDISデータ最終更新日時_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMEDISデータ最終更新日時" />
+  </wsdl:message>
+  <wsdl:message name="IFileReader_GetMEDISデータ最終更新日時_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMEDISデータ最終更新日時Response" />
+  </wsdl:message>
+  <wsdl:portType name="IFileReader">
+    <wsdl:operation name="OpenCSV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/OpenCSV" message="tns:IFileReader_OpenCSV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/OpenCSVResponse" message="tns:IFileReader_OpenCSV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Open使用量CSV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Open使用量CSV" message="tns:IFileReader_Open使用量CSV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Open使用量CSVResponse" message="tns:IFileReader_Open使用量CSV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Open使用量2CSV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Open使用量2CSV" message="tns:IFileReader_Open使用量2CSV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Open使用量2CSVResponse" message="tns:IFileReader_Open使用量2CSV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Open不動品CSV">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Open不動品CSV" message="tns:IFileReader_Open不動品CSV_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Open不動品CSVResponse" message="tns:IFileReader_Open不動品CSV_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get現在庫検索データ">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Get現在庫検索データ" message="tns:IFileReader_Get現在庫検索データ_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Get現在庫検索データResponse" message="tns:IFileReader_Get現在庫検索データ_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get後発品検索データ">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Get後発品検索データ" message="tns:IFileReader_Get後発品検索データ_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Get後発品検索データResponse" message="tns:IFileReader_Get後発品検索データ_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Open掲示板データ">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Open掲示板データ" message="tns:IFileReader_Open掲示板データ_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Open掲示板データResponse" message="tns:IFileReader_Open掲示板データ_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Open掲示板データキーワード検索">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/Open掲示板データキーワード検索" message="tns:IFileReader_Open掲示板データキーワード検索_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/Open掲示板データキーワード検索Response" message="tns:IFileReader_Open掲示板データキーワード検索_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="掲示板記事修正確認チェック">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/掲示板記事修正確認チェック" message="tns:IFileReader_掲示板記事修正確認チェック_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/掲示板記事修正確認チェックResponse" message="tns:IFileReader_掲示板記事修正確認チェック_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThreadTitles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/GetThreadTitles" message="tns:IFileReader_GetThreadTitles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/GetThreadTitlesResponse" message="tns:IFileReader_GetThreadTitles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="テロップ記事読み込み">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/テロップ記事読み込み" message="tns:IFileReader_テロップ記事読み込み_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/テロップ記事読み込みResponse" message="tns:IFileReader_テロップ記事読み込み_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DoMerge">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/DoMerge" message="tns:IFileReader_DoMerge_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/DoMergeResponse" message="tns:IFileReader_DoMerge_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMEDISデータ最終更新日時">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFileReader/GetMEDISデータ最終更新日時" message="tns:IFileReader_GetMEDISデータ最終更新日時_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFileReader/GetMEDISデータ最終更新日時Response" message="tns:IFileReader_GetMEDISデータ最終更新日時_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFileReader" type="tns:IFileReader">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="OpenCSV">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/OpenCSV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Open使用量CSV">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Open使用量CSV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Open使用量2CSV">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Open使用量2CSV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Open不動品CSV">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Open不動品CSV" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get現在庫検索データ">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Get現在庫検索データ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get後発品検索データ">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Get後発品検索データ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Open掲示板データ">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Open掲示板データ" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Open掲示板データキーワード検索">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/Open掲示板データキーワード検索" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="掲示板記事修正確認チェック">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/掲示板記事修正確認チェック" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetThreadTitles">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/GetThreadTitles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="テロップ記事読み込み">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/テロップ記事読み込み" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DoMerge">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/DoMerge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMEDISデータ最終更新日時">
+      <soap:operation soapAction="http://tempuri.org/IFileReader/GetMEDISデータ最終更新日時" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FileReader">
+    <wsdl:port name="BasicHttpBinding_IFileReader" binding="tns:BasicHttpBinding_IFileReader">
+      <soap:address location="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

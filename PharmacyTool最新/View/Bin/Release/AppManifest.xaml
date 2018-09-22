@@ -1,0 +1,24 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="View" EntryPointType="View.App" RuntimeVersion="3.0.40818.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="View" Source="View.dll" />
+    <AssemblyPart x:Name="Microsoft.Expression.Interactions" Source="Microsoft.Expression.Interactions.dll" />
+    <AssemblyPart x:Name="Microsoft.Windows.Controls.WatermarkedTextBox" Source="Microsoft.Windows.Controls.WatermarkedTextBox.dll" />
+    <AssemblyPart x:Name="SilverlightFX" Source="SilverlightFX.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data" Source="System.Windows.Controls.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls" Source="System.Windows.Controls.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Navigation" Source="System.Windows.Controls.Navigation.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Toolkit" Source="System.Windows.Controls.Toolkit.dll" />
+    <AssemblyPart x:Name="System.Windows.Data" Source="System.Windows.Data.dll" />
+    <AssemblyPart x:Name="System.Windows.Interactivity" Source="System.Windows.Interactivity.dll" />
+    <AssemblyPart Source="ja/Microsoft.Expression.Interactions.resources.dll" />
+    <AssemblyPart Source="ja/System.ComponentModel.DataAnnotations.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Data.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Data.Input.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Controls.Navigation.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Data.resources.dll" />
+    <AssemblyPart Source="ja/System.Windows.Interactivity.resources.dll" />
+  </Deployment.Parts>
+</Deployment>

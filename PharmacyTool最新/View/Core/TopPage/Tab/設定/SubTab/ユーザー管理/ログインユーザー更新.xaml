@@ -1,0 +1,34 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="View.Core.TopPage.Tab.設定.SubTab.ユーザー管理.ログインユーザー更新" 
+    Width="Auto" Height="Auto" mc:Ignorable="d">
+    <UserControl.Resources>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="0"/>
+            <RowDefinition Height="300"/>
+            <RowDefinition Height="0"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition Width="536"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="UserIDTextBlock" HorizontalAlignment="Left" Margin="95,110,0,0" VerticalAlignment="Top" Text="ユーザーID:" TextWrapping="Wrap"  Width="87" Height="17" Grid.Row="2" Grid.Column="1" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment" FontSize="14.667" FontWeight="Bold" RenderTransformOrigin="0.362,0.676"/>
+        <TextBlock x:Name="UserIDTextBlock2" VerticalAlignment="Top" TextWrapping="Wrap" Height="33" Margin="200,104,95,0" Grid.Column="1" Grid.Row="2" d:LayoutOverrides="VerticalAlignment" Width="241" FontSize="14.667" />
+        <TextBlock x:Name="PasswordTextBlock" HorizontalAlignment="Right" Margin="0,0,348,110" Text="新パスワード:" TextWrapping="Wrap" Width="107" Grid.Column="1" Grid.Row="2" Height="17" VerticalAlignment="Bottom" FontSize="14.667" FontWeight="Bold"/>
+        <PasswordBox x:Name="PasswordTextBox"  VerticalAlignment="Top" Height="32" Margin="200,168,95,0" Grid.Column="1" Grid.Row="2" Width="241" FontSize="14.667"/>
+        <Button x:Name="ユーザー更新Button"  Content="更新" HorizontalAlignment="Left" Width="62" VerticalAlignment="Top"  Height="22" Click="ユーザー更新Button_Click" Margin="379,232,0,0" Grid.Column="1" Grid.Row="2"/>
+        <Button x:Name="クリア" Margin="0,232,161,0" Content="クリア" VerticalAlignment="Top" RenderTransformOrigin="1.041,0.409" Width="62" Height="22" Click="クリア_Click" HorizontalAlignment="Right" Grid.Row="2" Grid.Column="1"/>
+        <TextBlock x:Name="ユーザー更新title" HorizontalAlignment="Left" Margin="27,29,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="2" Text="ユーザー情報更新" TextWrapping="Wrap" FontSize="16" FontWeight="Bold" TextDecorations="Underline" Foreground="Red"/>
+        <Border Margin="27,52,56,19" Grid.Column="1" Grid.Row="2" BorderBrush="Black" BorderThickness="1"/>
+
+
+
+
+    </Grid>
+</UserControl>

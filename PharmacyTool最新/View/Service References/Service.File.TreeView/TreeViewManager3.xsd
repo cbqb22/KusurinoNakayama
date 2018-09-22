@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.TreeView" />
+  <xs:element name="Create資料TreeView">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Create資料TreeViewResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.File.TreeView" minOccurs="0" name="Create資料TreeViewResult" nillable="true" type="q1:ArrayOfTreeViewItemData" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

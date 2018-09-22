@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="02372b33-f2ac-4b30-9f5c-7c27286c38cc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="FileReader.xsd" MetadataType="Schema" ID="9dfb605a-984c-4f41-b537-c58c0608a5e9" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd0" />
+    <MetadataFile FileName="FileReader2.xsd" MetadataType="Schema" ID="613fcf09-84e8-4011-9f84-fc39bcc051d8" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd2" />
+    <MetadataFile FileName="FileReader3.xsd" MetadataType="Schema" ID="35013828-4222-4a9b-bfdc-d91be0cc150c" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd1" />
+    <MetadataFile FileName="FileReader.wsdl" MetadataType="Wsdl" ID="9d23c865-b21e-4a0c-9526-3987d7c6d464" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?wsdl" />
+    <MetadataFile FileName="FileReader.disco" MetadataType="Disco" ID="938cc13e-9381-4174-ad18-9883f19e6f12" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?disco" />
+    <MetadataFile FileName="FileReader1.xsd" MetadataType="Schema" ID="b163eba7-fbd6-47b3-bbbc-93d4a4ab2b37" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

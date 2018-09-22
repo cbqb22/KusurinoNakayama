@@ -1,0 +1,18 @@
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyToolMobile\bin\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyToolMobile\bin\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyToolMobile\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\PharmacyToolMobile\bin\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\PharmacyToolMobile\bin\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool4 - コピー - コピー\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyToolMobile\bin\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyToolMobile\bin\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\PharmacyToolMobile\bin\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\PharmacyToolMobile\bin\PharmacyToolMobile.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.dll
+C:\Users\poohace\Desktop\PharmacyTool最新 - コピー\PharmacyToolMobile\obj\Debug\PharmacyToolMobile.pdb

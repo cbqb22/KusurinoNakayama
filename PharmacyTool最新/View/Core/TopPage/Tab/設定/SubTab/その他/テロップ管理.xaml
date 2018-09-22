@@ -1,0 +1,31 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Usercontrols="clr-namespace:View.Core.共通.UserControls"
+	mc:Ignorable="d"
+	x:Class="View.Core.TopPage.Tab.設定.SubTab.その他.テロップ管理"
+	d:DesignWidth="640" d:DesignHeight="480" Width="680" Height="410" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+	<Grid x:Name="LayoutRoot" Margin="26,32,0,0" HorizontalAlignment="Left" d:LayoutOverrides="Height">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Border Grid.Row="1" BorderBrush="Black" BorderThickness="1" Margin="1,-1,-12,0" Grid.RowSpan="2"/>
+		<Grid x:Name="gdHeader" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom">
+			<TextBlock x:Name="tblHeader" Text="テロップ編集" TextWrapping="Wrap" d:LayoutOverrides="Width, Height" FontSize="16" Foreground="Red" TextDecorations="Underline" FontWeight="Bold"/>
+		</Grid>
+		<Grid x:Name="gdTerop" HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Bottom" Grid.Row="1">
+            <Usercontrols:PharmacyToolTextBox x:Name="tbTerop" Background="{x:Null}" Width="618" AcceptsReturn="True" Height="200"/>
+		</Grid>
+		<Grid x:Name="gdButtons" HorizontalAlignment="Right" Margin="0,0,0,10" VerticalAlignment="Bottom" Grid.Row="2">
+			<StackPanel x:Name="stpButtons" Orientation="Horizontal">
+				<Button x:Name="bt更新" HorizontalAlignment="Left" Content=" 更　新 " Click="bt更新_Click" />
+				<Button x:Name="bt元に戻す" HorizontalAlignment="Left" Content="元に戻す" Click="bt元に戻す_Click"/>
+			</StackPanel>
+		</Grid>
+	</Grid>
+</UserControl>

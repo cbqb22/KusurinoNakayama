@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PharmacyTool.Web.Service.DAO.PharmacyTool.店舗.StoreData" CodeBehind="StoreData.svc.cs" Factory="PharmacyTool.Web.Service.DAO.PharmacyTool.店舗.StoreDataServiceHostFactory"%>

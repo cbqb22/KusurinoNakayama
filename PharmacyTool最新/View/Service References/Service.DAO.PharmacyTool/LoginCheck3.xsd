@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfログインチェック結果">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ログインチェック結果" nillable="true" type="tns:ログインチェック結果" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfログインチェック結果" nillable="true" type="tns:ArrayOfログインチェック結果" />
+  <xs:complexType name="ログインチェック結果">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="アクセス権限" type="xs:int" />
+      <xs:element minOccurs="0" name="エラーメッセージ" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="チェック成功か" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ユーザーID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="表示名称" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ログインチェック結果" nillable="true" type="tns:ログインチェック結果" />
+</xs:schema>

@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PharmacyTool.Web.Service.File.TreeView.TreeViewManager" CodeBehind="TreeViewManager.svc.cs" Factory="PharmacyTool.Web.Service.File.TreeView.TreeViewManagerServiceHostFactory" %>

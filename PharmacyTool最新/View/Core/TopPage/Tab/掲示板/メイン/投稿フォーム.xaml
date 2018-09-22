@@ -1,0 +1,238 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Usercontrols="clr-namespace:View.Core.共通.UserControls"
+	mc:Ignorable="d"
+	xmlns:fxui="clr-namespace:SilverlightFX.UserInterface;assembly=SilverlightFX"
+	x:Class="View.投稿フォーム"
+	d:DesignWidth="640" d:DesignHeight="480" Width="800">
+
+	<Grid x:Name="LayoutRoot" Width="700" HorizontalAlignment="Center">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<TextBlock TextWrapping="Wrap" Margin="0,0,0,-73" Grid.RowSpan="11"/>
+		<Grid x:Name="gd枠" HorizontalAlignment="Center" Margin="0,0,0,2" Grid.RowSpan="3">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+            <Grid x:Name="gdおなまえ" Margin="0,10,0,0" VerticalAlignment="Center" d:LayoutOverrides="Width" Grid.Row="0">
+                <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                    <TextBlock x:Name="tblおなまえ" HorizontalAlignment="Left" VerticalAlignment="Center" Text="おなまえ" TextWrapping="Wrap"/>
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbおなまえ" Margin="10,0,0,0" Width="200" TextWrapping="Wrap"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="gdＥメール" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="1" d:LayoutOverrides="Width">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock x:Name="tblEメール" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="Eメール"/>
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbEメール" Margin="14,0,0,0" TextWrapping="Wrap" Width="200" d:LayoutOverrides="Height"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="gdタイトル" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="2">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Bottom">
+                    <TextBlock x:Name="tblタイトル" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="タイトル"/>
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbタイトル" Margin="11,0,0,0" TextWrapping="Wrap" Width="285"/>
+                    <Button Width="55" Content="投稿する" Click="投稿Button_Click"/>
+                    <Button Width="55" Content="クリア" Click="クリアButton_Click"/>
+                </StackPanel>
+            </Grid>
+
+
+            <Grid x:Name="gdコメントヘッダ" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="3">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+                    <TextBlock x:Name="tblコメント" HorizontalAlignment="Left" VerticalAlignment="Center" TextWrapping="Wrap" Text="コメント"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="gdコメント" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Grid.Row="4">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbコメント" TextWrapping="Wrap" Width="450" Height="100" MaxLength="5000" AcceptsReturn="True" VerticalScrollBarVisibility="Auto">
+                    </Usercontrols:PharmacyToolTextBox>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="gdURL" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="5">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+                    <TextBlock x:Name="tblURL" HorizontalAlignment="Left" VerticalAlignment="Center" Text="URL" TextWrapping="Wrap"/>
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbURL" Margin="34,0,0,0" Width="396" TextWrapping="Wrap" Text="http://"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid x:Name="gd添付ファイル" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="6" d:LayoutOverrides="Width" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+                    <TextBlock x:Name="tbl添付File" HorizontalAlignment="Left" VerticalAlignment="Center" Text="添付File" TextWrapping="Wrap" Height="16"/>
+                    <Button x:Name="bt添付File" Margin="15,0,0,0" Width="75" Content="ファイル添付" Click="bt添付File_Click" Height="22"/>
+                    <StackPanel x:Name="stp添付File" Margin="10,0,0,0"/>
+                </StackPanel>
+            </Grid>
+            
+            			<Grid x:Name="gd暗証キー" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="7" d:LayoutOverrides="Width" HorizontalAlignment="Left">
+				<StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+					<TextBlock x:Name="tbl暗証キー" HorizontalAlignment="Left" VerticalAlignment="Center" Text="暗証キー" TextWrapping="Wrap"/>
+					<PasswordBox x:Name="pb暗証キー" HorizontalAlignment="Left" Margin="13,0,0,0" VerticalAlignment="Top" Width="50" MaxLength="8"/>
+					<TextBlock HorizontalAlignment="Center" Margin="10,0,0,0" VerticalAlignment="Center" Text="(英数字で8文字以内)" TextWrapping="Wrap"/>
+				</StackPanel>
+			</Grid>
+
+            <Grid x:Name="gd文字色" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Center" Grid.Row="8">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="gdColors" Height="24" Margin="0" VerticalAlignment="Bottom" Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid x:Name="gdBrown" Grid.Column="0">
+                        <StackPanel Orientation="Horizontal">
+                            <RadioButton x:Name="rbtBrown" Content="" IsChecked="True" GroupName="文字色GroupRadioButton" d:LayoutOverrides="Width"/>
+                            <Rectangle x:Name="rectBrown" Fill="Brown" Stroke="Brown" Width="15" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdRed" Margin="10,0,0,0" Grid.Column="1" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtRed" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectRed" Fill="Red" Stroke="Red" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdGreen" Margin="10,0,0,0" Grid.Column="2" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtGreen" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectGreen" Fill="Green" Stroke="Green" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdBlue" Margin="10,0,0,0" Grid.Column="3" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtBlue" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectBlue" Fill="Blue" Stroke="Blue" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdPurple" Margin="10,0,0,0" Grid.Column="4" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtPurple" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectPurple" Fill="Purple" Stroke="Purple" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdPink" Margin="10,0,0,0" Grid.Column="5" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtPink" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectMagenta" Fill="Magenta" Stroke="Magenta" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdOrange" Margin="10,0,0,0" Grid.Column="6" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtOrange" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectOrange" Fill="#FFFF5000" Stroke="#FFFF5000" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+
+                    <Grid x:Name="gdBlack" Margin="10,0,0,0" Grid.Column="7" d:LayoutOverrides="GridBox">
+                        <StackPanel HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+                            <RadioButton x:Name="rbtBlack" Content="" GroupName="文字色GroupRadioButton"/>
+                            <Rectangle x:Name="rectBlack" Fill="Black" Stroke="Black" Height="15" HorizontalAlignment="Left" VerticalAlignment="Top" Width="15" Margin="-4,0,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+                <Grid x:Name="gdHeader" HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0" VerticalAlignment="Bottom">
+                        <TextBlock x:Name="tbl文字色" HorizontalAlignment="Left" VerticalAlignment="Center" Text="文字色" TextWrapping="Wrap"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+
+            <Grid x:Name="gdヒント" HorizontalAlignment="Center" Margin="0" Grid.Row="9">
+                <TextBlock x:Name="tblヒント" Text="- 以下のフォームから自分の投稿記事を修正・削除することができます -" TextWrapping="Wrap" d:LayoutOverrides="Width, Height" FontSize="13.333" Foreground="#FF99D3D6"/>
+            </Grid>
+
+            <Grid x:Name="gdオペレーション" HorizontalAlignment="Left" Margin="0" Grid.Row="10" Height="22" VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Grid x:Name="gd処理">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="tbl処理" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Text="処理" TextWrapping="Wrap" d:LayoutOverrides="Height"/>
+                        <ComboBox x:Name="cmb処理" Height="20" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Center" Width="60">
+                            <ComboBoxItem x:Name="cmbItem修正" Content="修正" IsSelected="True"/>
+                            <ComboBoxItem x:Name="cmbItem削除" Content="削除"/>
+                        </ComboBox>
+                    </StackPanel>
+                </Grid>
+                <Grid x:Name="gd記事No" Margin="30,0,0,0" Grid.Column="1">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="tbl記事No" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Text="記事No" TextWrapping="Wrap" d:LayoutOverrides="Height"/>
+                        <Usercontrols:PharmacyToolTextBox x:Name="tb記事No" Height="20" Width="60" TextWrapping="Wrap" MaxLength="8"/>
+                    </StackPanel>
+                </Grid>
+                <Grid x:Name="gdVerify暗証キー" Margin="30,0,0,0" Grid.Column="2">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock x:Name="tblVerify暗証キー" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Text="暗証キー" TextWrapping="Wrap" d:LayoutOverrides="Height"/>
+                        <PasswordBox x:Name="pbVerify暗証キー" HorizontalAlignment="Left" Margin="13,0,0,0" VerticalAlignment="Top" Width="73" MaxLength="8" Height="20"/>
+                    </StackPanel>
+                </Grid>
+                <Grid x:Name="gd送信" Margin="15,0,0,0" Grid.Column="3">
+                    <Button x:Name="bt送信" HorizontalAlignment="Left" Width="55" Content="送信" d:LayoutOverrides="Height" VerticalAlignment="Center" Click="bt送信_Click"/>
+                </Grid>
+            </Grid>
+
+
+            <Grid x:Name="gdWordSearch" HorizontalAlignment="Left" Margin="0,20,0,0" Grid.Row="11" d:LayoutOverrides="GridBox" VerticalAlignment="Bottom">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+					<ColumnDefinition Width="Auto"/>
+				</Grid.ColumnDefinitions>
+				<Grid x:Name="gdWordSearchHeader" HorizontalAlignment="Center" VerticalAlignment="Center">
+					<TextBlock x:Name="tblWordSearch" Margin="0" Foreground="#FFFF0C0C" Text="- キーワード検索 : " TextWrapping="Wrap"/>
+				</Grid>
+				<Grid x:Name="gdWordSearchTextBox" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1">
+                    <Usercontrols:PharmacyToolTextBox x:Name="tbWordSearch" MinWidth="300" Width="305" TextWrapping="Wrap"/>
+				</Grid>
+				<Grid x:Name="gd検索ボタン" Margin="1,0,0,0" Grid.Column="2">
+					<Button x:Name="bt検索ボタン" Margin="0" Content=" 検  索 " d:LayoutOverrides="Height" Click="bt検索ボタン_Click"/>
+				</Grid>
+			</Grid>
+		</Grid>
+	</Grid>
+</UserControl>

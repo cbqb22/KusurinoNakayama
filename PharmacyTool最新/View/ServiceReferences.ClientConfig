@@ -1,0 +1,61 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_ILoginCheck" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IAccessManagement" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IUserManagement" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IStoreData" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IFileReader" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_ITreeViewManager" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IFileWriter" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Reader/FileReader.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileReader"
+                contract="Service.File.Reader.IFileReader" name="BasicHttpBinding_IFileReader" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ITreeViewManager"
+                contract="Service.File.TreeView.ITreeViewManager" name="BasicHttpBinding_ITreeViewManager" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/Writer/FileWriter.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IFileWriter"
+                contract="Service.File.Writer.IFileWriter" name="BasicHttpBinding_IFileWriter" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_ILoginCheck"
+                contract="Service.DAO.PharmacyTool.ILoginCheck" name="BasicHttpBinding_ILoginCheck" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E6%95%B0%E7%AE%A1%E7%90%86/AccessManagement.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IAccessManagement"
+                contract="Service.DAO.PharmacyTool.アクセス数管理.IAccessManagement"
+                name="BasicHttpBinding_IAccessManagement" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E7%AE%A1%E7%90%86/UserManagement.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IUserManagement"
+                contract="Service.DAO.PharmacyTool.ユーザー管理.IUserManagement"
+                name="BasicHttpBinding_IUserManagement" />
+            <endpoint address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/%E5%BA%97%E8%88%97/StoreData.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IStoreData"
+                contract="Service.DAO.PharmacyTool.店舗.IStoreData" name="BasicHttpBinding_IStoreData" />
+        </client>
+    </system.serviceModel>
+</configuration>

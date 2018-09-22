@@ -1,0 +1,131 @@
+﻿<UserControl
+    xmlns:controlsToolkit="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:在庫管理="clr-namespace:View.Core.TopPage.Tab.在庫管理;assembly=View"
+    xmlns:Usercontrols="clr-namespace:View.Core.共通.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    x:Class="View.Core.TopPage.Tab.在庫管理.在庫管理Frame"
+    Width="Auto" Height="Auto" mc:Ignorable="d">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        	<ColumnDefinition/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+    	<Grid x:Name="gdResult" HorizontalAlignment="Left">
+    		<TextBlock x:Name="tbl検索結果" VerticalAlignment="Bottom" TextWrapping="Wrap" d:LayoutOverrides="Width" HorizontalAlignment="Left" Foreground="Red"/>
+    	</Grid>
+
+        <Grid Grid.Row="0" Grid.Column="2" x:Name="gdSearch">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="0,8,0,0">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                    <Usercontrols:PharmacyToolTextBox x:Name="SearchTextBox1" KeyDown="SearchTextBox1_KeyDown" Width="240" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right"  x:Name="SearchButtonStack">
+                    <Button Content="現在庫" Click="検索Button_Click" x:Name="現在庫Button" Background="Magenta" Width="60"/>
+                    <Button Content="使用量" Click="検索Button_Click" x:Name="使用量Button" Background="Gray" Width="60" />
+                    <Button Content="不動品" Click="検索Button_Click" x:Name="不動品Button" Background="Gray" Width="60"/>
+                    <Button Content="後発品" Click="検索Button_Click" x:Name="後発品Button" Background="Gray" Width="60"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="1" x:Name="gdSearchOption">
+            <controlsToolkit:Expander x:Name="expSearchOption" Margin="5,8,0,0" Background="White" IsExpanded="False" ExpandDirection="Down" Header="検索オプション" HorizontalAlignment="Right" VerticalAlignment="Top"  >
+                <StackPanel Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left">
+                    <StackPanel x:Name="stp使用期限日" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,3,0,0">
+                        <TextBlock x:Name="tbl使用期限日" Text="使用期限日:" Margin="0,0,0,3" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="cmb使用期限日" Height="26" Width="170" SelectedIndex="0">
+                            <ComboBoxItem Content="全期間"/>
+                            <ComboBoxItem Content="期限内"/>
+                            <ComboBoxItem Content="期限切"/>
+                            <ComboBoxItem Content="期限１ヶ月以内"/>
+                            <ComboBoxItem Content="期限１ヶ月以上"/>
+                            <ComboBoxItem Content="期限２ヶ月以内"/>
+                            <ComboBoxItem Content="期限２ヶ月以上"/>
+                            <ComboBoxItem Content="期限３ヶ月以内"/>
+                            <ComboBoxItem Content="期限３ヶ月以上"/>
+                            <ComboBoxItem Content="期限４ヶ月以内"/>
+                            <ComboBoxItem Content="期限４ヶ月以上"/>
+                            <ComboBoxItem Content="期限５ヶ月以内"/>
+                            <ComboBoxItem Content="期限５ヶ月以上"/>
+                            <ComboBoxItem Content="期限６ヶ月以内"/>
+                            <ComboBoxItem Content="期限６ヶ月以上"/>
+                            <ComboBoxItem Content="期限７ヶ月以内"/>
+                            <ComboBoxItem Content="期限７ヶ月以上"/>
+                            <ComboBoxItem Content="期限８ヶ月以内"/>
+                            <ComboBoxItem Content="期限８ヶ月以上"/>
+                            <ComboBoxItem Content="期限９ヶ月以内"/>
+                            <ComboBoxItem Content="期限９ヶ月以上"/>
+                            <ComboBoxItem Content="期限１０ヶ月以内"/>
+                            <ComboBoxItem Content="期限１０ヶ月以上"/>
+                            <ComboBoxItem Content="期限１１ヶ月以内"/>
+                            <ComboBoxItem Content="期限１１ヶ月以上"/>
+                            <ComboBoxItem Content="期限１２ヶ月以内"/>
+                            <ComboBoxItem Content="期限１２ヶ月以上"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel x:Name="stp使用量検索" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="0,3,0,0">
+                        <TextBlock x:Name="tbl使用量検索" Text="使用量検索:" Margin="0,0,0,3" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="cmb使用量検索" Height="26" Width="170" SelectedIndex="3">
+                            <ComboBoxItem Content="全期間"/>
+                            <ComboBoxItem Content="過去１ヶ月以内"/>
+                            <ComboBoxItem Content="過去２ヶ月以内"/>
+                            <ComboBoxItem Content="過去３ヶ月以内"/>
+                            <ComboBoxItem Content="過去４ヶ月以内"/>
+                            <ComboBoxItem Content="過去５ヶ月以内"/>
+                            <ComboBoxItem Content="過去６ヶ月以内"/>
+                            <ComboBoxItem Content="過去７ヶ月以内"/>
+                            <ComboBoxItem Content="過去８ヶ月以内"/>
+                            <ComboBoxItem Content="過去９ヶ月以内"/>
+                            <ComboBoxItem Content="過去１０ヶ月以内"/>
+                            <ComboBoxItem Content="過去１１ヶ月以内"/>
+                            <ComboBoxItem Content="過去１２ヶ月以内"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel x:Name="stp使用期限色" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,3,0,0">
+                        <TextBlock x:Name="tbl使用期限色" Text="使用期限色:" Margin="0,0,0,3" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="cmb使用期限色" Height="26" Width="170" SelectedIndex="2">
+                            <ComboBoxItem Content="１ヶ月以内"/>
+                            <ComboBoxItem Content="２ヶ月以内"/>
+                            <ComboBoxItem Content="３ヶ月以内"/>
+                            <ComboBoxItem Content="４ヶ月以内"/>
+                            <ComboBoxItem Content="５ヶ月以内"/>
+                            <ComboBoxItem Content="６ヶ月以内"/>
+                            <ComboBoxItem Content="７ヶ月以内"/>
+                            <ComboBoxItem Content="８ヶ月以内"/>
+                            <ComboBoxItem Content="９ヶ月以内"/>
+                            <ComboBoxItem Content="１０ヶ月以内"/>
+                            <ComboBoxItem Content="１１ヶ月以内"/>
+                            <ComboBoxItem Content="１２ヶ月以内"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <StackPanel x:Name="stp後発品検索" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="0,3,0,0">
+                    	<TextBlock x:Name="tbl後発品検索" Text="後発品検索:" Margin="0,0,0,3" VerticalAlignment="Center"/>
+                        <ComboBox x:Name="cmb後発品検索" Height="26" Width="170" SelectedIndex="0">
+                            <ComboBoxItem Content="他規格・剤形は表示しない"/>
+                            <ComboBoxItem Content="他規格・剤形も表示する"/>
+                        </ComboBox>
+                    </StackPanel>
+                    <Button x:Name="btnCSV出力" Width="75" Content="CSV出力" HorizontalAlignment="Right" Margin="0,3,0,0" Click="btnCSV出力_Click" Visibility="Collapsed"/>
+                </StackPanel>
+            </controlsToolkit:Expander>
+        </Grid>
+
+        <Grid Grid.Row="1" x:Name="gdDataGrids" Grid.ColumnSpan="3" >
+            <在庫管理:後発品DataGrid x:Name="後発品DataGrid1" />
+            <在庫管理:不動品DataGrid x:Name="不動品DataGrid1" />
+            <在庫管理:使用量DataGrid x:Name="使用量DataGrid1" />
+            <在庫管理:現在庫DataGrid x:Name="現在庫DataGrid1" />
+        </Grid>
+
+
+    </Grid>
+</UserControl>

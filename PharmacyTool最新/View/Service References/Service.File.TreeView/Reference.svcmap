@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="16974729-72a3-420f-bfdb-bfc5a1644ed8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="TreeViewManager3.xsd" MetadataType="Schema" ID="639b5278-f02f-4a4a-9fbf-b0adaf66b907" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?xsd=xsd0" />
+    <MetadataFile FileName="TreeViewManager31.xsd" MetadataType="Schema" ID="30fb72f2-437f-4038-ae99-913cabe4a6c7" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?xsd=xsd1" />
+    <MetadataFile FileName="TreeViewManager1.disco" MetadataType="Disco" ID="5cb4ad9f-9dcd-4cac-a7e1-a0368b0e4ed9" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?disco" />
+    <MetadataFile FileName="TreeViewManager1.wsdl" MetadataType="Wsdl" ID="8f93defe-342d-4733-8764-194e6897b87e" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?wsdl" />
+    <MetadataFile FileName="TreeViewManager32.xsd" MetadataType="Schema" ID="ef509486-9345-4864-bade-ff6b3102fc69" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/File/TreeView/TreeViewManager.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

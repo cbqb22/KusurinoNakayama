@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="220b351c-31df-4bbf-a24b-c37b7f026c8f" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="LoginCheck1.wsdl" MetadataType="Wsdl" ID="40f3a058-8020-4d29-a5ec-6ce05f2eff79" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?wsdl" />
+    <MetadataFile FileName="LoginCheck3.xsd" MetadataType="Schema" ID="469ebaa3-8bf2-4897-a6da-816316cb33cc" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?xsd=xsd2" />
+    <MetadataFile FileName="LoginCheck31.xsd" MetadataType="Schema" ID="995a13a8-3e7d-411b-811a-f3649f565a2b" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?xsd=xsd0" />
+    <MetadataFile FileName="LoginCheck1.disco" MetadataType="Disco" ID="86b44c4d-1ccb-4e9c-9a70-e026940ff29d" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?disco" />
+    <MetadataFile FileName="LoginCheck32.xsd" MetadataType="Schema" ID="2df1ef89-13b3-4529-8aa0-575693cb9b66" SourceId="1" SourceUrl="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

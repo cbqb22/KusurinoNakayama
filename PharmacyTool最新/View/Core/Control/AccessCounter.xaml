@@ -1,0 +1,22 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:dataInput="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data.Input"
+	x:Class="View.AccessCounter"
+	d:DesignWidth="640" d:DesignHeight="480">
+
+	<Grid x:Name="LayoutRoot">
+		<dataInput:Label x:Name="lbAccessCounter" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="21.333" Content="" FontWeight="Bold" BorderBrush="White">
+			<dataInput:Label.Foreground>
+				<LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+					<GradientStop Color="White" Offset="0"/>
+					<GradientStop Color="#FF266285" Offset="1"/>
+					<GradientStop Color="#FF387DA5" Offset="0.665"/>
+				</LinearGradientBrush>
+			</dataInput:Label.Foreground>
+		</dataInput:Label>
+	</Grid>
+</UserControl>

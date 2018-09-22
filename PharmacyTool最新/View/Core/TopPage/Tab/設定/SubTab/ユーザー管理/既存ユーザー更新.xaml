@@ -1,0 +1,78 @@
+﻿<UserControl x:Class="View.Core.TopPage.Tab.設定.SubTab.ユーザー管理.既存ユーザー更新"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    xmlns:fxui="clr-namespace:SilverlightFX.UserInterface;assembly=SilverlightFX"
+    xmlns:converter="clr-namespace:View.Core.共通.Converter"
+    xmlns:ユーザー管理="clr-namespace:View.Core.TopPage.Tab.設定.SubTab.ユーザー管理">
+
+    <UserControl.Resources>
+        <converter:アクセスレベルConverter x:Key="アクセスレベルConverter"/>
+        <converter:削除フラグConverter x:Key="削除フラグConverter"/>
+
+
+        <DataTemplate x:Name="Templateユーザー名">
+            <TextBlock Text="{Binding UserID}" />
+        </DataTemplate>
+
+        <!--DataTemplate x:Name="Templateアクセスレベル">
+            <ComboBox SelectedIndex="{Binding アクセス権限,Converter={StaticResource アクセスレベルConverter},Mode=TwoWay}" SelectionChanged="ComboBox_SelectionChanged" >
+                <ComboBoxItem  Content="1:管理薬剤師" ></ComboBoxItem>
+                <ComboBoxItem  Content="2:正社員薬剤師"></ComboBoxItem>
+                <ComboBoxItem  Content="3:パート薬剤師"></ComboBoxItem>
+                <ComboBoxItem  Content="4:正社員事務"></ComboBoxItem>
+                <ComboBoxItem  Content="5:パート事務"></ComboBoxItem>
+            </ComboBox>
+
+        </DataTemplate-->
+
+        <!--DataTemplate x:Name="Template削除">
+            <ComboBox SelectedIndex="{Binding 削除フラグ,Converter={StaticResource 削除フラグConverter},Mode=TwoWay}" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem  Content="1:使用" ></ComboBoxItem>
+                <ComboBoxItem  Content="2:削除"></ComboBoxItem>
+            </ComboBox>
+
+        </DataTemplate-->
+
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="698" Height="427">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="210"/>
+            <RowDefinition Height="207"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="688"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+        <Grid Grid.Row="1" Grid.Column="1" Margin="52,71,48,-87">
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <fxui:Interaction.Behaviors>
+                    <fxui:MouseWheelScroll/>
+                </fxui:Interaction.Behaviors>
+                <StackPanel x:Name="stpUserList" Orientation="Vertical"/>
+            </ScrollViewer>
+            <!--data:DataGrid x:Name="DataGrid1" AutoGenerateColumns="False">
+                <data:DataGrid.Columns>
+                    <data:DataGridTemplateColumn Header="ユーザーID" Width="120" CellTemplate="{StaticResource Templateユーザー名}" />
+                    <data:DataGridTemplateColumn Header="アクセスレベル" Width="120" CellTemplate="{StaticResource Templateアクセスレベル}" />
+                    <data:DataGridTemplateColumn Header="ステータス" Width="120" CellTemplate="{StaticResource Template削除}" />
+                </data:DataGrid.Columns>
+            </data:DataGrid-->
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1" Margin="129,87,48,82">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Top">
+                <Button x:Name="更新Button" Content="更新" Click="更新_Click" Width="87" Height="30"/>
+            </StackPanel>
+        </Grid>
+        <TextBlock x:Name="既存ユーザー編集title" HorizontalAlignment="Left" Margin="17,19,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Text="登録ユーザー編集" TextWrapping="Wrap" FontWeight="Bold" FontSize="16" TextDecorations="Underline" Foreground="#FFFF0707"/>
+        <Border Margin="17,42,17,73" Grid.Column="1" Grid.Row="1" BorderBrush="Black" BorderThickness="1" Grid.RowSpan="2"/>
+
+    </Grid>
+</UserControl>

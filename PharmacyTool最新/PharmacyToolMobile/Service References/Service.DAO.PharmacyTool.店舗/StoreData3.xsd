@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/店舗/StoreData.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E5%BA%97%E8%88%97" />
+  <xs:element name="店舗名取得">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="店舗名取得Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool.%E5%BA%97%E8%88%97" minOccurs="0" name="店舗名取得Result" nillable="true" type="q1:ArrayOfPT店舗名リターンデータセット" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="新規店舗名作成">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="作成店舗名" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="新規店舗名作成Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="新規店舗名作成Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="店舗名削除">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="削除店舗名" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="店舗名削除Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="店舗名削除Result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

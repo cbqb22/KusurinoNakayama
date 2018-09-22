@@ -1,0 +1,10 @@
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyTool.Web\bin\PharmacyTool.Web.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyTool.Web\bin\PharmacyTool.Web.pdb
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyTool.Web\obj\NAKAYAMA\ResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyTool.Web\obj\NAKAYAMA\PharmacyTool.Web.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\Silverlight3\PharmacyTool\PharmacyTool.Web\obj\NAKAYAMA\PharmacyTool.Web.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyTool.Web\bin\PharmacyTool.Web.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyTool.Web\bin\PharmacyTool.Web.pdb
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyTool.Web\obj\NAKAYAMA\PharmacyTool.Web.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyTool.Web\obj\NAKAYAMA\PharmacyTool.Web.dll
+C:\Users\poohace\Desktop\PharmacyTool最新\PharmacyTool.Web\obj\NAKAYAMA\PharmacyTool.Web.pdb

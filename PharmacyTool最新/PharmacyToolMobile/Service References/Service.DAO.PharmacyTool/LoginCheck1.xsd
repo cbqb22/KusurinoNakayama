@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://www.kusurinonakayama.jp/PharmacyTool/Service/DAO/PharmacyTool/LoginCheck.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool" />
+  <xs:element name="LoginCheck実行">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="入力ユーザーID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="入力コンフィデンシャル" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="LoginCheck実行Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/PharmacyTool.Web.Service.DAO.PharmacyTool" minOccurs="0" name="LoginCheck実行Result" nillable="true" type="q1:ArrayOfログインチェック結果" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
