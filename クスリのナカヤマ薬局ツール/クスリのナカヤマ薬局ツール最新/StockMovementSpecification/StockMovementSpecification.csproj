@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A3E2EB5A-BEC0-44E5-9151-95F4AACC30C3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>クスリのナカヤマ薬局ツール</RootNamespace>
+    <AssemblyName>在庫HP更新ツール</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <Utf8Output>true</Utf8Output>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>desktop.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'NAKAYAMA|x86'">
+    <OutputPath>bin\x86\NAKAYAMA\</OutputPath>
+    <DefineConstants>NAKAYAMA;</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\DI.cs" />
+    <Compile Include="UserControls\Calendaer\DateUpDown.xaml.cs">
+      <DependentUpon>DateUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Calendaer\MonthCalendar.xaml.cs">
+      <DependentUpon>MonthCalendar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Home\HomeFrame.xaml.cs">
+      <DependentUpon>HomeFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\Buttons\SelectDateTextBox.xaml.cs">
+      <DependentUpon>SelectDateTextBox.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\Buttons\SpanSelects.xaml.cs">
+      <DependentUpon>SpanSelects.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\Components\DayAndDateCell.xaml.cs">
+      <DependentUpon>DayAndDateCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\Components\SelectInputComboboxBase.xaml.cs">
+      <DependentUpon>SelectInputComboboxBase.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\Components\ShiftRowDayHeader.xaml.cs">
+      <DependentUpon>ShiftRowDayHeader.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\IndividualShiftFrame.xaml.cs">
+      <DependentUpon>IndividualShiftFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\InputComboboxBase.cs" />
+    <Compile Include="UserControls\シフト表\InputShiftCell.xaml.cs">
+      <DependentUpon>InputShiftCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\ShiftMainFrame.xaml.cs">
+      <DependentUpon>ShiftMainFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\シフト表\ShiftTable.xaml.cs">
+      <DependentUpon>ShiftTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\人件費計算\CostCalcTable.xaml.cs">
+      <DependentUpon>CostCalcTable.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\人件費計算\CostTotalColumn.xaml.cs">
+      <DependentUpon>CostTotalColumn.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\人件費計算\CostTotalRow.xaml.cs">
+      <DependentUpon>CostTotalRow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\人件費計算\InputTotalCostCell.xaml.cs">
+      <DependentUpon>InputTotalCostCell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\ColumnHeaderWorkAssignment.xaml.cs">
+      <DependentUpon>ColumnHeaderWorkAssignment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\ColumnHeaderWorkTime.xaml.cs">
+      <DependentUpon>ColumnHeaderWorkTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\IndividualWorkAssignmentFrame.xaml.cs">
+      <DependentUpon>IndividualWorkAssignmentFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\OuterFrame.xaml.cs">
+      <DependentUpon>OuterFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\OuterFrameOTC.xaml.cs">
+      <DependentUpon>OuterFrameOTC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\RowHeaderWorkAssignment.xaml.cs">
+      <DependentUpon>RowHeaderWorkAssignment.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\WorkAssignmentFrame.xaml.cs">
+      <DependentUpon>WorkAssignmentFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\作業割り当て表\WorkItems.xaml.cs">
+      <DependentUpon>WorkItems.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\在庫\在庫データ作成トップ画面.xaml.cs">
+      <DependentUpon>在庫データ作成トップ画面.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\移動明細書\エラーリスト表示.xaml.cs">
+      <DependentUpon>エラーリスト表示.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\移動明細書\エラーリスト表示２.xaml.cs">
+      <DependentUpon>エラーリスト表示２.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\移動明細書\移動明細書管理トップ画面.xaml.cs">
+      <DependentUpon>移動明細書管理トップ画面.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\AssignmentTableViewer.xaml.cs">
+      <DependentUpon>AssignmentTableViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\CostCalcViewer.xaml.cs">
+      <DependentUpon>CostCalcViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\DocumentViewer.xaml.cs">
+      <DependentUpon>DocumentViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\ShiftViewer.xaml.cs">
+      <DependentUpon>ShiftViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="共通\Exception\ExtendException.cs" />
+    <Compile Include="共通\File\DownloadCenter.cs" />
+    <Compile Include="共通\File\GeneralMethods.cs" />
+    <Compile Include="共通\File\SettingsIniController.cs" />
+    <Compile Include="共通\File\在庫HP更新ツールCenter.cs" />
+    <Compile Include="共通\NakayamaConst.cs" />
+    <Compile Include="共通\NationalHolidayData.cs" />
+    <Compile Include="共通\NationalHolidaysData.cs" />
+    <Compile Include="共通\Printing\PrintCenter.cs" />
+    <Compile Include="共通\Program\ControlProgram.cs" />
+    <Compile Include="共通\Settings.cs" />
+    <Compile Include="共通\Updater\UpdateCenter.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Calendaer\DateUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Calendaer\MonthCalendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Home\HomeFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\Buttons\SelectDateTextBox.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\Buttons\SpanSelects.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\Components\DayAndDateCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\Components\SelectInputComboboxBase.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\Components\ShiftRowDayHeader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\IndividualShiftFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\InputShiftCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\ShiftMainFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\シフト表\ShiftTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\人件費計算\CostCalcTable.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\人件費計算\CostTotalColumn.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\人件費計算\CostTotalRow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\人件費計算\InputTotalCostCell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\ColumnHeaderWorkAssignment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\ColumnHeaderWorkTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\IndividualWorkAssignmentFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\OuterFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\OuterFrameOTC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\RowHeaderWorkAssignment.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\WorkAssignmentFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\作業割り当て表\WorkItems.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\在庫\在庫データ作成トップ画面.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\移動明細書\エラーリスト表示.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\移動明細書\エラーリスト表示２.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\移動明細書\移動明細書管理トップ画面.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\AssignmentTableViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\CostCalcViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\DocumentViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\ShiftViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nakayama.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="desktop.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="UserControls\印刷\" />
+    <Folder Include="UserControls\設定\" />
+    <Folder Include="共通\Converter\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

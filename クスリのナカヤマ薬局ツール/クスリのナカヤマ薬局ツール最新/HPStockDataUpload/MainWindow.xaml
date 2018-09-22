@@ -1,0 +1,30 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:クスリのナカヤマ薬局ツール_UserControls_在庫="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.在庫"
+        xmlns:クスリのナカヤマ薬局ツール_UserControls_移動明細書="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.移動明細書"
+        xmlns:windows="clr-namespace:クスリのナカヤマ薬局ツール.Windows"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        x:Class="クスリのナカヤマ薬局ツール.MainWindow"
+        Title="在庫HP更新ツール " mc:Ignorable="d" WindowStyle="ThreeDBorderWindow" Width="500" WindowStartupLocation="CenterScreen" Icon="nakayama.ico" Background="#FF485C7F" Height="460">
+    <Grid x:Name="gdRoot" HorizontalAlignment="Center" VerticalAlignment="Center">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <クスリのナカヤマ薬局ツール_UserControls_在庫:在庫データ作成トップ画面 Height="400" />
+
+        </Grid>
+        
+
+        <Grid Grid.Row="1">
+            <TextBlock x:Name="tblVersion" Text="" Foreground="White" HorizontalAlignment="Right" />
+
+        </Grid>
+
+    </Grid>
+</Window>

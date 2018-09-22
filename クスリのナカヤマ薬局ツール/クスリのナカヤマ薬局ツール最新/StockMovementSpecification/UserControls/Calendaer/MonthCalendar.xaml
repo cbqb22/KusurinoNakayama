@@ -1,0 +1,105 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.Calendaer.MonthCalendar"
+    xmlns="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   Height="240">
+    <UserControl.Resources>
+
+        <Style TargetType="Label">
+            <Setter Property="Margin" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Right"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+        </Style>
+
+        <Style x:Key="Day" TargetType="Label">
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Right"/>
+            <Setter Property="Content" Value="{Binding Path=Day}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding Path=Day}" Value="-1">
+                    <Setter Property="Visibility" Value="Collapsed"/>
+                </DataTrigger>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="LightBlue"/>
+                </Trigger>
+                <DataTrigger Binding="{Binding Path=DayOfWeek}" Value="0">
+                    <Setter Property="Foreground" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=DayOfWeek}" Value="6">
+                    <Setter Property="Foreground" Value="Blue"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=IsNationalHoliday}" Value="True">
+                    <Setter Property="Foreground" Value="Red"/>
+                    <Setter Property="ToolTip" Value="{Binding Path=Tips}"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=IsToday}" Value="True">
+                    <Setter Property="BorderBrush" Value="Red"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=IsSelectedDate}" Value="True">
+                    <Setter Property="Background" Value="Blue"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+                <DataTrigger Binding="{Binding Path=IsSelectableDate}" Value="True">
+                    <Setter Property="Background" Value="Pink"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Border Background="White">
+        <StackPanel Orientation="Vertical">
+            <StackPanel Background="Blue">
+                <Grid Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Grid.Column="0" Content="&lt;&lt;" Click="buttonPrevYear_Click" />
+                    <Button Grid.Column="1" Content="&lt;" Click="buttonPrev_Click" />
+                    <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label Content="{Binding Path=SelectedMonth.Year}" Margin="0" Padding="0" Foreground="White"/>
+                        <Label Content="年" Margin="0" Padding="0" Foreground="White"/>
+                        <Label Content="{Binding Path=SelectedMonth.Month}" Margin="0" Padding="0" Foreground="White"/>
+                        <Label Content="月" Margin="0" Padding="0" Foreground="White"/>
+                    </StackPanel>
+                    <Button Grid.Column="3" Content="&gt;" Click="buttonNext_Click" />
+                    <Button Grid.Column="4" Content="&gt;&gt;" Click="buttonNextYear_Click" />
+                </Grid>
+            </StackPanel>
+            <Grid Name="DayGrid">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Content="日" Foreground="Blue"/>
+                <Label Grid.Column="1" Content="月" Foreground="Blue"/>
+                <Label Grid.Column="2" Content="火" Foreground="Blue"/>
+                <Label Grid.Column="3" Content="水" Foreground="Blue"/>
+                <Label Grid.Column="4" Content="木" Foreground="Blue"/>
+                <Label Grid.Column="5" Content="金" Foreground="Blue"/>
+                <Label Grid.Column="6" Content="土" Foreground="Blue"/>
+                <Border Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="7" BorderBrush="Black" BorderThickness="0.5" Margin="5,0,5,0"/>
+
+            </Grid>
+        </StackPanel>
+    </Border>
+</UserControl>

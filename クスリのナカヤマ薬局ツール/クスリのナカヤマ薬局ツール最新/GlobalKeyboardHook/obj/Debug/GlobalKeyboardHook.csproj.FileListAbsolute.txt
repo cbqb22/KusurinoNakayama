@@ -1,0 +1,4 @@
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\GlobalKeyboardHook\bin\Debug\GlobalKeyboardHook.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\GlobalKeyboardHook\bin\Debug\GlobalKeyboardHook.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\GlobalKeyboardHook\obj\Debug\GlobalKeyboardHook.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\GlobalKeyboardHook\obj\Debug\GlobalKeyboardHook.pdb

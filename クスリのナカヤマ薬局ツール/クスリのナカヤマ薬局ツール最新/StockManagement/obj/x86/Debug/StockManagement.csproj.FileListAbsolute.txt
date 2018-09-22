@@ -1,0 +1,201 @@
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\StockManagement.exe.config
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\StockManagement.exe
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\StockManagement.pdb
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Office.Interop.Excel.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.xml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.baml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.baml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement_MarkupCompile.cache
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement_MarkupCompile.lref
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.baml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.baml
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.g.resources
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.Properties.Resources.resources
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.exe
+C:\Users\poohace\Desktop\PoohaceSVN\trunk\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.exe.config
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.xml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\ExcelControllerOffice11.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\bin\Debug\office.xml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\NumericUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\DeadStockFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\StockManagement.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockManagement\obj\x86\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\ExcelControllerOffice11.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\Microsoft.Office.Interop.Excel.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\office.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\Microsoft.Vbe.Interop.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\ExcelControllerOffice11.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\office.xml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\StockManagement.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\NumericUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\DeadStockFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\MessageBoxTopWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\NumericUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\DownloadingProgress.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicineAdd.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\ExceptiveMedicinesList.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\StoreSettingsUserControl.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\DeadStockFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\CompletedCountProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\ProgressBar\ProgressBarWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\SettingsFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\View\Settings\SettingsWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\StockManagement.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\StockManagement.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール.pdb

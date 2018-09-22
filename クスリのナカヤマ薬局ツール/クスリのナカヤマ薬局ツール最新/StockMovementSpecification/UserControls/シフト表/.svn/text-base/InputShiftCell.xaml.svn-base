@@ -1,0 +1,70 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.シフト表.InputShiftCell"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:components="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表.Components"
+             xmlns:shift="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表"
+             mc:Ignorable="d" 
+             Width="Auto" Height="Auto">
+    <UserControl.Resources>
+    </UserControl.Resources>
+    <Grid>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30" />
+                <ColumnDefinition Width="30" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+
+
+            <Grid Grid.Row="0" x:Name="gd00" Grid.Column="0">
+
+                <Border BorderBrush="Black" BorderThickness="1">
+                    <shift:InputComboboxBase CanvasWidth="30"  CanvasHeight="30" TextBoxWidth="30" TextBoxHeight="30"/>
+
+                </Border>
+            </Grid>
+
+
+            <Grid Grid.Row="0" x:Name="gd01" Grid.Column="1" Margin="0,0,0,0">
+                <Border BorderBrush="Black" BorderThickness="1">
+
+                    <shift:InputComboboxBase CanvasWidth="30"  CanvasHeight="30" TextBoxWidth="30" TextBoxHeight="30"/>
+
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="1" x:Name="gd10" Grid.Column="0">
+
+                <Border BorderBrush="Black" BorderThickness="1" Margin="0,-1,0,0">
+                    <shift:InputComboboxBase CanvasWidth="30"  CanvasHeight="30" TextBoxWidth="30" TextBoxHeight="30"/>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="1" x:Name="gd11" Grid.Column="1">
+                <Border BorderBrush="Black" BorderThickness="1" Margin="0,-1,0,0">
+                    <shift:InputComboboxBase CanvasWidth="30"  CanvasHeight="30" TextBoxWidth="30" TextBoxHeight="30"/>
+                </Border>
+            </Grid>
+
+            <Grid Grid.Row="0" x:Name="gdAll" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Visibility="Collapsed">
+                <Canvas>
+                    <Border BorderBrush="Black" BorderThickness="1"/>
+                    <shift:InputComboboxBase CanvasWidth="58"  CanvasHeight="58" TextBoxWidth="58" TextBoxHeight="58"/>
+                    <Path Data="M0,8 L60,60" Fill="#FFF4F4F5" Height="60" Stretch="Fill" Stroke="Black" Width="60"/>
+                    <Path Data="M60,0 L12,56" Fill="#FFF4F4F5" Height="60" Stretch="Fill" Stroke="Black" Width="60"/>
+                </Canvas>
+            </Grid>
+
+
+        </Grid>
+
+    </Grid>
+</UserControl>

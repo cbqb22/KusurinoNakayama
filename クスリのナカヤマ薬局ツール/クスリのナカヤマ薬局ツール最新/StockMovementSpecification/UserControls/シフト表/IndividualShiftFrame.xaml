@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.シフト表.IndividualShiftFrame"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:shift="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表"
+             xmlns:components="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表.Components"
+             mc:Ignorable="d" 
+             
+             Width="Auto" Height="Auto">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Border BorderThickness="1" BorderBrush="Black">
+                <shift:InputComboboxBase CanvasHeight="80" CanvasWidth="59" TextBoxHeight="80" TextBoxWidth="59" />
+            </Border>
+        </Grid>
+        <Grid Grid.Row="1">
+            <shift:InputShiftCell />
+        </Grid>
+        <Grid Grid.Row="2">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="3">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="4">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="5">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="6">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="7">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="8">
+            <shift:InputShiftCell/>
+        </Grid>
+
+        <Grid Grid.Row="9">
+            <shift:InputShiftCell />
+        </Grid>
+        <Grid Grid.Row="10">
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="11"  >
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="12"  >
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="13"  >
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="14"  >
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="15"  >
+            <shift:InputShiftCell/>
+        </Grid>
+        <Grid Grid.Row="16"  >
+            <shift:InputShiftCell/>
+        </Grid>
+    </Grid>
+</UserControl>

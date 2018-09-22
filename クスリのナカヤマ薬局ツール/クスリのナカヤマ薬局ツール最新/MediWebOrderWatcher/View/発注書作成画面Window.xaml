@@ -1,0 +1,21 @@
+﻿<Window x:Class="MediWebOrderWatcher.View.発注書作成画面Window"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:MediWebOrderWatcher.View"
+        Title="発注書作成画面Window" WindowState="Maximized" WindowStyle="None">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btnMinimized" Content="＿" Click="btnMinimized_Click" />
+                <Button x:Name="btnClose" Content="×" Click="btnClose_Click" />
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <view:発注書作成画面 />
+        </Grid>
+    </Grid>
+</Window>

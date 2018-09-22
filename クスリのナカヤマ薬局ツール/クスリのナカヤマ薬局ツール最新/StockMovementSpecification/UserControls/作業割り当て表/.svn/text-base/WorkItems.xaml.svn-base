@@ -1,0 +1,580 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.作業割り当て表.WorkItems"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0"  Margin="20,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="LightGreen">
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <TextBlock Text="〔開店業務〕" />
+                    </Border>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0" >
+                    <TextBlock Text="(1)カギ開け" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(5)床清掃" />
+                </Grid>
+
+                <Grid  Grid.Row="2" Grid.Column="0">
+                    <TextBlock Text="(2)レジ開店処理" />
+                </Grid>
+
+                <Grid  Grid.Row="2" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(6)備品補充" />
+                </Grid>
+
+                <Grid  Grid.Row="3" Grid.Column="0">
+                    <TextBlock Text="(3)店舗周辺清掃" />
+                </Grid>
+
+                <Grid  Grid.Row="4" Grid.Column="0">
+                    <TextBlock Text="(4)店頭品出し" />
+                </Grid>
+
+
+
+
+            </Grid>
+            <Grid Grid.Column="1"  Margin="20,10,0,0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Background="LightGreen">
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <TextBlock Text="〔作業割り当て〕" />
+                    </Border>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0" >
+                    <TextBlock Text="(1)清掃" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1"  Margin="10,0,0,0">
+                    <TextBlock Text="(5)調剤業務" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="2"  Margin="10,0,0,0">
+                    <TextBlock Text="(9)中礼" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="3"  Margin="10,0,0,0">
+                    <TextBlock Text="(13)中間レジ点検" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="4"  Margin="10,0,0,0">
+                    <TextBlock Text="(17)作業割り当て作成" />
+                </Grid>
+
+
+                <Grid  Grid.Row="2" Grid.Column="0">
+                    <TextBlock Text="(2)検品" />
+                </Grid>
+
+                <Grid  Grid.Row="2" Grid.Column="1"  Margin="10,0,0,0">
+                    <TextBlock Text="(6)医療事務" />
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="2"  Margin="10,0,0,0">
+                    <TextBlock Text="(10)レジ清算" />
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="3"  Margin="10,0,0,0">
+                    <TextBlock Text="(14)棚替え・陳列" />
+                </Grid>
+
+                <Grid Grid.Row="2" Grid.Column="4"  Margin="10,0,0,0">
+                    <TextBlock Text="(18)売上金回収" />
+                </Grid>
+
+
+                <Grid  Grid.Row="3" Grid.Column="0">
+                    <TextBlock Text="(3)品出し・補充" />
+                </Grid>
+
+                <Grid  Grid.Row="3" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(7)販促" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="2"  Margin="10,0,0,0">
+                    <TextBlock Text="(11)レジ清算確認" />
+                </Grid>
+
+                <Grid Grid.Row="3" Grid.Column="3"  Margin="10,0,0,0">
+                    <TextBlock Text="(15)勉強会・会議" />
+                </Grid>
+
+
+                <Grid  Grid.Row="4" Grid.Column="0">
+                    <TextBlock Text="(4)レジ業務" />
+                </Grid>
+
+                <Grid  Grid.Row="4" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(8)発注" />
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="2"  Margin="10,0,0,0">
+                    <TextBlock Text="(12)銀行入金・両替" />
+                </Grid>
+
+                <Grid Grid.Row="4" Grid.Column="3"  Margin="10,0,0,0">
+                    <TextBlock Text="(16)休憩" />
+                </Grid>
+
+
+
+
+            </Grid>
+            <Grid Grid.Column="2"  Margin="20,10,0,0">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Background="LightGreen">
+                    <Border BorderThickness="1" BorderBrush="Gray">
+                        <TextBlock Text="〔閉店業務〕" />
+                    </Border>
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="0" >
+                    <TextBlock Text="(1)ゴミ処理" />
+                </Grid>
+
+                <Grid Grid.Row="1" Grid.Column="1"  Margin="10,0,0,0">
+                    <TextBlock Text="(5)レジ閉店処理" />
+                </Grid>
+
+                <Grid  Grid.Row="2" Grid.Column="0">
+                    <TextBlock Text="(2)商品の店内搬入" />
+                </Grid>
+
+                <Grid  Grid.Row="2" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(6)売上金(紙幣)釣銭保管" />
+                </Grid>
+
+                <Grid  Grid.Row="3" Grid.Column="0">
+                    <TextBlock Text="(3)店舗周辺清掃" />
+                </Grid>
+
+                <Grid  Grid.Row="3" Grid.Column="1" Margin="10,0,0,0">
+                    <TextBlock Text="(7)カギ閉め" />
+                </Grid>
+
+                <Grid  Grid.Row="4" Grid.Column="0">
+                    <TextBlock Text="(4)レジの手拭・雑巾を洗剤に浸ける" />
+                </Grid>
+
+
+
+
+            </Grid>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="20,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="A" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="カギ開け者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="カギ閉め者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Grid>
+                <Grid Grid.Row="1">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="B" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="レジ開店処理・釣銭入金者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="レジ閉店処理・釣銭入金者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="8"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="2">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="C" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="中礼者" Width="100" TextAlignment="Center" VerticalAlignment="Center"  FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Column="1" Margin="20,0,0,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="D" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="レジ清算者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="レジ清算確認者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="銀行入金者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="銀行入金者確認" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+                
+                <Grid Grid.Row="1">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="E" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="両替指示者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="両替者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="両替チェック者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Grid>
+                
+                
+
+            </Grid>
+            <Grid Grid.Column="2" Margin="20,0,0,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="F" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="中間レジ点検者" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="G" Margin="5,0,0,0"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="売上金回収者(17時)" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="Orange">
+                                <TextBlock Text="売上金回収者(21時)" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                    </StackPanel>
+
+                </Grid>
+
+
+            </Grid>
+            <Grid Grid.Column="3" Margin="20,0,0,0">
+
+                <Grid>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="H" Margin="5,0,0,0"/>
+                        <Grid Background="Orange">
+                            <TextBlock Text="清掃業務(商品前だし,棚上整理,ハタキ掛け,補充含む)" Width="200" FontSize="8"/>
+                        </Grid>
+                        <StackPanel Orientation="Horizontal">
+                            <Grid Background="LightGreen">
+                                <TextBlock Text="氏名" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                            <Grid Background="LightGreen">
+                                <TextBlock Text="棚割り" Width="100" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+
+                    </StackPanel>
+                </Grid>
+
+            </Grid>
+            <Grid Grid.Column="4" Margin="20,0,0,0">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="I ☆" Margin="5,0,0,0"/>
+                        <Grid Background="Orange">
+                            <TextBlock Text="店長不在時の優先順位" Width="200" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="①" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="②" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="③" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+
+                <Grid Grid.Row="1">
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="  ☆" Margin="5,0,0,0"/>
+                        <Grid Background="Orange">
+                            <TextBlock Text="レジ優先順位" Width="200" TextAlignment="Center" VerticalAlignment="Center" FontSize="9"/>
+                        </Grid>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="①" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="②" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Orientation="Horizontal">
+                            <Grid>
+                                <TextBlock Text="③" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                            <Grid>
+                                <TextBox Text="" Width="100" TextAlignment="Center" VerticalAlignment="Center"/>
+                            </Grid>
+                        </StackPanel>
+
+                    </StackPanel>
+                </Grid>
+
+
+            </Grid>
+
+
+        </Grid>
+
+
+    </Grid>
+</UserControl>

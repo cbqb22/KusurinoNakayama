@@ -1,0 +1,136 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.Calendaer.DateUpDown"
+    xmlns="http://schemas.microsoft.com/netfx/2007/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <UserControl.Resources>
+
+        <LinearGradientBrush x:Key="TopButtonNormalBrush" StartPoint="0,0" EndPoint="1,2">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#CCCCF0" Offset=".2"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="TopButtonHoverBrush" StartPoint="0,0" EndPoint="1,2">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#DDDDFF" Offset=".2"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="TopButtonPressedBrush" StartPoint="0,0" EndPoint="1,2">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="White" Offset="0"/>
+                <GradientStop Color="#AAAAFF" Offset=".2"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BottomButtonNormalBrush" StartPoint="0,-1" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#CCCCF0" Offset=".8"/>
+                <GradientStop Color="#9999CC" Offset="1"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BottomButtonHoverBrush" StartPoint="0,-1" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#DDDDFF" Offset=".8"/>
+                <GradientStop Color="#CCCCCC" Offset="1"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="BottomButtonPressedBrush" StartPoint="0,-1" EndPoint="1,1">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop Color="#AAAAFF" Offset=".8"/>
+                <GradientStop Color="#9999CC" Offset="1"/>
+            </LinearGradientBrush.GradientStops>
+        </LinearGradientBrush>
+
+        <Style TargetType="{x:Type RepeatButton}" x:Key="SharedStyle">
+            <Setter Property="Height" Value="9"/>
+            <Setter Property="Width" Value="17"/>
+            <Setter Property="Focusable" Value="False"/>
+            <Setter Property="Margin" Value="0 .25 0 .25"/>
+        </Style>
+
+        <Style TargetType="{x:Type RepeatButton}" x:Key="TopButton" BasedOn="{StaticResource SharedStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Border Name="TopButtonBorder" BorderThickness="0" CornerRadius="2 2 0 0" 
+										  Margin="1 1 1 .5" Background="{StaticResource TopButtonNormalBrush}">
+
+                            <Polygon Points="3,6 7.5,2 12,6 8.5,6 7.5,5 6.5,6"  StrokeThickness="1" Fill="Black"
+											   StrokeLineJoin="Round" Canvas.Left="1" Canvas.Top="1"/>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="TopButtonBorder" Property="Background" 
+													  Value="{StaticResource TopButtonHoverBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="TopButtonBorder" Property="Background" 
+													  Value="{StaticResource TopButtonPressedBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type RepeatButton}" x:Key="BottomButton" BasedOn="{StaticResource SharedStyle}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type RepeatButton}">
+                        <Border Name="BottomButtonBorder" BorderThickness="0" CornerRadius="0 0 2 2" 
+										  Margin="1 .5 1 1" Background="{StaticResource BottomButtonNormalBrush}">
+
+                            <Polygon Points="3,2 7.5,6 12,2 8.5,2 7.5,3 6.5,2"  StrokeThickness="1" Fill="Black"
+										   StrokeLineJoin="Round" Canvas.Left="1" Canvas.Top="1"/>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BottomButtonBorder" Property="Background" 
+													  Value="{StaticResource BottomButtonHoverBrush}"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BottomButtonBorder" Property="Background" 
+													  Value="{StaticResource BottomButtonPressedBrush}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </UserControl.Resources>
+
+    <Border BorderThickness="1" BorderBrush="#FF7F9DB9">
+        <Grid Margin="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <TextBox
+				Grid.Row="0"
+				Grid.Column="0"
+				Grid.RowSpan="2"
+				Name="textBox"
+				HorizontalAlignment="Stretch"
+				VerticalAlignment="Stretch"
+				BorderThickness="0"
+				HorizontalContentAlignment="Right"
+				VerticalContentAlignment="Center" Margin="0"
+				/>
+            <RepeatButton Grid.Row="0" Grid.Column="1" Name="rbUp" VerticalAlignment="Stretch" Click="repeatButtonUp_Click" Focusable="False" Style="{StaticResource TopButton}" />
+            <RepeatButton Grid.Row="1" Grid.Column="1" Name="rbDown" VerticalAlignment="Stretch" Click="repeatButtonDown_Click" Focusable="False" Style="{StaticResource BottomButton}" />
+        </Grid>
+    </Border>
+
+</UserControl>

@@ -1,0 +1,248 @@
+﻿<Window x:Class="OASystem.View.Windows.IndividualBasedMedicineAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:validator="clr-namespace:OASystem.Model.Validator"
+        Title="個別管理医薬品マスタ追加" Height="350" Width="500"
+        WindowStartupLocation="CenterScreen"
+Background="#FF2F415F" Icon="/OASystemIcon100x100.ico">
+
+    <Window.Resources>
+        <validator:JanCodeValidatorRule x:Key="JanCodeValidatorRule" />
+        <validator:StringValidatorRule x:Key="StringValidatorRule" />
+        <validator:DoubleValidatorRule x:Key="DoubleValidatorRule" />
+
+        <Style TargetType="TextBlock" x:Key="styHeader">
+            <Setter Property="HorizontalAlignment" Value="Right" />
+            <Setter Property="TextAlignment" Value="Right" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        <Style TargetType="TextBlock" x:Key="styExample">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="TextAlignment" Value="Left" />
+            <Setter Property="FontSize" Value="8.5" />
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="auto" />
+            <Setter Property="TextAlignment" Value="Left" />
+            <Setter Property="HorizontalAlignment" Value="Left" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="styButtonKeyword">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Background" Value="#9CAAC1" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="styButton">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="12.5" />
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+
+
+    </Window.Resources>
+    <Grid Margin="20,20,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" >
+            <TextBlock Text="ＪＡＮコード:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <TextBox x:Name="tbＪＡＮコード" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="JANコード" Mode="TwoWay" NotifyOnValidationError="True" ValidatesOnExceptions="True">
+                        <Binding.ValidationRules>
+                            <validator:JanCodeValidatorRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="2">
+            <TextBlock Text="例) 4987*********" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <TextBlock Text="医薬品名:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <TextBox x:Name="tb医薬品名" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="医薬品名">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MaxLength="50" MinLength="1"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <TextBlock Text="例) マイクロファインプラス 31G 5mm" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <TextBlock Text="包装形態:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <TextBox x:Name="tb包装形態" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="包装形態">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MaxLength="10" MinLength="1"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <TextBlock Text="例)袋" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+
+        <Grid Grid.Row="3"  Grid.Column="0">
+            <TextBlock Text="包装単位:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <TextBox x:Name="tb包装単位" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="包装単位">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MaxLength="10" MinLength="1"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <TextBlock Text="例)本" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+        <Grid Grid.Row="4"  Grid.Column="0">
+            <TextBlock Text="包装単位数:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <TextBox x:Name="tb包装単位数" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="包装単位数">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MaxLength="10" MinLength="1"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <TextBlock Text="例)14本x5" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+
+        <Grid Grid.Row="5" Grid.Column="0">
+            <TextBlock Text="包装総量:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="1">
+            <TextBox x:Name="tb包装総量" Width="150" VerticalAlignment="Center">
+                <TextBox.Text>
+                    <Binding Path="包装総量">
+                        <Binding.ValidationRules>
+                            <validator:DoubleValidatorRule/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="2">
+            <TextBlock Text="例)70 ※半角数字入力" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+
+        <Grid Grid.Row="6" Grid.Column="0">
+            <TextBlock Text="剤形区分:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.Column="1">
+            <ComboBox x:Name="cmb剤形区分" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </Grid>
+
+        <Grid Grid.Row="6" Grid.Column="2">
+            <TextBlock Text="例) 医療材料=0.その他" VerticalAlignment="Center" Style="{StaticResource styExample}"/>
+        </Grid>
+
+        <Grid Grid.Row="7" Grid.Column="0">
+            <TextBlock Text="製薬会社:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+
+        <Grid Grid.Row="7" Grid.Column="1">
+            <TextBox x:Name="tb製薬会社" Width="150" VerticalAlignment="Center" FontSize="9">
+                <TextBox.Text>
+                    <Binding Path="製薬会社">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MinLength="1" MaxLength="30"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+        </Grid>
+
+        <Grid Grid.Row="7" Grid.Column="2">
+            <Button x:Name="btn製薬会社キーワード検索" Content="キーワード検索" Width="100" Style="{StaticResource styButtonKeyword}" Click="btn製薬会社キーワード検索_Click" />
+        </Grid>
+
+
+        <Grid Grid.Row="8" Grid.Column="0">
+            <TextBlock Text="販売会社:" VerticalAlignment="Center" Style="{StaticResource styHeader}"/>
+        </Grid>
+        <Grid Grid.Row="8" Grid.Column="1">
+            <TextBox x:Name="tb販売会社" Width="150" VerticalAlignment="Center" FontSize="9">
+                <TextBox.Text>
+                    <Binding Path="販売会社">
+                        <Binding.ValidationRules>
+                            <validator:StringValidatorRule MinLength="1" MaxLength="30"/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
+
+        </Grid>
+
+        <Grid Grid.Row="8" Grid.Column="2">
+            <Button x:Name="btn販売会社キーワード検索" Content="キーワード検索" Width="100" Style="{StaticResource styButtonKeyword}" Click="btn販売会社キーワード検索_Click"/>
+        </Grid>
+
+
+        <Grid Grid.Row="9" Grid.Column="2" Margin="0,20,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btn中止" Content="中止" Width="75" Height="30" Click="btn中止_Click" Style="{StaticResource styButton}"/>
+                <Button x:Name="btn追加" Content="追加" Width="75" Height="30" Click="btn追加_Click" Style="{StaticResource styButton}"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

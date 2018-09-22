@@ -1,0 +1,114 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OASystem.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DownloadFilesPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles</Value>
+    </Setting>
+    <Setting Name="Download不動品TotalFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\不動品total.csv</Value>
+    </Setting>
+    <Setting Name="Download現在庫TotalFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\現在庫total.csv</Value>
+    </Setting>
+    <Setting Name="DownloadMEDIS_HOT13lFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\MEDIS_HOT13.TXT</Value>
+    </Setting>
+    <Setting Name="Download帳合先マスタFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\帳合先マスタ.csv</Value>
+    </Setting>
+    <Setting Name="Download帳合先チェックマスタ医薬品別FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\帳合先チェックマスタ医薬品別.csv</Value>
+    </Setting>
+    <Setting Name="Download個別管理医薬品マスタFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\個別管理医薬品マスタ.csv</Value>
+    </Setting>
+    <Setting Name="SENDO1DATFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\MEDICODE DATA\SEND01.DAT</Value>
+    </Setting>
+    <Setting Name="SettingsIniFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\Settings.ini</Value>
+    </Setting>
+    <Setting Name="OrderLogsFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\OrderLogs</Value>
+    </Setting>
+    <Setting Name="TempFilesFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles</Value>
+    </Setting>
+    <Setting Name="TempBlancingAccountsFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\帳合先マスタTemp.csv</Value>
+    </Setting>
+    <Setting Name="UploadPath帳合先マスタCSV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先マスタ.csv</Value>
+    </Setting>
+    <Setting Name="UploadPath帳合先チェックマスタ医薬品別CSV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先チェックマスタ医薬品別.csv</Value>
+    </Setting>
+    <Setting Name="UploadPath個別管理医薬品マスタCSV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/個別管理医薬品マスタ.csv</Value>
+    </Setting>
+    <Setting Name="TempIndividualBasedMedicineFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\個別管理医薬品マスタTemp.csv</Value>
+    </Setting>
+    <Setting Name="Download帳合先チェックマスタメーカー別FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\帳合先チェックマスタメーカー別.csv</Value>
+    </Setting>
+    <Setting Name="UploadPath帳合先チェックマスタメーカー別CSV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先チェックマスタメーカー別.csv</Value>
+    </Setting>
+    <Setting Name="TempBalancingAccountsCheckMakerSortFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\帳合先チェックマスタメーカー別Temp.csv</Value>
+    </Setting>
+    <Setting Name="TempBalancingAccountsCheckMedicineSortFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\帳合先チェックマスタ医薬品別Temp.csv</Value>
+    </Setting>
+    <Setting Name="OASystemRootPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem</Value>
+    </Setting>
+    <Setting Name="MediWebProcessName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">FESTA</Value>
+    </Setting>
+    <Setting Name="MediWebProgramPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Program Files\MEDICODE-Web SR\FESTA.exe</Value>
+    </Setting>
+    <Setting Name="OASystemProcessName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">OASystem.exe</Value>
+    </Setting>
+    <Setting Name="VersionDatServerPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/Update/OASystem/Version.dat</Value>
+    </Setting>
+    <Setting Name="UpdateFolderServerPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/Update/OASystem</Value>
+    </Setting>
+    <Setting Name="UpdateLocalFolder" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\Update</Value>
+    </Setting>
+    <Setting Name="VersionDatLocalPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\Version.dat</Value>
+    </Setting>
+    <Setting Name="OASystemBackUpPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystemBkUp</Value>
+    </Setting>
+    <Setting Name="UploadMEDIS_HOT13FilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/MEDIS/MEDIS_HOT13.TXT</Value>
+    </Setting>
+    <Setting Name="Temp保護リストFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\保護リストTemp.csv</Value>
+    </Setting>
+    <Setting Name="UploadFolderPath保護リスト" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/保護リスト</Value>
+    </Setting>
+    <Setting Name="Temp優先移動リストFilePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\TempFiles\優先移動リストTemp.csv</Value>
+    </Setting>
+    <Setting Name="UploadFolderPath優先移動リスト" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/優先移動リスト</Value>
+    </Setting>
+    <Setting Name="Download保護リストFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\保護リスト</Value>
+    </Setting>
+    <Setting Name="Download優先移動リストFolderPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OASystem\DownloadFiles\優先移動リスト</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

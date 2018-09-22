@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="MediWebOrderWatcher.View.発注書作成画面"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" >
+    <Grid>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="30"/>
+    		<RowDefinition Height="*"/>
+    	</Grid.RowDefinitions>
+    	<Grid x:Name="gdHeader">
+    		<TextBlock x:Name="tblHeader" Margin="0,0,-0.001,2" Text="発注書作成" TextWrapping="Wrap" FontSize="21.333" FontWeight="Bold"/>
+    	</Grid>
+    	<Grid x:Name="gdContainer" Grid.Row="1">
+    		<Grid x:Name="gdContainerSplitter">
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition/>
+    				<ColumnDefinition/>
+    				<ColumnDefinition/>
+    			</Grid.ColumnDefinitions>
+    			<Grid x:Name="gdOrderList" Grid.Column="0">
+    				<ListBox x:Name="lbOrderList"/>
+    				<ListBoxItem Content="ListBoxItem" />
+    			</Grid>
+    			<Grid x:Name="gdExpire" Grid.Column="1">
+    				<ListBox x:Name="lbExpire">
+    					<ListBoxItem Content="ListBoxItem"/>
+    				</ListBox>
+    			</Grid>
+    			<Grid x:Name="gdDeadStock" Grid.Column="2">
+    				<ListBox x:Name="lbDeadStock">
+    					<ListBoxItem Content="ListBoxItem"/>
+    				</ListBox>
+    			</Grid>
+    		</Grid>
+    	</Grid>
+        
+        
+            
+    </Grid>
+</UserControl>

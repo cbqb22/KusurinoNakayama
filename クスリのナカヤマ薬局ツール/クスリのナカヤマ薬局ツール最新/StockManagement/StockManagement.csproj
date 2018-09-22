@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{33173AF7-13D2-4AE1-AD66-8686B02C25ED}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>StockManagement</RootNamespace>
+    <AssemblyName>デッド品管理ツール</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.20621.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>desktopicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>bin\Release\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\WPF Toolkit\v3.5.50211.1\WPFToolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Common\Converter\CreateSheetButtonConverter.cs" />
+    <Compile Include="Common\Converter\StopButtonConverter.cs" />
+    <Compile Include="Common\DataConvert\DataConvert.cs" />
+    <Compile Include="Common\MessageBox\MessageBoxTop.cs" />
+    <Compile Include="Common\Program\ControlProgram.cs" />
+    <Compile Include="Const\SMConst.cs" />
+    <Compile Include="Model\DI.cs" />
+    <Compile Include="Settings\InitialData.cs" />
+    <Compile Include="ViewModel\DeadStockEntity.cs" />
+    <Compile Include="ViewModel\DeadStockOrderDetailEntity.cs" />
+    <Compile Include="ViewModel\DeadStockReceivingDetailEntity.cs" />
+    <Compile Include="ViewModel\DeadStockRoutines.cs" />
+    <Compile Include="ViewModel\DeadStockRoutinesForReceiving.cs" />
+    <Compile Include="ViewModel\DSException\DeadStockException.cs" />
+    <Compile Include="ViewModel\Excel\DeadStockOutputListEnum.cs" />
+    <Compile Include="ViewModel\Excel\ExcelController.cs" />
+    <Compile Include="ViewModel\Excel\ExcelControllerForReceiving.cs" />
+    <Compile Include="ViewModel\Excel\ExcelTypeEnum.cs" />
+    <Compile Include="ViewModel\Excel\ExcelControllerForAllStoreNoUse.cs" />
+    <Compile Include="ViewModel\Excel\ExcelControllerForExpStock.cs" />
+    <Compile Include="ViewModel\ExceptionMedicineEntity.cs" />
+    <Compile Include="ViewModel\ExpStockOrderRoutines.cs" />
+    <Compile Include="ViewModel\FileDownloader.cs" />
+    <Compile Include="ViewModel\File\DownloadCenter.cs" />
+    <Compile Include="ViewModel\File\GeneralMethods.cs" />
+    <Compile Include="ViewModel\File\SettingsIniController.cs" />
+    <Compile Include="ViewModel\IO\FileController.cs" />
+    <Compile Include="ViewModel\IO\FolderController.cs" />
+    <Compile Include="ViewModel\Updater\UpdateCenter.cs" />
+    <Compile Include="ViewModel\UsedAmountEntity.cs" />
+    <Compile Include="ViewModel\DeadStockRoutinesForAllStoreNoUse.cs" />
+    <Compile Include="ViewModel\DeadStockAllStoreNoUseEntity.cs" />
+    <Compile Include="ViewModel\ExpStockEntity.cs" />
+    <Compile Include="ViewModel\ExpStockOrderDetailEntity.cs" />
+    <Compile Include="View\ButtonActionTypeEnum.cs" />
+    <Compile Include="View\DeadStockFrame.xaml.cs">
+      <DependentUpon>DeadStockFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MessageBoxTopWindow.xaml.cs">
+      <DependentUpon>MessageBoxTopWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NumericUpDown.xaml.cs">
+      <DependentUpon>NumericUpDown.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProgressBar\CompletedCountProgress.xaml.cs">
+      <DependentUpon>CompletedCountProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProgressBar\CompletedCountProgressBarWindow.xaml.cs">
+      <DependentUpon>CompletedCountProgressBarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProgressBar\DownloadingProgress.xaml.cs">
+      <DependentUpon>DownloadingProgress.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ProgressBar\ProgressBarWindow.xaml.cs">
+      <DependentUpon>ProgressBarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\ExceptiveMedicineAdd.xaml.cs">
+      <DependentUpon>ExceptiveMedicineAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\ExceptiveMedicinesList.xaml.cs">
+      <DependentUpon>ExceptiveMedicinesList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\SettingsFrame.xaml.cs">
+      <DependentUpon>SettingsFrame.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\SettingsWindow.xaml.cs">
+      <DependentUpon>SettingsWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings\StoreSettingsUserControl.xaml.cs">
+      <DependentUpon>StoreSettingsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\DeadStockFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MessageBoxTopWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NumericUpDown.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProgressBar\CompletedCountProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProgressBar\CompletedCountProgressBarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProgressBar\DownloadingProgress.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\ProgressBar\ProgressBarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings\ExceptiveMedicineAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Settings\ExceptiveMedicinesList.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Settings\SettingsFrame.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings\SettingsWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings\StoreSettingsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows インストーラー 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelControllerOffice11\ExcelControllerOffice11.csproj">
+      <Project>{7A967813-BAA0-49E9-B1EA-6305A2A3277F}</Project>
+      <Name>ExcelControllerOffice11</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nakayama.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="desktopicon.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

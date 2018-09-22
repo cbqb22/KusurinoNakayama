@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6AC8A863-FA56-4C57-817D-47C41CE7774D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OASystem</RootNamespace>
+    <AssemblyName>OASystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+    <ExpressionBlendVersion>3.0.1938.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>OASystemIcon100x100.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>OASystem.App</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationFramework.Aero" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\DI.cs" />
+    <Compile Include="Model\Entity\BalancingAccountsEntity.cs" />
+    <Compile Include="Model\Entity\ExpDeadListEntity.cs" />
+    <Compile Include="Model\Entity\IndividualBasedManagementMedicineEntity.cs" />
+    <Compile Include="Model\Entity\MEDIS_HOT13Entity.cs" />
+    <Compile Include="Model\Entity\OrderLogListEntity.cs" />
+    <Compile Include="Model\Entity\OrderScheduledListEntity.cs" />
+    <Compile Include="Model\Entity\PriorityMoveEntity.cs" />
+    <Compile Include="Model\Entity\ProtectEntity.cs" />
+    <Compile Include="Model\Entity\SEND01DATEntity.cs" />
+    <Compile Include="Model\Entity\BalancingAccountsCheckMedicineSortEntity.cs" />
+    <Compile Include="Model\Entity\BalancingAccountsCheckResultEntity.cs" />
+    <Compile Include="Model\Entity\不動品Entity.cs" />
+    <Compile Include="Model\Entity\現在庫Entity.cs" />
+    <Compile Include="Model\Enum\剤形区分Enum.cs" />
+    <Compile Include="Model\Validator\JanCodeValidatorRule.cs" />
+    <Compile Include="Model\Validator\StringValidatorRule.cs" />
+    <Compile Include="Model\Validator\DoubleValidatorRule.cs" />
+    <Compile Include="ViewModel\Behaviours\GridViewColumnResize.cs" />
+    <Compile Include="ViewModel\Common\Converters\BooltoCircleConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\ExpDeadInputAmountConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\ExpForegroundColorConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\ShortDateTimeStringConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\VanCodeToBalancingAccountConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\DateTimetoDispStringConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\DoubletoStringConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\BooltoCircleCrossConverter.cs" />
+    <Compile Include="ViewModel\Common\Converters\BooltoBlackCircleConverter.cs" />
+    <Compile Include="ViewModel\Common\DataConvert\DataConvert.cs" />
+    <Compile Include="ViewModel\Common\DateCenter\Converter.cs" />
+    <Compile Include="ViewModel\Common\Printer\PrintOrderSheet.cs" />
+    <Compile Include="ViewModel\Common\Printer\PrintOrderSheetFree.cs" />
+    <Compile Include="ViewModel\Common\Printer\Print未納品一覧要確定表.cs" />
+    <Compile Include="ViewModel\Common\Program\ControlProgram.cs" />
+    <Compile Include="ViewModel\Common\Validator\PreValidation.cs" />
+    <Compile Include="ViewModel\File\DownloadCenter.cs" />
+    <Compile Include="ViewModel\File\GeneralMethods.cs" />
+    <Compile Include="ViewModel\File\LoadCenter.cs" />
+    <Compile Include="ViewModel\File\OASystemCenter.cs" />
+    <Compile Include="ViewModel\File\OrderLogsFileManagement.cs" />
+    <Compile Include="ViewModel\File\SEND01DATAnalyzer.cs" />
+    <Compile Include="ViewModel\File\SettingsIniController.cs" />
+    <Compile Include="ViewModel\File\TempFilesManager.cs" />
+    <Compile Include="ViewModel\File\UploadCenter.cs" />
+    <Compile Include="ViewModel\OrderCenter\CheckExpAndDead.cs" />
+    <Compile Include="ViewModel\Updater\UpdateCenter.cs" />
+    <Compile Include="View\UserControls\OAStartProgressBar.xaml.cs">
+      <DependentUpon>OAStartProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsAdd.xaml.cs">
+      <DependentUpon>BalancingAccountsAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsCheckRegister.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckRegister.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\IndividualBasedMedicineAdd.xaml.cs">
+      <DependentUpon>IndividualBasedMedicineAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\IndividualBasedMedicineSelectMaker.xaml.cs">
+      <DependentUpon>IndividualBasedMedicineSelectMaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\LoginCheck.xaml.cs">
+      <DependentUpon>LoginCheck.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MasterDataManagement.xaml.cs">
+      <DependentUpon>MasterDataManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\Menus.xaml.cs">
+      <DependentUpon>Menus.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OAStartProgressBarWindow.xaml.cs">
+      <DependentUpon>OAStartProgressBarWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OrderCenter.xaml.cs">
+      <DependentUpon>OrderCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OrderLogs.xaml.cs">
+      <DependentUpon>OrderLogs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\SingletonWindows.cs" />
+    <Compile Include="View\Windows\BalancingAccountsCheckMakerSortAdd.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckMakerSortAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsCheckMakerSortSelectMaker.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckMakerSortSelectMaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsCheckMedicineSortSelectMedicine.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckMedicineSortSelectMedicine.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsCheckMedicineSortSelectMedicineDetail.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckMedicineSortSelectMedicineDetail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalancingAccountsCheckResult.xaml.cs">
+      <DependentUpon>BalancingAccountsCheckResult.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Windows\OrderMedicineManagement.xaml.cs">
+      <DependentUpon>OrderMedicineManagement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OrderMedicineManagementProtectAdd.xaml.cs">
+      <DependentUpon>OrderMedicineManagementProtectAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OrderMedicineManagementPriorityMoveAdd.xaml.cs">
+      <DependentUpon>OrderMedicineManagementPriorityMoveAdd.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\UserControls\OAStartProgressBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckRegister.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\IndividualBasedMedicineAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\IndividualBasedMedicineSelectMaker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\LoginCheck.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\MasterDataManagement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\Menus.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OAStartProgressBarWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OrderCenter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OrderLogs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckMakerSortAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckMakerSortSelectMaker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckMedicineSortSelectMedicine.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckMedicineSortSelectMedicineDetail.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\BalancingAccountsCheckResult.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\OrderMedicineManagement.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\OrderMedicineManagementProtectAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Windows\OrderMedicineManagementPriorityMoveAdd.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="OASystemIcon100x100.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="support-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View_Details-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="sinchronize-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="add_database-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="search-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="wipes-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="cancel-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="external_link-32.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

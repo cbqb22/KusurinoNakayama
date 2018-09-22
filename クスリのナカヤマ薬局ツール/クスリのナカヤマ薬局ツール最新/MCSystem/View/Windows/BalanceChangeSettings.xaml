@@ -1,0 +1,250 @@
+﻿<Window x:Class="MCSystem.View.Windows.BalanceChangeSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="帳合変更マクロ設定"
+        WindowStartupLocation="CenterScreen"
+        Icon="/MCSystem100x100.ico"
+        Topmost="True" Background="#FF2F415F" Width="380" Height="400"
+        >
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="8" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+        
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="9" />
+        </Style>
+        
+        <Style TargetType="TextBox">
+            <Setter Property="FontSize" Value="8" />
+        </Style>
+        
+        <Style TargetType="ToggleButton">
+            <Setter Property="Width" Value="50" />
+            <Setter Property="Height" Value="20" />
+            <Setter Property="FontSize" Value="9" />
+        </Style>
+
+    </Window.Resources>
+
+    <Grid Margin="20" HorizontalAlignment="Left" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <!--<RowDefinition Height="200" />-->
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="検索名称ＸＹ座標" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="X:"/>
+                    <TextBox x:Name="tb検索名称X"  Width="50" MaxLength="4"/>
+                    <TextBlock Text="Y:" />
+                    <TextBox x:Name="tb検索名称Y"  Width="50" MaxLength="4"/>
+                    <ToggleButton x:Name="tbtn検索名称クリック取得" Content="Click取得" Click="tbtn検索名称クリック取得_Click" Checked="tbtn検索名称クリック取得_Checked" Background="#FFC5DAFF"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="検索名称F12完了ボタンＸＹ座標" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="X:"/>
+                    <TextBox x:Name="tb検索名称完了ボタンX"  Width="50" MaxLength="4"/>
+                    <TextBlock Text="Y:" />
+                    <TextBox x:Name="tb検索名称完了ボタンY"  Width="50" MaxLength="4"/>
+                    <ToggleButton x:Name="tbtn検索名称完了ボタンクリック取得" Content="Click取得" Click="tbtn検索名称完了ボタンクリック取得_Click" Checked="tbtn検索名称完了ボタンクリック取得_Checked" Background="#FFC5DAFF" />
+                </StackPanel>
+            </Grid>
+
+
+
+            <Grid Grid.Row="2" Grid.Column="0">
+                <TextBlock Text="通常仕入先ＸＹ座標" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="X:"/>
+                    <TextBox x:Name="tb通常仕入先X"  Width="50" MaxLength="4"/>
+                    <TextBlock Text="Y:" />
+                    <TextBox x:Name="tb通常仕入先Y"  Width="50" MaxLength="4"/>
+                    <ToggleButton x:Name="tbtn通常仕入先クリック取得" Content="Click取得" Click="tbtn通常仕入先クリック取得_Click" Checked="tbtn通常仕入先クリック取得_Checked" Background="#FFC5DAFF"/>
+                </StackPanel>
+            </Grid>
+
+
+            
+            
+            <Grid Grid.Row="3" Grid.Column="0">
+                <TextBlock Text="通常仕入先F12完了ボタンＸＹ座標" Margin="0,0,10,0"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="X:"/>
+                    <TextBox x:Name="tb個別入力完了ボタンX"  Width="50" MaxLength="4"/>
+                    <TextBlock Text="Y:" />
+                    <TextBox x:Name="tb個別入力完了ボタンY"  Width="50" MaxLength="4"/>
+                    <ToggleButton x:Name="tbtn個別入力完了ボタンクリック取得"  Content="Click取得" Click="tbtn個別入力完了ボタンクリック取得_Click" Checked="tbtn個別入力完了ボタンクリック取得_Checked" Background="#FFC5DAFF" />
+                </StackPanel>
+            </Grid>
+
+
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="在庫メンテナンス(受付)座標範囲" Margin="0,0,22,0"/>
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="auto" Height="auto" BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="img在庫メンテナンス受付" Width="100" Height="20" Margin="5,5,5,5"/>
+                    </Border>
+                    <ToggleButton x:Name="tbtn在庫メンテナンス受付Drag取得" Content="Drag取得" Height="auto" Checked="tbtn在庫メンテナンス受付Drag取得_Checked" Background="#FFC5DAFF"/>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="在庫メンテナンス座標範囲" Width="auto" Height="30" Margin="0,0,0,0"/>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <Border Width="auto" Height="auto"  BorderThickness="1" BorderBrush="White">
+                        <Image x:Name="img在庫メンテナンス" Width="100" Height="20" Margin="5,5,5,5"/>
+                    </Border>
+                    <ToggleButton x:Name="tbtn在庫メンテナンスDrag取得" Content="Drag取得" Height="auto" Checked="tbtn在庫メンテナンスDrag取得_Checked" Background="#FFC5DAFF"/>
+                </StackPanel>
+            </Grid>
+
+        </Grid>
+
+        <Grid Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto" />
+                <ColumnDefinition Width="auto" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0" Grid.Column="0">
+                <TextBlock Text="在庫テーブルCSVパス" />
+            </Grid>
+            <Grid Grid.Row="0" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="tb在庫テーブルCSVFilePath" Width="200" Height="40" TextWrapping="Wrap"/>
+                    <Button x:Name="btn在庫テーブル参照" Content="参照" Width="auto" Click="btn在庫テーブル参照_Click" Background="#FFE4FFCF"/>
+                </StackPanel>
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                    <TextBlock Text="新帳合変更データ表パス" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <StackPanel Orientation="Horizontal">
+                    <TextBox x:Name="tb新帳合変更データ表FilePath" Width="200" Height="40" TextWrapping="Wrap"/>
+                    <Button x:Name="btn新帳合変更参照" Content="参照" Width="auto" Click="btn新帳合変更参照_Click" Background="#FFE4FFCF"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+        
+        
+        <!--<Grid Grid.Row="5" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            
+            <Grid Grid.Row="0">
+                <TextBlock Text="帳合先コードリスト" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="0">
+                <TextBlock Text="メディセオ" />
+            </Grid>
+            <Grid Grid.Row="1" Grid.Column="1">
+                <TextBox x:Name="tbメディセオ" Width="50"  TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="0">
+                <TextBlock Text="スズケン" />
+            </Grid>
+            <Grid Grid.Row="2" Grid.Column="1">
+                <TextBox x:Name="tbスズケン"  Width="50"  TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="0">
+                <TextBlock Text="アルフレッサ" />
+            </Grid>
+            <Grid Grid.Row="3" Grid.Column="1">
+                <TextBox x:Name="tbアルフレッサ"  Width="50"  TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="0">
+                <TextBlock Text="東邦薬品" />
+            </Grid>
+            <Grid Grid.Row="4" Grid.Column="1">
+                <TextBox x:Name="tb東邦薬品"  Width="50"  TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="0">
+                <TextBlock Text="東和" />
+            </Grid>
+            <Grid Grid.Row="5" Grid.Column="1">
+                <TextBox x:Name="tb東和"  Width="50"  TextAlignment="Right"/>
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="0">
+                <TextBlock Text="酒井薬品" />
+            </Grid>
+            <Grid Grid.Row="6" Grid.Column="1">
+                <TextBox x:Name="tb酒井薬品"  Width="50"  TextAlignment="Right"/>
+            </Grid>
+        </Grid>-->
+
+
+        <Grid Grid.Row="6" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btn保存" Content="保存" Click="btn保存_Click" Width="80" Height="30" Background="#FFFFFECD"/>
+                <Button x:Name="btn閉じる" Content="閉じる" Click="btn閉じる_Click" Width="80" Height="30" Background="#FFFFFECD"/>
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Window>

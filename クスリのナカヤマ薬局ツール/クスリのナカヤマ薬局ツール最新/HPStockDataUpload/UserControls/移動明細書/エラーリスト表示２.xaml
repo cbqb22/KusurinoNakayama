@@ -1,0 +1,223 @@
+﻿<Window x:Name="window" x:Class="クスリのナカヤマ薬局ツール.UserControls.移動明細書.エラーリスト表示２"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:errorlistdisp2="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.移動明細書"
+        Title="移動明細書チェック：エラーリスト"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        Icon="/nakayama.ico"
+        >
+
+    <Window.Resources>
+        
+
+        <errorlistdisp2:ListViewStyleSelector x:Key="ListViewStyleSelector" />
+
+        <DataTemplate x:Key="dt明細書店舗名払">
+            <Grid>
+                <TextBlock Text="{Binding Path=払データ.明細書店舗名}" HorizontalAlignment="Center"  Background="LavenderBlush" FontSize="8.5"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票日付払">
+            <TextBlock Text="{Binding Path=払データ.伝票日付}"  HorizontalAlignment="Center" FontSize="8"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票No払">
+            <TextBlock Text="{Binding Path=払データ.伝票No}" HorizontalAlignment="Center" Background="LavenderBlush" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt相手先払">
+            <TextBlock Text="{Binding Path=払データ.相手先}" HorizontalAlignment="Center" Background="LavenderBlush" FontSize="8.5"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品名払">
+            <TextBlock Text="{Binding Path=払データ.薬品名}" FontSize="9.5"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品コード払">
+            <TextBlock Text="{Binding Path=払データ.薬品コード}" HorizontalAlignment="Center" Background="LavenderBlush" FontSize="8"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt数量払">
+            <TextBlock Text="{Binding Path=払データ.数量}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt単価払">
+            <TextBlock Text="{Binding Path=払データ.単価}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt金額払">
+            <TextBlock Text="{Binding Path=払データ.金額}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+
+
+
+        <DataTemplate x:Key="dt事由">
+            <TextBlock Text="{Binding Path=エラー事由}" FontSize="8"/>
+        </DataTemplate>
+
+
+
+
+        <DataTemplate x:Key="dt入力店舗名">
+            <TextBlock Text="{Binding Path=受データ.明細書店舗名}" HorizontalAlignment="Center" Background="AliceBlue" FontSize="8.5"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票日付受">
+            <TextBlock Text="{Binding Path=受データ.伝票日付}" HorizontalAlignment="Center" FontSize="8"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票No受">
+            <TextBlock Text="{Binding Path=受データ.伝票No}" HorizontalAlignment="Center"  FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt相手伝票No受">
+            <TextBlock Text="{Binding Path=受データ.相手伝票No}" HorizontalAlignment="Center" Background="AliceBlue" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt相手先受">
+            <TextBlock Text="{Binding Path=受データ.相手先}" HorizontalAlignment="Center" Background="AliceBlue" FontSize="8.5"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品名受">
+            <TextBlock Text="{Binding Path=受データ.薬品名}" FontSize="9.5"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品コード受">
+            <TextBlock Text="{Binding Path=受データ.薬品コード}" HorizontalAlignment="Center" Background="AliceBlue" FontSize="8"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt数量受">
+            <TextBlock Text="{Binding Path=受データ.数量}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt単価受">
+            <TextBlock Text="{Binding Path=受データ.単価受}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt金額受">
+            <TextBlock Text="{Binding Path=受データ.金額}" HorizontalAlignment="Center" FontSize="10"/>
+        </DataTemplate>
+
+        <Style x:Key="sty払" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Background" Value="Pink" />
+            <Setter Property="Foreground" Value="Gray" />
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+        <Style x:Key="stytbl払" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="Red" />
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+        <Style x:Key="stytbl受" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="SkyBlue" />
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+
+        <Style x:Key="sty受" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Background" Value="SkyBlue"/>
+            <Setter Property="Foreground" Value="Gray" />
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+        <Style x:Key="sty事由" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="Background" Value="LightYellow"/>
+            <Setter Property="Foreground" Value="Red" />
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+
+    </Window.Resources>
+    <Grid x:Name="grid1" Background="LightYellow">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <!--<RowDefinition Height="{Binding ActualHeight, ElementName=btnCSV, Mode=Default}" />-->
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="LavenderBlush" >
+            <TextBlock Text="移動伝票明細チェック結果" FontSize="15" Foreground="Gray" FontWeight="Bold" VerticalAlignment="Center" Margin="15,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Background="LavenderBlush" >
+            <Grid Background="LightYellow">
+                <!--<Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="122" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>-->
+                
+                <StackPanel Orientation="Horizontal">
+                    <Grid Grid.Column="0" x:Name="gdListTitle払">
+                        <TextBlock Text="店間振替払" TextAlignment="Center" Style="{StaticResource stytbl払}" Width="200" />
+                    </Grid>
+                    <Grid Grid.Column="1" x:Name="gdListTitleエラー事由">
+                    </Grid>
+                    <Grid Grid.Column="2"  x:Name="gdListTitle受">
+                        <TextBlock Text="店間振替受" TextAlignment="Center"  Style="{StaticResource stytbl受}" Width="200"/>
+                    </Grid>
+
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+
+        <Grid x:Name="grid3" Grid.Row="2">
+            <StackPanel Orientation="Vertical">
+                <Grid x:Name="grid2">
+                    <ScrollViewer VerticalScrollBarVisibility="Auto" Height="{Binding ActualHeight, ElementName=grid3, Mode=Default}">
+                        <ListView Name="lv移動伝票明細書エラー">
+
+                            
+                            <ListView.ItemContainerStyle>
+                                <Style TargetType="ListViewItem">
+                                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                </Style>
+                            </ListView.ItemContainerStyle>
+                            <ListView.View>
+                                <GridView>
+                                    <GridViewColumn Header="伝票No" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt伝票No払}" Width="Auto"/>
+                                    <GridViewColumn Header="伝票日付" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt伝票日付払}" Width="Auto" />
+                                    <GridViewColumn Header="発行店舗名" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt明細書店舗名払}" Width="Auto"/>
+                                    <GridViewColumn Header="相手先" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt相手先払}" Width="Auto"/>
+                                    <GridViewColumn Header="薬品コード" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt薬品コード払}" Width="Auto"/>
+                                    <GridViewColumn Header="薬品名" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt薬品名払}" Width="120"/>
+                                    <GridViewColumn Header="数量" HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt数量払}" Width="Auto"/>
+                                    <!--GridViewColumn Header="単価"  HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt単価払}" Width="Auto" /-->
+                                    <!--GridViewColumn Header="金額"  HeaderContainerStyle="{StaticResource sty払}" CellTemplate="{StaticResource dt金額払}" Width="Auto"/-->
+                                    <GridViewColumn Header="エラー事由"  HeaderContainerStyle="{StaticResource sty事由}"  CellTemplate="{StaticResource dt事由}" Width="Auto"/>
+                                    <GridViewColumn Header="伝票No"  HeaderContainerStyle="{StaticResource sty受}" CellTemplate="{StaticResource dt伝票No受}" Width="Auto" />
+                                    <GridViewColumn Header="相手伝票No"  HeaderContainerStyle="{StaticResource sty受}" CellTemplate="{StaticResource dt相手伝票No受}" Width="Auto" />
+                                    <GridViewColumn Header="伝票日付"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt伝票日付受}" Width="Auto" />
+                                    <GridViewColumn Header="入力店舗名 "  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt入力店舗名}" Width="Auto"/>
+                                    <GridViewColumn Header="相手先"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt相手先受}" Width="Auto"/>
+                                    <GridViewColumn Header="薬品コード"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt薬品コード受}" Width="Auto"/>
+                                    <GridViewColumn Header="薬品名"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt薬品名受}" Width="120"/>
+                                    <GridViewColumn Header="数量"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt数量受}" Width="Auto"/>
+                                    <!--GridViewColumn Header="単価"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt単価受}" Width="Auto" /-->
+                                    <!--GridViewColumn Header="金額"  HeaderContainerStyle="{StaticResource sty受}"  CellTemplate="{StaticResource dt金額受}" Width="Auto"/-->
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </ScrollViewer>
+                </Grid>
+            </StackPanel>
+        </Grid>
+
+        <Grid x:Name="grid" Grid.Row="3">
+            <DockPanel LastChildFill="False">
+                <TextBlock x:Name="tbl結果" Text="" VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                <Button Name="btnCSV" Content="CSV" Height="40" Width="100" Click="btnCSV_Click" DockPanel.Dock="Right" Background="LightBlue" Foreground="Gray" FontWeight="Bold" FontSize="15"/>
+            </DockPanel>
+        </Grid>
+
+    </Grid>
+</Window>

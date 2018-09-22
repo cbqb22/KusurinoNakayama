@@ -1,0 +1,11 @@
+﻿<Window x:Class="クスリのナカヤマ薬局ツール.Windows.ShiftViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:shift="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表;assembly="
+        Title="シフト表"
+        WindowState="Maximized"
+        >
+    <Grid>
+        <shift:ShiftTable />
+    </Grid>
+</Window>

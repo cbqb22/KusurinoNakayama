@@ -1,0 +1,12 @@
+﻿<Window x:Class="クスリのナカヤマ薬局ツール.Windows.CostCalcViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:costcalc="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.人件費計算"
+        Title="CostCalcViewer"
+        WindowState="Maximized"
+        Height="auto" Width="auto"
+        >
+    <Grid>
+        <costcalc:CostCalcTable />
+    </Grid>
+</Window>

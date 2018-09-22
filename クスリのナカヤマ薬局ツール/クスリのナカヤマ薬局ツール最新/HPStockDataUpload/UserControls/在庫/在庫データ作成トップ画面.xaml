@@ -1,0 +1,167 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.在庫.在庫データ作成トップ画面"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" Background="#FF2F415F" Width="473" Height="380">
+    
+    <UserControl.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </UserControl.Resources>
+    <Grid x:Name="gdMain" Margin="20,0,20,2">
+    	<Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto"/>
+    		<RowDefinition Height="Auto" MinHeight="91"/>
+    	</Grid.RowDefinitions>
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition Width="Auto"/>
+    	</Grid.ColumnDefinitions>
+    	<Grid x:Name="gdボタン" Margin="0,0,20,32" VerticalAlignment="Bottom" Grid.Row="7" HorizontalAlignment="Right">
+    		<StackPanel x:Name="stpボタン" HorizontalAlignment="Left" VerticalAlignment="Top" Orientation="Horizontal">
+    			<Button x:Name="bt開始" HorizontalAlignment="Left" Content="データ作成" Foreground="#FFF9F6F6" Background="#FFEB1616" Click="bt開始_Click" Width="66" Visibility="Hidden" />
+                <Button x:Name="bt開始更新" HorizontalAlignment="Left" Content="作成＆更新" Background="#FF102FEB" Foreground="White" Click="bt開始アップロード_Click" Width="80" />
+                <Button x:Name="btキャンセル" HorizontalAlignment="Left" Content="終了" Background="#FFA81A1A" Foreground="White" Click="btキャンセル_Click" Width="80" />
+    		</StackPanel>
+    	</Grid>
+    	<Grid x:Name="gd店舗名" HorizontalAlignment="Left" Margin="0,1,0,0" Grid.Row="6">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="176"/>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="Auto"/>
+    		</Grid.ColumnDefinitions>
+    		<Grid x:Name="gd店舗名Right" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" Grid.Column="2"/>
+    		<Grid x:Name="gd店舗名Center" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Grid.Column="1">
+    			<TextBox x:Name="tb店舗名" MinWidth="200" TextWrapping="Wrap" Width="236" Height="24"/>
+    		</Grid>
+    		<Grid x:Name="gd店舗名Left" VerticalAlignment="Center" Margin="20,0,0,0" >
+    			<TextBlock x:Name="tbl店舗名" Margin="0" Text="出力店舗名称" TextWrapping="Wrap" />
+    		</Grid>
+    	</Grid>
+    	<Grid x:Name="gd出力フォルダ先" HorizontalAlignment="Left" Margin="0,50,0,0" Grid.Row="5" Grid.IsSharedSizeScope="True">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="176"/>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="Auto"/>
+    		</Grid.ColumnDefinitions>
+    		<Grid x:Name="gd出力先Right" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" Grid.Column="2">
+                <Button x:Name="bt出力先参照" HorizontalAlignment="Left" Content="参照" Click="bt出力先参照_Click"  Height="36" Width="36" Background="#FF4EA3DF" Foreground="#FFCFDC79"/>
+    		</Grid>
+    		<Grid x:Name="gd出力先Center" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Center" Grid.Column="1">
+    			<TextBox x:Name="tb出力先ディレクトリ名" MinWidth="200" TextWrapping="Wrap" Width="200" Height="36"/>
+    		</Grid>
+    		<Grid x:Name="gd出力先Left" VerticalAlignment="Center" Margin="20,0,0,0" >
+    			<TextBlock x:Name="tbl出力先ディレクトリ名" Margin="0" Text="出力先フォルダ名" TextWrapping="Wrap" />
+    		</Grid>
+    	</Grid>
+    	<Grid x:Name="gd不動品" Margin="0,10,0,0" Grid.Row="4">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="125"/>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="Auto"/>
+    		</Grid.ColumnDefinitions>
+    		<Grid x:Name="gd不動品Right" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" Grid.Column="3">
+    			<Button x:Name="bt不動品参照" HorizontalAlignment="Left" Content="参照" Click="bt不動品参照_Click" Height="36" Width="36" Background="#FF4EA3DF" Foreground="#FFCFDC79"/>
+    		</Grid>
+    		<Grid x:Name="gd不動品Center" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="2">
+    			<TextBox x:Name="tb不動品ファイル名" MinWidth="200" TextWrapping="Wrap" Width="200" Height="36"/>
+    		</Grid>
+    		<Grid x:Name="gd不動品Left" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Grid.Column="1">
+    			<TextBlock x:Name="tbl不動品データ作成" Margin="0" Text="不動品データファイル" TextWrapping="Wrap" />
+    		</Grid>
+    		<Grid x:Name="gdCheckBox不動品" Margin="15,0,0,0">
+    			<CheckBox x:Name="chk不動品" Margin="0" Content="" VerticalAlignment="Center" IsChecked="True"/>
+    		</Grid>
+    	</Grid>
+    	<Grid x:Name="gd使用量" Margin="0,10,0,0" Grid.Row="3">
+    		<Grid.RowDefinitions>
+    			<RowDefinition Height="Auto"/>
+    			<RowDefinition Height="Auto"/>
+    		</Grid.RowDefinitions>
+    		<Grid x:Name="gdLower" Margin="0,0,40,0" Grid.Row="1">
+    			<StackPanel x:Name="stpComboBox" HorizontalAlignment="Right" Orientation="Horizontal">
+    				<ComboBox x:Name="cmbYear" Margin="0" Width="119" Height="20" BorderThickness="0" FontSize="10.667">
+    					<ComboBox.Background>
+    						<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+    							<GradientStop Color="#FFF3F3F3" Offset="0"/>
+    							<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+    							<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+    							<GradientStop Color="#FF6E88E5" Offset="1"/>
+    						</LinearGradientBrush>
+    					</ComboBox.Background>
+    				</ComboBox>
+    				<ComboBox x:Name="cmbMonth" Margin="0" Width="118" Height="20" BorderThickness="0" FontSize="10.667">
+    					<ComboBox.Background>
+    						<LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+    							<GradientStop Color="#FFF3F3F3" Offset="0"/>
+    							<GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+    							<GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+    							<GradientStop Color="#FFE4B5B5" Offset="1"/>
+    						</LinearGradientBrush>
+    					</ComboBox.Background>
+    				</ComboBox>
+    			</StackPanel>
+    		</Grid>
+    		<Grid x:Name="gdUpper" Margin="0,0,39.999,0">
+    			<Grid.ColumnDefinitions>
+    				<ColumnDefinition Width="Auto"/>
+    				<ColumnDefinition Width="125"/>
+    				<ColumnDefinition Width="Auto"/>
+    				<ColumnDefinition Width="Auto"/>
+    			</Grid.ColumnDefinitions>
+    			<Grid x:Name="gd使用量Right" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0" Grid.Column="3">
+                    <Button x:Name="bt使用量参照" HorizontalAlignment="Left" Content="参照" Click="bt使用量参照_Click" Height="36" Width="36" Background="#FF4EA3DF" Foreground="#FFCFDC79">
+    				</Button>
+    			</Grid>
+    			<Grid x:Name="gd使用量Center" HorizontalAlignment="Left" Margin="20,0,0,0" VerticalAlignment="Center" Grid.Column="2">
+    				<TextBox x:Name="tb使用量2ファイル名" MinWidth="200" TextWrapping="Wrap" Width="200" Height="36"/>
+    			</Grid>
+    			<Grid x:Name="gd使用量Left" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0"  Grid.Column="1">
+    				<TextBlock x:Name="tbl使用量データ作成" Margin="0,0,-0.001,0" Text="使用量データファイル" TextWrapping="Wrap" />
+    			</Grid>
+    			<Grid x:Name="gdCheckBox使用量" Margin="15,0,0,0">
+    				<CheckBox x:Name="chk使用量2" Margin="0" Content="" HorizontalAlignment="Left" VerticalAlignment="Center" IsChecked="True"/>
+    			</Grid>
+    		</Grid>
+    	</Grid>
+    	<Grid x:Name="gd現在庫" Margin="0,20,0,0" Grid.Row="2">
+    		<Grid.ColumnDefinitions>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="125"/>
+    			<ColumnDefinition Width="Auto"/>
+    			<ColumnDefinition Width="Auto"/>
+    		</Grid.ColumnDefinitions>
+    		<Grid x:Name="gd現在庫Right" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="3">
+                <Button x:Name="bt現在庫参照" HorizontalAlignment="Left" Content="参照" Click="bt現在庫参照_Click" Height="36" Width="36" Background="#FF4EA3DF" Foreground="#FFCFDC79">
+    			</Button>
+    		</Grid>
+    		<Grid x:Name="gd現在庫Center" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,0,0,0" Grid.Column="2">
+    			<TextBox x:Name="tb現在庫ファイル名" TextWrapping="Wrap" MinWidth="200" Width="200" Height="36"/>
+    		</Grid>
+    		<Grid x:Name="gd現在庫Left" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,0,0,0" Grid.Column="1">
+    			<TextBlock x:Name="tbl現在庫データ作成" Margin="0,0,-0.001,0" Text="現在庫データファイル" TextWrapping="Wrap" />
+    		</Grid>
+    		<Grid x:Name="gdCheckBox現在庫" Margin="15,0,0,0" VerticalAlignment="Center">
+    			<CheckBox x:Name="chk現在庫" Margin="0" Content="" IsChecked="True"/>
+    		</Grid>
+    	</Grid>
+    	<Grid x:Name="gdTitle" Margin="0,0,0,10" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1">
+            <TextBlock x:Name="tblタイトル" Margin="0" Text="調剤ホームページ在庫更新" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18.667" Foreground="#FFDFD81A" FontWeight="Bold" FontFamily="ＭＳ Ｐ明朝"/>
+    	</Grid>
+        
+        <Grid x:Name="gdSettings" Grid.Row="1">
+            <Button x:Name="btSetting" Content="設定" Width="40" Height="22" HorizontalAlignment="Right" Margin="0,0,20,0" VerticalAlignment="Top" Background="#FFFFDE40" Foreground="#FF534141" Click="btSetting_Click"/>
+        </Grid>
+    	<Border x:Name="bdDataFile" Margin="0,8,21.6,-20" Grid.RowSpan="3" BorderBrush="White" BorderThickness="2" Grid.Row="2" CornerRadius="2"/>
+    	<Border x:Name="bdOutput" Margin="0,38.6,21.6,-16" BorderBrush="White" BorderThickness="2" Grid.Row="5" Grid.RowSpan="2" CornerRadius="2"/>
+            
+    </Grid>
+</UserControl>

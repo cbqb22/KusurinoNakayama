@@ -1,0 +1,83 @@
+﻿<Window x:Class="StockManagement.View.Settings.ExceptiveMedicinesList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="チェック除外医薬品 設定" Height="500" Width="430"
+        WindowStartupLocation="CenterScreen"
+        Icon="/nakayama.ico" Background="#FF2F415F"
+        >
+    <Window.Resources>
+
+        
+        
+        <Style TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="White" />
+        </Style>
+
+        <Style x:Key="styColumnHeader" TargetType="{x:Type GridViewColumnHeader}">
+            <Setter Property="FontSize" Value="10" />
+        </Style>
+
+        <DataTemplate x:Key="dt医薬品名称">
+            <Grid>
+                <TextBlock Text="{Binding 医薬品名称}" HorizontalAlignment="Right"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtレセプト電算コード">
+            <Grid>
+                <TextBlock Text="{Binding レセプト電算コード}" HorizontalAlignment="Right"/>
+            </Grid>
+        </DataTemplate>
+
+
+
+    </Window.Resources>
+
+    <Grid Margin="20,0,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="80" />
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0" Margin="0,20,0,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="30" />
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <TextBlock Text="除外医薬品リスト" Width="auto" Foreground="White"  HorizontalAlignment="Left" TextAlignment="Center" FontWeight="Bold"/>
+            </Grid>
+            <Grid Grid.Row="1">
+                <ListView SelectionMode="Single" x:Name="lvExceptiveMedicinesList"  SelectionChanged="lvExceptiveMedicinesList_SelectionChanged">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="医薬品名称"  CellTemplate="{StaticResource dt医薬品名称}" Width="Auto"/>
+                            <GridViewColumn Header="レセプト電算コード"  HeaderContainerStyle="{StaticResource styColumnHeader}" CellTemplate="{StaticResource dtレセプト電算コード}" Width="auto"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+            </Grid>
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="btn除外追加" Content="除外追加" Click="btn除外追加_Click" Width="60" Height="25" HorizontalAlignment="Right" Background="#FFFF8B8B"/>
+                    <Button x:Name="btn選択削除" Content="選択削除" Click="btn選択削除_Click" Width="60" Height="25" HorizontalAlignment="Right" Background="#FFFF8B8B"/>
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+
+        <Grid Grid.Row="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <!--<Button x:Name="btn保存" Content="保存" Click="btn保存_Click" Width="80" Height="30" Background="#FFEAE6AA"/>-->
+                <Button x:Name="btn閉じる" Content="閉じる" Click="btn閉じる_Click" Width="80" Height="30" Background="#FFEAE6AA"/>
+            </StackPanel>
+        </Grid>
+
+
+    </Grid>
+</Window>

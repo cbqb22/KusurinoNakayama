@@ -1,0 +1,144 @@
+﻿<Window x:Name="window" x:Class="クスリのナカヤマ薬局ツール.UserControls.移動明細書.エラーリスト表示"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="移動明細書チェック：エラーリスト"
+        WindowState="Maximized"
+        WindowStartupLocation="CenterScreen"
+        Icon="/nakayama.ico">
+         
+    <Window.Resources>
+
+        <DataTemplate x:Key="dtチェック済">
+            <CheckBox IsChecked="{Binding Path=チェック済}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt区分">
+            <TextBlock Text="{Binding Path=区分}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt明細書店舗名">
+            <TextBlock Text="{Binding Path=明細書店舗名}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票日付">
+            <TextBlock Text="{Binding Path=伝票日付}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt伝票No">
+            <TextBlock Text="{Binding Path=伝票No}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt相手先">
+            <TextBlock Text="{Binding Path=相手先}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品名">
+            <TextBlock Text="{Binding Path=薬品名}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt薬品コード">
+            <TextBlock Text="{Binding Path=薬品コード}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt数量">
+            <TextBlock Text="{Binding Path=数量}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt単価">
+            <TextBlock Text="{Binding Path=単価}"/>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt金額">
+            <TextBlock Text="{Binding Path=金額}"/>
+        </DataTemplate>
+
+
+    </Window.Resources>
+    <Grid x:Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="{Binding ActualHeight, ElementName=btnCSV, Mode=Default}" />
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Row="0" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="　&#xa;　&#xa;払&#xa;○&#xa;　&#xa;受&#xa;×" Height="{Binding ActualHeight, ElementName=エラーリスト払いあり受けなしListView, Mode=Default}" TextAlignment="Center" Width="25" FontSize="18" FontWeight="Bold" Background="LightBlue" Foreground="#FFF40404"/>
+                <ListView Name="エラーリスト払いあり受けなしListView" Height="Auto" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="済" CellTemplate="{StaticResource dtチェック済}" Width="Auto"/>
+                            <GridViewColumn Header="明細書作成店舗名" CellTemplate="{StaticResource dt明細書店舗名}" Width="Auto"/>
+                            <GridViewColumn Header="区分" CellTemplate="{StaticResource dt区分}" Width="Auto"/>
+                            <GridViewColumn Header="伝票日付" CellTemplate="{StaticResource dt伝票日付}" Width="Auto" />
+                            <GridViewColumn Header="伝票No" CellTemplate="{StaticResource dt伝票No}" Width="Auto" />
+                            <GridViewColumn Header="相手先" CellTemplate="{StaticResource dt相手先}" Width="75"/>
+                            <GridViewColumn Header="薬品名" CellTemplate="{StaticResource dt薬品名}" Width="150"/>
+                            <GridViewColumn Header="薬品コード" CellTemplate="{StaticResource dt薬品コード}" Width="Auto"/>
+                            <GridViewColumn Header="数量" CellTemplate="{StaticResource dt数量}" Width="Auto"/>
+                            <GridViewColumn Header="単価" CellTemplate="{StaticResource dt単価}" Width="Auto" />
+                            <GridViewColumn Header="金額" CellTemplate="{StaticResource dt金額}" Width="Auto"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="　&#xa;　&#xa;払&#xa;×&#xa;　&#xa;受&#xa;○" Height="{Binding ActualHeight, ElementName=エラーリスト受けあり払いなしListView, Mode=Default}" TextAlignment="Center" Width="25" FontSize="18" FontWeight="Bold" Background="MediumPurple" Foreground="#FF001AFF"/>
+                <ListView Name="エラーリスト受けあり払いなしListView" Height="Auto" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="済" CellTemplate="{StaticResource dtチェック済}" Width="Auto"/>
+                            <GridViewColumn Header="明細書作成店舗名" CellTemplate="{StaticResource dt明細書店舗名}" Width="Auto"/>
+                            <GridViewColumn Header="区分" CellTemplate="{StaticResource dt区分}" Width="Auto"/>
+                            <GridViewColumn Header="伝票日付" CellTemplate="{StaticResource dt伝票日付}" Width="Auto" />
+                            <GridViewColumn Header="伝票No" CellTemplate="{StaticResource dt伝票No}" Width="Auto" />
+                            <GridViewColumn Header="相手先" CellTemplate="{StaticResource dt相手先}" Width="75"/>
+                            <GridViewColumn Header="薬品名" CellTemplate="{StaticResource dt薬品名}" Width="150"/>
+                            <GridViewColumn Header="薬品コード" CellTemplate="{StaticResource dt薬品コード}" Width="Auto"/>
+                            <GridViewColumn Header="数量" CellTemplate="{StaticResource dt数量}" Width="Auto"/>
+                            <GridViewColumn Header="単価" CellTemplate="{StaticResource dt単価}" Width="Auto" />
+                            <GridViewColumn Header="金額" CellTemplate="{StaticResource dt金額}" Width="Auto"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock x:Name="textBlock" Text="数&#xa;量&#xa;違&#xa;い" Height="{Binding ActualWidth, ElementName=エラーリスト払い受けあり入力間違いListView, Mode=Default}" TextAlignment="Center" Width="25" FontSize="18" FontWeight="Bold" Background="Gray" />
+                <ListView x:Name="エラーリスト払い受けあり入力間違いListView" Height="Auto" >
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="済" CellTemplate="{StaticResource dtチェック済}" Width="Auto"/>
+                            <GridViewColumn Header="明細書作成店舗名" CellTemplate="{StaticResource dt明細書店舗名}" Width="Auto"/>
+                            <GridViewColumn Header="区分" CellTemplate="{StaticResource dt区分}" Width="Auto"/>
+                            <GridViewColumn Header="伝票日付" CellTemplate="{StaticResource dt伝票日付}" Width="Auto" />
+                            <GridViewColumn Header="伝票No" CellTemplate="{StaticResource dt伝票No}" Width="Auto" />
+                            <GridViewColumn Header="相手先" CellTemplate="{StaticResource dt相手先}" Width="75"/>
+                            <GridViewColumn Header="薬品名" CellTemplate="{StaticResource dt薬品名}" Width="150"/>
+                            <GridViewColumn Header="薬品コード" CellTemplate="{StaticResource dt薬品コード}" Width="Auto"/>
+                            <GridViewColumn Header="数量" CellTemplate="{StaticResource dt数量}" Width="Auto"/>
+                            <GridViewColumn Header="単価" CellTemplate="{StaticResource dt単価}" Width="Auto" />
+                            <GridViewColumn Header="金額" CellTemplate="{StaticResource dt金額}" Width="Auto"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </StackPanel>
+        </Grid>
+
+        
+        <Grid x:Name="grid" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+            <DockPanel LastChildFill="False">
+                <TextBlock x:Name="tbl結果" Text="" VerticalAlignment="Center" DockPanel.Dock="Left"/>
+                <Button Name="btnCSV" Content="CSV" Height="30" Width="50" Click="btnCSV_Click" DockPanel.Dock="Right"/>
+            </DockPanel>
+        </Grid>
+        
+    </Grid>
+</Window>

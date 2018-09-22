@@ -1,0 +1,159 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Class="MCSystem.View.Windows.BalanceChangeMenu"
+        Title="帳合変更プログラムメニュー" Height="500" Width="600"
+        Icon="/MCSystem100x100.ico"
+        WindowStartupLocation="CenterScreen" Background="#FF2F415F" mc:Ignorable="d">
+	<Window.Resources>
+		<Storyboard x:Key="Storyboard1">
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdHeader" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Hidden}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton1" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton2" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton3" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton4" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton5" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton6" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Visible}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<ObjectAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="label" Storyboard.TargetProperty="(UIElement.Visibility)">
+				<DiscreteObjectKeyFrame KeyTime="00:00:00" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:03" Value="{x:Static Visibility.Visible}"/>
+				<DiscreteObjectKeyFrame KeyTime="00:00:04" Value="{x:Static Visibility.Hidden}"/>
+			</ObjectAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="label" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:01" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:02" Value="1"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:03" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ThicknessAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="border" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+				<SplineThicknessKeyFrame KeyTime="00:00:00" Value="-99,0,-100,0"/>
+				<SplineThicknessKeyFrame KeyTime="00:00:04" Value="-99,0,-1600,0"/>
+				<SplineThicknessKeyFrame KeyTime="00:00:04.3000000" Value="-99,0,-100,0"/>
+			</ThicknessAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="stackPanel" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.3000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<ThicknessAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="stackPanel" Storyboard.TargetProperty="(FrameworkElement.Margin)">
+				<SplineThicknessKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineThicknessKeyFrame KeyTime="00:00:04.3000000" Value="700,0,0,0"/>
+				<SplineThicknessKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+			</ThicknessAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton1" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton2" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton3" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton4" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton5" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdbutton6" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+			<DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="gdVersion" Storyboard.TargetProperty="(UIElement.Opacity)">
+				<SplineDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:04.6000000" Value="0"/>
+				<SplineDoubleKeyFrame KeyTime="00:00:05" Value="1"/>
+			</DoubleAnimationUsingKeyFrames>
+		</Storyboard>
+	</Window.Resources>
+	<Window.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard Storyboard="{StaticResource Storyboard1}"/>
+		</EventTrigger>
+	</Window.Triggers>
+    <Grid Margin="20,20,20,20">
+    	<Grid.ColumnDefinitions>
+    		<ColumnDefinition/>
+    		<ColumnDefinition/>
+    	</Grid.ColumnDefinitions>
+    	<Grid.RowDefinitions>
+    		<RowDefinition Height="100"/>
+    		<RowDefinition/>
+    		<RowDefinition/>
+    		<RowDefinition/>
+            <RowDefinition Height="15"/>
+        </Grid.RowDefinitions>
+    	<Border x:Name="border" Margin="-99,0,-100,0" Width="600" Background="White" BorderBrush="Black" BorderThickness="1" Grid.ColumnSpan="2" Height="80"/>
+    	<Label x:Name="label" HorizontalAlignment="Left" Margin="-62.777,-15,0,0" VerticalAlignment="Top" Content="Now Loading...." FontSize="16" Foreground="White" Visibility="Hidden" Grid.Column="1" Grid.Row="2"/>
+    	<Grid x:Name="gdHeader" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.ColumnSpan="2" Margin="27,0,0,0">
+    		<StackPanel x:Name="stackPanel" Margin="0" VerticalAlignment="Center">
+    			<TextBlock Margin="0" VerticalAlignment="Top" FontSize="17.333" FontStyle="Italic" FontWeight="Bold" Foreground="#FF65632E" Text="-MCSystem-" TextWrapping="Wrap"/>
+    			<TextBlock Margin="0" VerticalAlignment="Top" FontSize="21.333" Foreground="#FF65632E" Text="帳合変更プログラム" TextWrapping="Wrap" FontWeight="Bold"/>
+    		</StackPanel>
+    	</Grid>
+    	<Grid x:Name="gdbutton1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1">
+    		<Button x:Name="btnMacroStart" Content="マクロ開始" Click="btnMacroStart_Click" Margin="0" Width="180" HorizontalAlignment="Center" Height="70" FontSize="16" Background="#FFFFFECD"/>
+    	</Grid>
+    	<Grid x:Name="gdbutton2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+    		<Button x:Name="btnValifyStart" Content="照合" Click="btnValifyStart_Click" Margin="0" Width="180" HorizontalAlignment="Center" Height="70" FontSize="16" Background="#FFFFFECD"/>
+    	</Grid>
+    	<Grid x:Name="gdbutton3" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2">
+            <Button x:Name="btnCreateMacro" Content="マクロ作成" Click="btnCreateMacro_Click" Margin="0" Width="180" HorizontalAlignment="Center"  IsEnabled="True" Height="70" FontSize="16" Background="#FFFFFECD"/>
+    	</Grid>
+    	<Grid x:Name="gdbutton4" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2">
+            <Button x:Name="btnOriginalMacroStart" Content="独自マクロ開始" Click="btnOriginalMacroStart_Click" Margin="0" Width="180" HorizontalAlignment="Center" IsEnabled="True" Height="70" FontSize="16" Background="#FFFFFECD"/>
+    	</Grid>
+    	<Grid x:Name="gdbutton5" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3">
+    		<Button x:Name="btnNone" Content="" Click="btnOriginalMacroStart_Click" Margin="0" Width="180" HorizontalAlignment="Center" Height="70" FontSize="16" IsEnabled="False" Background="#FFFFFECD"/>
+    	</Grid>
+    	<Grid x:Name="gdbutton6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="3">
+    		<Button x:Name="btnSettings" Content="設定" Click="btnSettings_Click"  Margin="0" Width="180" HorizontalAlignment="Center" Height="70" FontSize="16" Background="#FFFFFECD"/>
+    	</Grid>
+        <Grid x:Name="gdVersion" HorizontalAlignment="Right" VerticalAlignment="Bottom" Grid.Column="1" Grid.Row="4">
+            <TextBlock Text="Ver1.00a" Foreground="White" />
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,67 @@
+﻿<Window x:Class="OASystem.View.Windows.BalancingAccountsCheckMakerSortAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="帳合先チェックマスタ：メーカー別 追加" Height="200" Width="500"
+        WindowStartupLocation="CenterScreen"
+                Background="#FF2F415F" Icon="/OASystemIcon100x100.ico">
+    
+    <Window.Resources>
+
+        <Style TargetType="Button" x:Key="styButtonKeyword">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Background" Value="#9CAAC1" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="styButton">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="12.5" />
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="1" Grid.Column="0" Margin="20,0,0,0">
+            <TextBlock Text="メーカー名:" VerticalAlignment="Center"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1" >
+            <StackPanel Orientation="Horizontal">
+                <TextBox x:Name="tbxメーカー名" Text="キーワード検索してください。" Width="150" VerticalAlignment="Center" IsHitTestVisible="False"  Foreground="LightGray"  FontSize="9"/>
+                <Button x:Name="btn検索メーカー名" Content="キーワード検索" Width="auto" FontSize="10" Click="btn検索メーカー名_Click" Style="{StaticResource styButtonKeyword}"/>
+
+            </StackPanel>
+
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="0" Margin="20,0,0,0">
+            <TextBlock Text="帳合先:" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Grid Grid.Row="2" Grid.Column="1">
+            <ComboBox x:Name="cmb帳合先" Width="150" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+        </Grid>
+
+
+        <Grid Grid.Row="3" Margin="20" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom">
+                <Button x:Name="btn中止" Content="中止" Width="75" Height="30" Click="btn中止_Click" Style="{StaticResource styButton}"/>
+                <Button x:Name="btn追加" Content="追加" Width="75" Height="30" Click="btn追加_Click" Style="{StaticResource styButton}"/>
+            </StackPanel>
+        </Grid>
+
+    </Grid>
+</Window>

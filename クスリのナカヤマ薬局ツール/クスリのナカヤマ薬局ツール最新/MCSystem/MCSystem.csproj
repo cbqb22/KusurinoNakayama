@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{961E27EB-8FAD-49E8-BCF7-D43CC36E28F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MCSystem</RootNamespace>
+    <AssemblyName>MCSystem</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>MCSystem100x100.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Model\BCSettingsEntity.cs" />
+    <Compile Include="Model\DI.cs" />
+    <Compile Include="Model\DragMeasure.cs" />
+    <Compile Include="Model\OriginalMacroDetailEntity.cs" />
+    <Compile Include="Model\OriginalMacroEntity.cs" />
+    <Compile Include="Model\帳合変更結果Entity.cs" />
+    <Compile Include="Model\在庫テーブルEntity.cs" />
+    <Compile Include="Model\新帳合変更データ表Entity.cs" />
+    <Compile Include="ViewModel\BCMacroRoutines.cs" />
+    <Compile Include="ViewModel\Common\Converter\RectToStringConverter.cs" />
+    <Compile Include="ViewModel\Common\Image\BitmapChecker.cs" />
+    <Compile Include="ViewModel\Common\MessageBox\MessageBoxTop.cs" />
+    <Compile Include="ViewModel\Common\Program\ControlProgram.cs" />
+    <Compile Include="ViewModel\ControlBCSettings.cs" />
+    <Compile Include="ViewModel\ControlOriginalMacro.cs" />
+    <Compile Include="ViewModel\Mockkeyboard.cs" />
+    <Compile Include="ViewModel\帳合変更結果Loader.cs" />
+    <Compile Include="ViewModel\在庫テーブルLoader.cs" />
+    <Compile Include="ViewModel\帳合変更マクロ実行Routines.cs" />
+    <Compile Include="ViewModel\新帳合変更データ表Loader.cs" />
+    <Compile Include="View\Enum\MacroOperationEnum.cs" />
+    <Compile Include="View\Windows\BalanceChangeSettings.xaml.cs">
+      <DependentUpon>BalanceChangeSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\BalnceChangeMenu.xaml.cs">
+      <DependentUpon>BalnceChangeMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\Cancel.xaml.cs">
+      <DependentUpon>Cancel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\MessageBoxTopWindow.xaml.cs">
+      <DependentUpon>MessageBoxTopWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OperationAdd.xaml.cs">
+      <DependentUpon>OperationAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\OriginalMacroMaker.xaml.cs">
+      <DependentUpon>OriginalMacroMaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Windows\SingletonWindows.cs" />
+    <Compile Include="View\Windows\XYLocation.xaml.cs">
+      <DependentUpon>XYLocation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="View\Windows\OriginalMacroExecuter.xaml.cs">
+      <DependentUpon>OriginalMacroExecuter.xaml</DependentUpon>
+    </Compile>
+    <Page Include="View\Windows\BalanceChangeSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\BalnceChangeMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\Cancel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\MessageBoxTopWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OperationAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OriginalMacroMaker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\XYLocation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Windows\OriginalMacroExecuter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="MCSystem100x100.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,17 @@
+﻿<Window x:Class="OASystem.View.Windows.OAStartProgressBarWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:p="clr-namespace:OASystem.View.UserControls"
+        Title="ProgressBarWindow" 
+        SizeToContent="WidthAndHeight" 
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen" 
+        Topmost="False"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Icon="/OASystemIcon100x100.ico"
+        >
+    <Grid>
+        <p:OAStartProgressBar x:Name="oaspb" />
+    </Grid>
+</Window>

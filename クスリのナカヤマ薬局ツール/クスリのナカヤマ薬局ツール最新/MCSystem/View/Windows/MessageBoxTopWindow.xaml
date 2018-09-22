@@ -1,0 +1,12 @@
+﻿<Window x:Class="MCSystem.View.Windows.MessageBoxTopWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MessageBoxTopWindow" Height="0" Width="0"
+        WindowStyle="None"
+        
+        
+        >
+    <Grid>
+        
+    </Grid>
+</Window>

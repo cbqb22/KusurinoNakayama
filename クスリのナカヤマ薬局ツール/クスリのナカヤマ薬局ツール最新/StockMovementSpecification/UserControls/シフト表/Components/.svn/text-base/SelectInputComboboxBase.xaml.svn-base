@@ -1,0 +1,108 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.シフト表.Components.SelectInputComboboxBase"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:shift="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.シフト表"
+             mc:Ignorable="d" 
+             Width="Auto" Height="Auto">
+
+    <UserControl.Resources>
+
+        <Style TargetType="TextBox">
+            <Style.Triggers>
+
+                <!--DataTrigger Binding="{Binding IsFirstFocus}" Value="true">
+                    <Setter Property="TextBox.Template">
+                        <Setter.Value>
+                            <ControlTemplate>
+                                <Canvas>
+                                </Canvas>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger-->
+
+                <DataTrigger Binding="{Binding IsFirstFocus}" Value="false">
+                    <Setter Property="TextBox.Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TextBox">
+                                <TextBlock Margin="6,0,6,0" Text="{Binding Path=表示用文字列}"  VerticalAlignment="Center" MinWidth="10"
+                                Foreground="Blue"
+                                />
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </DataTrigger>
+
+
+                <!--Trigger Property="IsFocused" Value="True">
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}"/>
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.WindowBrushKey}}"/>
+                </Trigger-->
+                <!--MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+											AncestorType={x:Type ListViewItem}}, Path=IsSelected}" Value="True" />
+                                        <Condition Binding="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=IsFocused}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="TextBox.Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="TextBox">
+                                                <TextBlock Margin="6,0,6,0" Text="{Binding Path=TemplatedParent.DataContext.Row.LongNameForView}"  VerticalAlignment="Center" MinWidth="10"
+                                Foreground="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                AncestorType={x:Type ListViewItem}}, Path=DataContext.Row.処方入力NameCellForeground}"
+                                />
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </MultiDataTrigger>
+                                <MultiDataTrigger>
+                                    <MultiDataTrigger.Conditions>
+                                        <Condition Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+											AncestorType={x:Type ListViewItem}}, Path=IsSelected}" Value="False" />
+                                        <Condition Binding="{Binding RelativeSource={x:Static RelativeSource.Self}, Path=IsFocused}" Value="False" />
+                                    </MultiDataTrigger.Conditions>
+                                    <Setter Property="TextBox.Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="TextBox">
+                                                <TextBlock Margin="6,0,6,0" Text="{Binding Path=TemplatedParent.DataContext.Row.LongNameForView}"  VerticalAlignment="Center" MinWidth="10"
+                                Foreground="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                AncestorType={x:Type ListViewItem}}, Path=DataContext.Row.処方入力NameCellForeground}"
+                                Background="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+                                AncestorType={x:Type ListViewItem}}, Path=DataContext.Row.処方入力NameCellBackground}"
+                                />
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </MultiDataTrigger>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListView}}, Path=IsKeyboardFocusWithin}" Value="True">
+                                    <Setter Property="TextBox.Focusable" Value="True"/>
+                                </DataTrigger>
+                                <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListView}}, Path=IsKeyboardFocusWithin}" Value="False">
+                                    <Setter Property="TextBox.Focusable" Value="False"/>
+                                </DataTrigger-->
+            </Style.Triggers>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+        <Border>
+            <Grid>
+                <TextBox
+                Text="{Binding Path=表示用文字列}"
+								Name="textbox"
+								HorizontalAlignment="Stretch"
+								VerticalAlignment="Center"
+								VerticalContentAlignment="Center"
+								BorderThickness="0"
+								Margin="0" Width="25" Height="25">
+
+                </TextBox>
+
+            </Grid>
+        </Border>
+
+
+    </Grid>
+</UserControl>

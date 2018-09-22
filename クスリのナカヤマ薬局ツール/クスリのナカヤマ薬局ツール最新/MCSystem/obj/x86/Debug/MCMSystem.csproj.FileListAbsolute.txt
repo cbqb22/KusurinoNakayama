@@ -1,0 +1,11 @@
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\bin\Debug\MCMSystem.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\bin\Debug\MCMSystem.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\MCMSystem\obj\x86\Debug\MCMSystem.pdb

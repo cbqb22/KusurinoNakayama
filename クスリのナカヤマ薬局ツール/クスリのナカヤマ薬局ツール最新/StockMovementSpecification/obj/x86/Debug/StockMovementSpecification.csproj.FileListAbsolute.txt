@@ -1,0 +1,245 @@
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe.config
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Themes\Generic.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\クスリのナカヤマ薬局ツール.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\StockMovementSpecification.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe.config
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\在庫HP更新ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\StockMovementSpecification.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Themes\Generic.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\クスリのナカヤマ薬局ツール.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\StockMovementSpecification.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール - コピー\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール\StockMovementSpecification\obj\x86\Debug\StockMovementSpecification.csprojResolveAssemblyReference.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe.config
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\bin\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\bin\Debug\在庫HP更新ツール.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\bin\Debug\WPFToolkit.dll
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\bin\Debug\WPFToolkit.pdb
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\MainWindow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\DateUpDown.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Calendaer\MonthCalendar.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\Home\HomeFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\DayAndDateCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\ShiftRowDayHeader.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftMainFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalRow.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\ColumnHeaderWorkTime.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\IndividualWorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\RowHeaderWorkAssignment.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkItems.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\在庫\在庫データ作成トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\移動明細書管理トップ画面.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\DocumentViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\App.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール_MarkupCompile.lref
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\MainWindow.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Themes\Generic.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SelectDateTextBox.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Buttons\SpanSelects.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\Components\SelectInputComboboxBase.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\IndividualShiftFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\InputShiftCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\シフト表\ShiftTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostCalcTable.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\CostTotalColumn.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\人件費計算\InputTotalCostCell.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\OuterFrameOTC.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\作業割り当て表\WorkAssignmentFrame.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\UserControls\移動明細書\エラーリスト表示２.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\AssignmentTableViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\CostCalcViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\Windows\ShiftViewer.baml
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.g.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\クスリのナカヤマ薬局ツール.Properties.Resources.resources
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\StockMovementSpecification.csproj.GenerateResource.Cache
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.exe
+C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockMovementSpecification\obj\x86\Debug\在庫HP更新ツール.pdb

@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="クスリのナカヤマ薬局ツール.UserControls.シフト表.Buttons.SelectDateTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:UserControls="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.Calendaer"
+    >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <UserControls:DateUpDown x:Name="年月日DateUpDown" HorizontalAlignment="Stretch"
+			  SelectedDate="{Binding RelativeSource={RelativeSource Mode=FindAncestor,
+													AncestorType={x:Type UserControl}}, Path=SelectedDate,  Mode=TwoWay, NotifyOnTargetUpdated=True}"
+      />
+        <Button Width="30" Content="C" Click="年月日カレンダ表示クリック" Grid.Column="1" />
+        <Popup x:Name="年月日カレンダポップアップ" StaysOpen="False" IsOpen="False" Placement="Bottom" PlacementTarget="{Binding ElementName=年月日DateUpDown}"  HorizontalAlignment="Left" >
+            <Border BorderThickness="1">
+                <UserControls:MonthCalendar x:Name="年月日カレンダ" DateSelected="年月日カレンダ選択" />
+            </Border>
+        </Popup>
+
+    </Grid>
+</UserControl>

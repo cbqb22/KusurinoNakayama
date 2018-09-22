@@ -1,0 +1,85 @@
+﻿<Window x:Class="OASystem.View.Windows.OrderMedicineManagementProtectAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="医薬品 検索" Height="450" Width="500"
+        WindowStartupLocation="CenterScreen"
+Background="#FF2F415F" Icon="/OASystemIcon100x100.ico">
+    <Window.Resources>
+
+        <!--ListViewItem全般-->
+        <Style TargetType="{x:Type ListViewItem}">
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsSelected" Value="true" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="LightYellow" />
+                </MultiTrigger>
+            </Style.Triggers>
+
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+
+        <DataTemplate x:Key="dtレセプト電算コード">
+            <Grid>
+                <TextBlock Text="{Binding レセプト電算コード}" HorizontalAlignment="Left"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dt医薬品名">
+            <Grid>
+                <TextBlock Text="{Binding 医薬品名}" HorizontalAlignment="Left"/>
+            </Grid>
+        </DataTemplate>
+
+        <Style TargetType="Button" x:Key="styButtonKeyword">
+            <Setter Property="HorizontalAlignment" Value="Left" />
+            <Setter Property="Background" Value="#9CAAC1" />
+        </Style>
+
+        <Style TargetType="Button" x:Key="styButton">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="12.5" />
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+
+
+
+    </Window.Resources>
+    <Grid Margin="20,20,20,20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                <TextBox x:Name="tbキーワード" Width="200" VerticalAlignment="Center" TextAlignment="Left"/>
+                <Button x:Name="btnキーワード検索" Content="キーワード検索" Width="auto" Height="25" Click="btnキーワード検索_Click"  Style="{StaticResource styButtonKeyword}"/>
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView SelectionMode="Single" x:Name="lvMedicineInfo" Height="280">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="レセプト電算コード" CellTemplate="{StaticResource dtレセプト電算コード}" Width="120"/>
+                        <GridViewColumn Header="医薬品名" CellTemplate="{StaticResource dt医薬品名}" Width="280"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+
+        </Grid>
+
+        <Grid Grid.Row="2" Margin="0,20,0,0">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Button x:Name="btn追加" Content="追加" Width="100" Height="30" Click="btn追加_Click"  Style="{StaticResource styButton}"/>
+                <Button x:Name="btn中止" Content="中止" Width="100" Height="30" Click="btn中止_Click"  Style="{StaticResource styButton}"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

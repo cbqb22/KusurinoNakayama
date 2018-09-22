@@ -1,0 +1,11 @@
+﻿<Window x:Class="MediWebOrderWatcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="100" Width="400">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="MediWebフォルダ監視中  周のテストプログラム" />
+            <Button x:Name="btn発注書作成画面起動" Content="発注書作成" Click="btn発注書作成画面起動_Click" />
+        </StackPanel>
+    </Grid>
+</Window>

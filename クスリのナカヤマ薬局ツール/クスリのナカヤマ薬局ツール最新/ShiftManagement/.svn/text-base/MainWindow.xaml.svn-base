@@ -1,0 +1,9 @@
+﻿<Window x:Class="ShiftManagement.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:home="clr-namespace:クスリのナカヤマ薬局ツール.UserControls.Home;assembly=在庫HP更新ツール"
+        Title="業務支援ツール" SizeToContent="WidthAndHeight">
+    <Grid>
+        <home:HomeFrame x:Name="homeFrame" />
+    </Grid>
+</Window>

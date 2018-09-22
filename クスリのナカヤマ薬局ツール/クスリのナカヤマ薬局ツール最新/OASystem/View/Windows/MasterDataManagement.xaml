@@ -1,0 +1,245 @@
+﻿<Window x:Class="OASystem.View.Windows.MasterDataManagement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="マスタ管理" Height="700" Width="768"
+        WindowStartupLocation="CenterScreen"
+Background="#FF2F415F" Icon="/OASystemIcon100x100.ico">
+
+    <Window.Resources>
+
+        <!--ListViewItem全般-->
+        <Style TargetType="{x:Type ListViewItem}">
+            <Style.Triggers>
+                <MultiTrigger>
+                    <MultiTrigger.Conditions>
+                        <Condition Property="IsSelected" Value="true" />
+                    </MultiTrigger.Conditions>
+                    <Setter Property="Background" Value="LightYellow" />
+                </MultiTrigger>
+            </Style.Triggers>
+
+            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+        </Style>
+
+
+
+        <Style TargetType="TextBlock" x:Key="stytblMasterDataManagementHeader">
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="Background" Value="Pink" />
+            <Setter Property="Foreground" Value="Black" />
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="stytblOtherMakerHeader">
+            <Setter Property="FontSize" Value="22" />
+            <Setter Property="Background" Value="Gray" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Height" Value="35" />
+            <Setter Property="Width" Value="200" />
+        </Style>
+
+        <Style TargetType="ComboBox" x:Key="styOtherMakerCombobox">
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="Width" Value="200" />
+        </Style>
+
+        <Style TargetType="TextBlock" x:Key="stytblIBMM">
+            <Setter Property="FontSize" Value="9" />
+        </Style>
+
+
+
+        <Style TargetType="Button" x:Key="styButton">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="40" />
+            <Setter Property="FontSize" Value="12.5" />
+            <Setter Property="Background" Value="LightYellow" />
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+
+
+        <Style x:Key="styListViewHeader" TargetType="{x:Type GridViewColumnHeader}">
+            <!--<Setter Property="Background" Value="LightGoldenrodYellow"/>
+            <Setter Property="Foreground" Value="Gray" />-->
+            <Setter Property="FontSize" Value="8.5" />
+        </Style>
+
+
+        <DataTemplate x:Key="dtBalancingAccountsMaster卸ＶＡＮコード">
+            <Grid>
+                <TextBlock Text="{Binding Path=卸ＶＡＮコード}" HorizontalAlignment="Left"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtBalancingAccountsMaster帳合先名称">
+            <Grid>
+                <TextBlock Text="{Binding Path=帳合先名称}" HorizontalAlignment="Left"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicineＪＡＮコード">
+            <Grid>
+                <TextBlock Text="{Binding Path=JANコード}" HorizontalAlignment="Center" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine医薬品名">
+            <Grid>
+                <TextBlock Text="{Binding Path=医薬品名}" HorizontalAlignment="Left" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine包装形態">
+            <Grid>
+                <TextBlock Text="{Binding Path=包装形態}" HorizontalAlignment="Center" TextAlignment="Center" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine包装単位">
+            <Grid>
+                <TextBlock Text="{Binding Path=包装単位}" HorizontalAlignment="Center" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine包装単位数">
+            <Grid>
+                <TextBlock Text="{Binding Path=包装単位数}" HorizontalAlignment="Left" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine包装総量">
+            <Grid>
+                <TextBlock Text="{Binding Path=包装総量}" HorizontalAlignment="Left" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine製薬会社">
+            <Grid>
+                <TextBlock Text="{Binding Path=製薬会社}" HorizontalAlignment="Left" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+        <DataTemplate x:Key="dtIndividualBasedManagementMedicine販売会社">
+            <Grid>
+                <TextBlock Text="{Binding Path=販売会社}" HorizontalAlignment="Left" Style="{StaticResource stytblIBMM}"/>
+            </Grid>
+        </DataTemplate>
+
+
+    </Window.Resources>
+
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0" Margin="20,10,20,10">
+                <!--<Border Margin="5" Padding="5" BorderThickness="1" Background="#FFFF9CAE" CornerRadius="10">
+                    <TextBlock Text="マスタ管理" Style="{StaticResource stytblMasterDataManagementHeader}" VerticalAlignment="Center" TextAlignment="Center" Width="300" HorizontalAlignment="Left" Background="{x:Null}" Foreground="#FF6A4747"/>
+                </Border>-->
+            </Grid>
+
+            <Grid Grid.Row="1" Margin="20,0,20,10">
+
+                <Grid>
+                    <TabControl x:Name="tcBalancingAccountsMaster" Background="#FF465A7D">
+                        <!--<TabItem Header="帳合先マスタ"  Width="350">-->
+                        <TabItem Header="帳合先マスタ"  Width="150">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="100"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+
+                                    <ListView SelectionMode="Single" x:Name="lvBalancingAccountsMaster">
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="卸ＶＡＮコード"  CellTemplate="{StaticResource dtBalancingAccountsMaster卸ＶＡＮコード}" Width="200"/>
+                                                <GridViewColumn Header="帳合先名称"  CellTemplate="{StaticResource dtBalancingAccountsMaster帳合先名称}" Width="200"/>
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                            <Button x:Name="btnBalancingAccountsMasterDelete" Content="選択を削除" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnBalancingAccountsMasterDelete_Click"/>
+                                            <Button x:Name="btnBalancingAccountsMasterAdd" Content="追加" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnBalancingAccountsMasterAdd_Click"/>
+                                            <Button x:Name="btnBalancingAccountsMasterUpload" Content="アップロード" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnBalancingAccountsMasterUpload_Click"/>
+                                            <Button x:Name="btnClose" Content="閉じる" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnClose_Click"/>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </Grid>
+
+
+                            </Grid>
+
+
+                        </TabItem>
+
+                        <!--<TabItem Header="個別管理医薬品マスタ" Width="350">-->
+                        <TabItem Header="個別管理医薬品マスタ" Width="150">
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="100"/>
+                                </Grid.RowDefinitions>
+                                <Grid Grid.Row="0">
+
+                                    <ListView SelectionMode="Single" x:Name="lvIndividualBasedManagementMedicine">
+                                        <ListView.View>
+                                            <GridView>
+                                                <GridViewColumn Header="ＪＡＮコード" HeaderContainerStyle="{StaticResource styListViewHeader}" CellTemplate="{StaticResource dtIndividualBasedManagementMedicineＪＡＮコード}" Width="75"/>
+                                                <GridViewColumn Header="医薬品名"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine医薬品名}" Width="150"/>
+                                                <GridViewColumn Header="包装形態" HeaderContainerStyle="{StaticResource styListViewHeader}"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine包装形態}" Width="50" />
+                                                <GridViewColumn Header="包装単位" HeaderContainerStyle="{StaticResource styListViewHeader}"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine包装単位}" Width="50"/>
+                                                <GridViewColumn Header="包装単位数" HeaderContainerStyle="{StaticResource styListViewHeader}"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine包装単位数}" Width="70"/>
+                                                <GridViewColumn Header="包装総量" HeaderContainerStyle="{StaticResource styListViewHeader}"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine包装総量}" Width="70"/>
+                                                <GridViewColumn Header="製薬会社"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine製薬会社}" Width="100" />
+                                                <GridViewColumn Header="販売会社"  CellTemplate="{StaticResource dtIndividualBasedManagementMedicine販売会社}" Width="100" />
+                                            </GridView>
+                                        </ListView.View>
+                                    </ListView>
+
+                                </Grid>
+
+                                <Grid Grid.Row="1">
+                                    <Grid>
+                                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,10,0">
+                                            <Button x:Name="btnIndividualBasedManagementMedicineDelete" Content="選択を削除" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnIndividualBasedManagementMedicineDelete_Click"/>
+                                            <Button x:Name="btnIndividualBasedManagementMedicineAdd" Content="追加" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnIndividualBasedManagementMedicineAdd_Click"/>
+                                            <Button x:Name="btnIndividualBasedManagementMedicineUpload" Content="アップロード" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnIndividualBasedManagementMedicineUpload_Click"/>
+                                            <Button x:Name="btnClose2" Content="閉じる" Style="{StaticResource styButton}" Margin="10,0,0,0" Click="btnClose_Click"/>
+                                        </StackPanel>
+
+                                    </Grid>
+                                </Grid>
+
+
+                            </Grid>
+
+
+                        </TabItem>
+                    </TabControl>
+                </Grid>
+                <Grid Grid.Row="1">
+
+                </Grid>
+
+
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
