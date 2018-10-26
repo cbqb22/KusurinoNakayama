@@ -244,3 +244,4 @@ Tools/ConstructEnvironment/FileList.txt
 **/.asciidoctor/*
 Tools/NMeCab0.07/dic/ipadic/sys.dic
 Framework/WrapperDll.Mecab/Lib/dic/ipadic/sys.dic
+*.suo
