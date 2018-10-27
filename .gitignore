@@ -245,3 +245,9 @@ Tools/ConstructEnvironment/FileList.txt
 Tools/NMeCab0.07/dic/ipadic/sys.dic
 Framework/WrapperDll.Mecab/Lib/dic/ipadic/sys.dic
 *.suo
+PharmacyTool最新/PharmacyTool.suo
+*.cache
+PharmacyTool最新/PharmacyTool.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
+PharmacyTool最新/View/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+*.cache
