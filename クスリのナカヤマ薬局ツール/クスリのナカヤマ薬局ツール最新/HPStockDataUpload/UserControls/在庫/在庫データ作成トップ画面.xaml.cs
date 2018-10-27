@@ -314,7 +314,7 @@ namespace クスリのナカヤマ薬局ツール.UserControls.在庫
                     string myFile = System.IO.Path.Combine(DestinationPath, Settings.現在庫出力ファイル名);
 
                     WebRequest req = WebRequest.Create(uri);
-                    NetworkCredential nc = new NetworkCredential(Settings.FtpID, Settings.FtpCredent);
+                    NetworkCredential nc = new NetworkCredential(Settings.FtpId, Settings.FtpCredential);
                     req.Credentials = nc;
                     req.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -358,7 +358,7 @@ namespace クスリのナカヤマ薬局ツール.UserControls.在庫
                     //string myFile = System.IO.Path.Combine(DestinationPath, string.Format("使用量データ_{0}{1}.csv", cmbYear.SelectedValue.ToString().Replace("更新年: ", "").Replace("年", ""), cmbMonth.SelectedValue.ToString().Replace("更新月: ", "").Replace("月", "")));
 
                     WebRequest req = WebRequest.Create(uri);
-                    NetworkCredential nc = new NetworkCredential(Settings.FtpID, Settings.FtpCredent);
+                    NetworkCredential nc = new NetworkCredential(Settings.FtpId, Settings.FtpCredential);
                     req.Credentials = nc;
                     req.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -409,7 +409,7 @@ namespace クスリのナカヤマ薬局ツール.UserControls.在庫
                     string myFile = System.IO.Path.Combine(DestinationPath, Settings.不動品出力ファイル名);
 
                     WebRequest req = WebRequest.Create(uri);
-                    NetworkCredential nc = new NetworkCredential(Settings.FtpID, Settings.FtpCredent);
+                    NetworkCredential nc = new NetworkCredential(Settings.FtpId, Settings.FtpCredential);
                     req.Credentials = nc;
                     req.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -1152,9 +1152,8 @@ namespace クスリのナカヤマ薬局ツール.UserControls.在庫
             string uri = Settings.ZaikoGenericHandlerPath;
             UriBuilder ub = new UriBuilder(uri);
             ub.Query = string.Format("Type={0}&Operation={1}", "Merge", マージタイプ);
-            //ub.Query = string.Format("{1}filename={0}&GetBytes=true&Type={2}", UploadingFileName, string.IsNullOrEmpty(ub.Query) ? "" : ub.Query.Remove(0, 1) + "&", "在庫関連");
             WebClient client = new WebClient();
-            client.Credentials = new System.Net.NetworkCredential(クスリのナカヤマ薬局ツール.共通.Settings.BasicID, クスリのナカヤマ薬局ツール.共通.Settings.BasicCredent);
+            client.Credentials = new System.Net.NetworkCredential(クスリのナカヤマ薬局ツール.共通.Settings.BasicId, クスリのナカヤマ薬局ツール.共通.Settings.BasicCredential);
             client.DownloadStringCompleted += new DownloadStringCompletedEventHandler(client_DownloadStringCompleted);
             client.DownloadStringAsync(ub.Uri);
         }

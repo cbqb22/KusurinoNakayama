@@ -31,6 +31,5 @@ namespace クスリのナカヤマ薬局ツール
         {
             tblVersion.Text = string.Format("Version {0}",クスリのナカヤマ薬局ツール.Model.DI.在庫HP更新ツールVersionName);
         }
-
     }
 }

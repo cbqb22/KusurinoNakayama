@@ -24,7 +24,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
                 //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
+                ftpReq.Credentials = new System.Net.NetworkCredential(Settings.FtpId, Settings.FtpCredential);
                 //MethodにWebRequestMethods.Ftp.ListDirectoryDetails("LIST")を設定
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.ListDirectory;
                 //要求の完了後に接続を閉じる
@@ -72,7 +72,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
                 //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
+                ftpReq.Credentials = new System.Net.NetworkCredential(Settings.FtpId, Settings.FtpCredential);
                 //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
                 //要求の完了後に接続を閉じる

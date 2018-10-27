@@ -19,7 +19,7 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                 SIO.Directory.CreateDirectory(savePath);
             }
 
-            string downloadVersionDatLocalPath = SIO.Path.Combine(savePath, "Version.dat");
+            string downloadVersionDatLocalPath = SIO.Path.Combine(savePath, Settings.VerdatFileName);
             List<string> needApplyVersionList = new List<string>();
 
             try
@@ -63,7 +63,7 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                 // ClearOldProcess
                 ClearOldProcess();
             }
-            catch(System.Exception ex)
+            catch (System.Exception ex)
             {
                 // とりあえずfalseで返しておく.
                 throw ex;
@@ -88,12 +88,12 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                     {
                         var sepa = file.Split('\\');
                         var filename = sepa[sepa.Count() - 1];
-                        System.IO.File.Copy(file, SIO.Path.Combine(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールRootPath, filename), true);
+                        System.IO.File.Copy(file, SIO.Path.Combine(Settings.StockUpdaterRootFolder, filename), true);
                     }
                 }
 
                 // Version.datを適用
-                System.IO.File.Copy(downloadVersiondat, SIO.Path.Combine(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールRootPath, "Version.dat"), true);
+                System.IO.File.Copy(downloadVersiondat, Settings.VersionDatLocalPath, true);
 
             }
             catch (System.Exception ex)
@@ -112,10 +112,10 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
 
             try
             {
-                DownloadCenter.DownloadFile(クスリのナカヤマ薬局ツール.Properties.Settings.Default.VersionDatServerPath, downloadVersionDatLocalPath);
+                DownloadCenter.DownloadFile(Settings.VersionDatServerPath, downloadVersionDatLocalPath);
 
                 using (SIO.StreamReader sr = new SIO.StreamReader(downloadVersionDatLocalPath, Encoding.GetEncoding(932)))
-                using (SIO.StreamReader sr2 = new SIO.StreamReader(クスリのナカヤマ薬局ツール.Properties.Settings.Default.VersionDatLocalPath, Encoding.GetEncoding(932)))
+                using (SIO.StreamReader sr2 = new SIO.StreamReader(Settings.VersionDatLocalPath, Encoding.GetEncoding(932)))
                 {
                     string line = "";
                     while ((line = sr.ReadLine()) != null)
@@ -158,19 +158,17 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
             try
             {
                 // バックアップの作成
-                if (!System.IO.Directory.Exists(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールBackUpPath))
+                if (!System.IO.Directory.Exists(Settings.StockUpdaterRootBackUpPath))
                 {
-                    System.IO.Directory.CreateDirectory(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールBackUpPath);
+                    System.IO.Directory.CreateDirectory(Settings.StockUpdaterRootBackUpPath);
                 }
-                bkPath = System.IO.Path.Combine(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールBackUpPath, DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss"));
-                File.GeneralMethods.CopyDirectory(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールRootPath, bkPath,false);
+                bkPath = System.IO.Path.Combine(Settings.StockUpdaterRootBackUpPath, DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss"));
+                File.GeneralMethods.CopyDirectory(Settings.StockUpdaterRootFolder, bkPath, false);
 
                 // 一旦、別アプリへ名前変更
                 var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                System.IO.File.Delete(System.IO.Path.Combine(baseDir, "在庫HP更新ツール.old"));
-                //System.IO.File.Copy(System.IO.Path.Combine(baseDir, "OASystem.exe"), System.IO.Path.Combine(baseDir, "OASystem2.exe"));
-                System.IO.File.Move(System.IO.Path.Combine(baseDir, "在庫HP更新ツール.exe"), System.IO.Path.Combine(baseDir, "在庫HP更新ツール.old"));
-                //System.IO.File.Move(System.IO.Path.Combine(baseDir, "OASystem2.exe"), System.IO.Path.Combine(baseDir, "OASystem.exe"));
+                System.IO.File.Delete(System.IO.Path.Combine(baseDir, Settings.OldExeName));
+                System.IO.File.Move(System.IO.Path.Combine(baseDir, Settings.ExeName), System.IO.Path.Combine(baseDir, Settings.OldExeName));
             }
             catch (System.Exception ex)
             {
@@ -183,15 +181,15 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
         public static void RollBackPrepair()
         {
             var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            System.IO.File.Delete(System.IO.Path.Combine(baseDir, "在庫HP更新ツール.exe"));
-            System.IO.File.Move(System.IO.Path.Combine(baseDir, "在庫HP更新ツール.old"), System.IO.Path.Combine(baseDir, "在庫HP更新ツール.exe"));
+            System.IO.File.Delete(System.IO.Path.Combine(baseDir, Settings.ExeName));
+            System.IO.File.Move(System.IO.Path.Combine(baseDir, Settings.OldExeName), System.IO.Path.Combine(baseDir, Settings.ExeName));
         }
 
         public static bool DownloadUpdateFile(List<string> needApplyVersionList, string savePath)
         {
             try
             {
-                List<string> fileListInfo = DownloadCenter.DownloadFileList(クスリのナカヤマ薬局ツール.Properties.Settings.Default.UpdateFolderServerPath);
+                List<string> fileListInfo = DownloadCenter.DownloadFileList(Settings.UpdateFolderServerPath);
                 if (fileListInfo.Count == 0)
                 {
                     throw new System.Exception("サーバー在庫HP更新ツールのUpdateフォルダー内が空です。");
@@ -200,7 +198,7 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                 foreach (var folder in fileListInfo)
                 {
                     // datファイルは飛ばす
-                    if (folder == "Version.dat")
+                    if (folder == Settings.VersionDatLocalPath)
                     {
                         continue;
                     }
@@ -212,8 +210,7 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                     }
 
                     // それ以外はフォルダしかないことが前提
-
-                    string downloadFolder = クスリのナカヤマ薬局ツール.Properties.Settings.Default.UpdateFolderServerPath + "/" + folder;
+                    string downloadFolder = Settings.UpdateFolderServerPath + "/" + folder;
                     List<string> fli = DownloadCenter.DownloadFileList(downloadFolder);
 
                     foreach (var f in fli)
@@ -249,12 +246,11 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
         {
             try
             {
-                var proc = Process.Start(SIO.Path.Combine(クスリのナカヤマ薬局ツール.Properties.Settings.Default.在庫HP更新ツールRootPath, "在庫HP更新ツール.exe"), "/up " + Process.GetCurrentProcess().Id);
+                var proc = Process.Start(SIO.Path.Combine(Settings.StockUpdaterRootFolder, Settings.ExeName), "/up " + Process.GetCurrentProcess().Id);
                 if (proc == null)
                 {
                     return false;
                 }
-                //Process.Start("OASystem.exe", "/up " + Process.GetCurrentProcess().Id); //DEBUG用
             }
             catch (System.Exception ex)
             {

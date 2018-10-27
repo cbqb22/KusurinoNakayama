@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\
+C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\
 StockManagement
 none
 false
 DEBUG;TRACE
-C:\Users\poohace\Desktop\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\App.xaml
+C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\App.xaml
 13-737744806
 
 52578635325
-17-661009415
+172062634447
 MainWindow.xaml;View\DeadStockFrame.xaml;View\MessageBoxTopWindow.xaml;View\NumericUpDown.xaml;View\ProgressBar\CompletedCountProgress.xaml;View\ProgressBar\CompletedCountProgressBarWindow.xaml;View\ProgressBar\DownloadingProgress.xaml;View\ProgressBar\ProgressBarWindow.xaml;View\Settings\ExceptiveMedicineAdd.xaml;View\Settings\ExceptiveMedicinesList.xaml;View\Settings\SettingsFrame.xaml;View\Settings\SettingsWindow.xaml;View\Settings\StoreSettingsUserControl.xaml;
 
-False
+True
 

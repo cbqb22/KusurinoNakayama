@@ -8,6 +8,7 @@ using クスリのナカヤマ薬局ツール.共通.Program;
 using System.Diagnostics;
 using System.IO;
 using クスリのナカヤマ薬局ツール.共通.File;
+using クスリのナカヤマ薬局ツール.共通;
 
 namespace クスリのナカヤマ薬局ツール
 {
@@ -35,7 +36,7 @@ namespace クスリのナカヤマ薬局ツール
             }
 
             DateTime startDate = DateTime.Now;
-            string savePath = Path.Combine(クスリのナカヤマ薬局ツール.Properties.Settings.Default.UpdateLocalFolder, startDate.ToString("yyyy.MM.dd.HHmmss"));
+            string savePath = Path.Combine(Settings.UpdateLocalFolder, startDate.ToString("yyyy.MM.dd.HHmmss"));
 
             try
             {

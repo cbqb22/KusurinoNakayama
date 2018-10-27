@@ -9,10 +9,9 @@ namespace クスリのナカヤマ薬局ツール.共通.File
 {
     public static class SettingsIniController
     {
-
         public static void SetVersionNameToDI()
         {
-            using (StreamReader sr = new StreamReader(クスリのナカヤマ薬局ツール.Properties.Settings.Default.VersionDatLocalPath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(Settings.VersionDatLocalPath, Encoding.GetEncoding(932)))
             {
                 string line = "";
                 string version = "";
@@ -29,7 +28,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
 
         public static void DoWrite(string 現在庫ファイルパス, string 使用量ファイルパス, string 不動品ファイルパス, string 出力先フォルダ名,string 出力店舗名称)
         {
-            using (StreamWriter sw = new StreamWriter(クスリのナカヤマ薬局ツール.Properties.Settings.Default.SettingsIniLocalPath, false, Encoding.GetEncoding(932)))
+            using (StreamWriter sw = new StreamWriter(Settings.SettingsIniLocalPath, false, Encoding.GetEncoding(932)))
             {
                 sw.WriteLine(string.Format("[現在庫データファイル]={0}", 現在庫ファイルパス));
                 sw.WriteLine(string.Format("[使用量データファイル]={0}", 使用量ファイルパス));
@@ -50,9 +49,9 @@ namespace クスリのナカヤマ薬局ツール.共通.File
 
         public static void DoLoad()
         {
-            if (!System.IO.File.Exists(クスリのナカヤマ薬局ツール.Properties.Settings.Default.SettingsIniLocalPath))
+            if (!System.IO.File.Exists(Settings.SettingsIniLocalPath))
             {
-                using (StreamWriter sw = new StreamWriter(クスリのナカヤマ薬局ツール.Properties.Settings.Default.SettingsIniLocalPath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(Settings.SettingsIniLocalPath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("[現在庫データファイル]=");
                     sw.WriteLine("[使用量データファイル]=");
@@ -64,7 +63,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 }
             }
 
-            using (StreamReader sr = new StreamReader(クスリのナカヤマ薬局ツール.Properties.Settings.Default.SettingsIniLocalPath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(Settings.SettingsIniLocalPath, Encoding.GetEncoding(932)))
             {
                 string line = "";
                 while ((line = sr.ReadLine()) != null)
@@ -93,9 +92,5 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 }
             }
         }
-
-
-
-
     }
 }
