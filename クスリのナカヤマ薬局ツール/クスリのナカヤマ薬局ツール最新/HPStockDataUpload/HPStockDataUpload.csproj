@@ -183,6 +183,7 @@
     <Compile Include="Windows\ShiftViewer.xaml.cs">
       <DependentUpon>ShiftViewer.xaml</DependentUpon>
     </Compile>
+    <Compile Include="共通\Encrypts\AESCrypter.cs" />
     <Compile Include="共通\Exception\ExtendException.cs" />
     <Compile Include="共通\File\DownloadCenter.cs" />
     <Compile Include="共通\File\GeneralMethods.cs" />

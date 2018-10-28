@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Configuration;
+using クスリのナカヤマ薬局ツール.共通.Encrypts;
 
 namespace クスリのナカヤマ薬局ツール.共通
 {
@@ -11,12 +12,12 @@ namespace クスリのナカヤマ薬局ツール.共通
         static Settings()
         {
             FtpAddress = ConfigurationManager.AppSettings["FtpAddress"].ToString();
-            FtpId = ConfigurationManager.AppSettings["FtpId"].ToString();
-            FtpCredential = ConfigurationManager.AppSettings["FtpCredential"].ToString();
+            FtpId = AESCrypter.Decrypt(ConfigurationManager.AppSettings["FtpId"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
+            FtpCredential = AESCrypter.Decrypt(ConfigurationManager.AppSettings["FtpCredential"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
             UsePassive = Convert.ToBoolean(ConfigurationManager.AppSettings["UsePassive"]);
 
-            BasicId = ConfigurationManager.AppSettings["BasicId"].ToString();
-            BasicCredential = ConfigurationManager.AppSettings["BasicCredential"].ToString();
+            BasicId = AESCrypter.Decrypt(ConfigurationManager.AppSettings["BasicId"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
+            BasicCredential = AESCrypter.Decrypt(ConfigurationManager.AppSettings["BasicCredential"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
 
             if (string.IsNullOrEmpty(FtpAddress))
                 throw new ConfigurationErrorsException("設定ファイルに 'FtpAddress 'が設定されていません。");
