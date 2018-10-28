@@ -30,7 +30,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
                 //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
+                ftpReq.UsePassive = Settings.UsePassive;
 
                 //FtpWebResponseを取得
 
@@ -80,7 +80,7 @@ namespace クスリのナカヤマ薬局ツール.共通.File
                 //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
                 //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
+                ftpReq.UsePassive = Settings.UsePassive;
                 // タイムアウトは６０秒とする
                 ftpReq.Timeout = 60000;
                 //FtpWebResponseを取得
