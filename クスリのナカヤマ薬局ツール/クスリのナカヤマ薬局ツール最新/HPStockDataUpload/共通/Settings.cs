@@ -11,7 +11,7 @@ namespace クスリのナカヤマ薬局ツール.共通
     {
         static Settings()
         {
-            FtpAddress = ConfigurationManager.AppSettings["FtpAddress"].ToString();
+            FtpAddress = new Uri(ConfigurationManager.AppSettings["FtpAddress"].ToString());
             FtpId = AESCrypter.Decrypt(ConfigurationManager.AppSettings["FtpId"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
             FtpCredential = AESCrypter.Decrypt(ConfigurationManager.AppSettings["FtpCredential"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
             UsePassive = Convert.ToBoolean(ConfigurationManager.AppSettings["UsePassive"]);
@@ -19,7 +19,7 @@ namespace クスリのナカヤマ薬局ツール.共通
             BasicId = AESCrypter.Decrypt(ConfigurationManager.AppSettings["BasicId"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
             BasicCredential = AESCrypter.Decrypt(ConfigurationManager.AppSettings["BasicCredential"].ToString(), AESCrypter.AES_IV, AESCrypter.AES_Key);
 
-            if (string.IsNullOrEmpty(FtpAddress))
+            if (string.IsNullOrEmpty(FtpAddress.OriginalString))
                 throw new ConfigurationErrorsException("設定ファイルに 'FtpAddress 'が設定されていません。");
 
             if (string.IsNullOrEmpty(FtpId))
@@ -36,7 +36,7 @@ namespace クスリのナカヤマ薬局ツール.共通
         }
 
         // From exe.config
-        public static string FtpAddress;
+        public static Uri FtpAddress;
         public static string FtpId;
         public static string FtpCredential;
         public static bool UsePassive;
@@ -58,60 +58,18 @@ namespace クスリのナカヤマ薬局ツール.共通
         public const string StockUpdaterRootBackUpPath = @"C:\在庫HP更新ツールBkUp";
 
         // FtpServerInfo
-        public static string Ftp現在庫Path { get { return FtpAddress + "PharmacyTool/ClientBin/在庫関連/現在庫"; } }
-        public static string Ftp使用量2Path { get { return FtpAddress + "PharmacyTool/ClientBin/在庫関連/使用量2"; } }
-        public static string Ftp不動品Path { get { return FtpAddress + "PharmacyTool/ClientBin/在庫関連/不動品"; } }
+        public static string Ftp現在庫Path { get { return new Uri(FtpAddress, "PharmacyTool/ClientBin/在庫関連/現在庫").ToString(); } }
+        public static string Ftp使用量2Path { get { return new Uri(FtpAddress, "PharmacyTool/ClientBin/在庫関連/使用量2").ToString(); } }
+        public static string Ftp不動品Path { get { return new Uri(FtpAddress, "PharmacyTool/ClientBin/在庫関連/不動品").ToString(); } }
 
-        public static string UpdateFolderServerPath { get { return FtpAddress + "Update/在庫HP更新ツール"; } }
-        public static string VersionDatServerPath { get { return FtpAddress + "Update/在庫HP更新ツール/" + VerdatFileName; } }
+        public static string UpdateFolderServerPath { get { return new Uri(FtpAddress , "Update/在庫HP更新ツール").ToString(); } }
+        public static string VersionDatServerPath { get { return new Uri(FtpAddress , "Update/在庫HP更新ツール/" + VerdatFileName).ToString(); } }
 
         // HpInfo
         public const string HpBaseAddress = @"http://www.kusurinonakayama.jp/";
         public const string ZaikoGenericHandlerPath = HpBaseAddress + @"PharmacyTool/GenericHandler/在庫データFileUpload.ashx";
         public static string BasicId;
         public static string BasicCredential;
-
-#if DEBUG
-
-
-        //// Credencial
-        //public const string FtpID = "a10254737";
-        //public const string FtpCredent = "C_hwJ5Eg";
-
-        //// Http Basic
-        //public const string BasicID = "poohace";
-        //public const string BasicCredent = "cbqb22";
-
-        //// Path   
-        //public const string ZaikoGenericHandlerPath = @"http://localhost:56305/GenericHandler/在庫データFileUpload.ashx";
-        //public const string FtpRootPath = "ftp://ftp.my-world.me/httpdocs/";
-        //public const string Ftp現在庫Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/現在庫";
-        ////こっちはもう使わない
-        ////public const string Ftp使用量Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量";
-        //public const string Ftp使用量2Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量2";
-        //public const string Ftp不動品Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/不動品";
-
-#else
-
-        // Credencial
-        public const string FtpID = "a10254737";
-        public const string FtpCredent = "C_hwJ5Eg";
-
-        // Http Basic
-        public const string BasicID = "poohace";
-        public const string BasicCredent = "cbqb22";
-
-        // Path   
-        public const string ZaikoGenericHandlerPath = @"http://www.my-world.me/PharmacyTool/GenericHandler/在庫データFileUpload.ashx";
-        public const string FtpRootPath = "ftp://ftp.my-world.me/httpdocs/";
-        public const string Ftp現在庫Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/現在庫";
-        //こっちはもう使わない
-        //public const string Ftp使用量Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量";
-        public const string Ftp使用量2Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量2";
-        public const string Ftp不動品Path = "ftp://ftp.my-world.me/httpdocs/PharmacyTool/ClientBin/在庫関連/不動品";
-
-#endif
-
     }
 
 }
