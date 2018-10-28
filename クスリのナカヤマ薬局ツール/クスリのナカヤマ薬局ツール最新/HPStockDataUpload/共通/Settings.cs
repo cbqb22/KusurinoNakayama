@@ -46,6 +46,7 @@ namespace クスリのナカヤマ薬局ツール.共通
         public const string 使用量2出力ファイル名 = "使用量2データ.csv";
         public const string 不動品出力ファイル名 = "不動品データ.csv";
         public const string VerdatFileName = "Version.dat";
+        public const string SuggestFileName = "ここはdatとこのファイル以外は全てフォルダ.txt";
         public const string OldExeName = "在庫HP更新ツール.old";
         public const string ExeName = "在庫HP更新ツール.exe";
 

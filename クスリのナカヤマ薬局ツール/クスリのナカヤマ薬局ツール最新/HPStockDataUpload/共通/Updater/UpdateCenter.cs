@@ -198,13 +198,14 @@ namespace クスリのナカヤマ薬局ツール.共通.Updater
                 foreach (var folder in fileListInfo)
                 {
                     // datファイルは飛ばす
-                    if (folder == Settings.VersionDatLocalPath)
+                    //if (folder == Settings.VersionDatLocalPath)
+                    if (folder == Settings.VerdatFileName)
                     {
                         continue;
                     }
 
                     // 警告ファイルも飛ばす
-                    if (folder == "ここはdatとこのファイル以外は全てフォルダ.txt")
+                    if (folder == Settings.SuggestFileName)
                     {
                         continue;
                     }
