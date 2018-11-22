@@ -376,7 +376,7 @@ where TChild : DependencyObject
             UploadCenter.Upload帳合先チェックマスタ_医薬品別(ofd.FileName);
 
             // ローカルも更新
-            System.IO.File.Copy(ofd.FileName, OASystem.Properties.Settings.Default.Download帳合先チェックマスタ医薬品別FilePath, true);
+            System.IO.File.Copy(ofd.FileName, OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath, true);
 
             Set医薬品別ListView();
 
@@ -447,7 +447,7 @@ where TChild : DependencyObject
             UploadCenter.Upload帳合先チェックマスタ_メーカー別(ofd.FileName);
 
             // ローカルも更新
-            System.IO.File.Copy(ofd.FileName, OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath, true);
+            System.IO.File.Copy(ofd.FileName, OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath, true);
 
             SetMakerListView();
 
@@ -494,7 +494,7 @@ where TChild : DependencyObject
 
 
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMedicineSortFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.TempBalancingAccountsCheckMedicineSortFilePath, false, Encoding.GetEncoding(932)))
                 {
 
                     sw.WriteLine("JANコード,レセプト電算コード,医薬品名,包装形態,包装単位,包装単位数,包装総量,剤形区分,メーカー名,帳合先,修正後帳合先,JAN管理");
@@ -614,10 +614,10 @@ where TChild : DependencyObject
                     sw.Flush();
                 }
 
-                UploadCenter.Upload帳合先チェックマスタ_医薬品別(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMedicineSortFilePath);
+                UploadCenter.Upload帳合先チェックマスタ_医薬品別(OASystem.Common.Settings.TempBalancingAccountsCheckMedicineSortFilePath);
 
                 // ローカルも更新
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMedicineSortFilePath, OASystem.Properties.Settings.Default.Download帳合先チェックマスタ医薬品別FilePath, true);
+                System.IO.File.Copy(OASystem.Common.Settings.TempBalancingAccountsCheckMedicineSortFilePath, OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath, true);
 
                 MessageBox.Show("帳合先チェックマスタ_医薬品別データを更新しました。", "確認", MessageBoxButton.OK, MessageBoxImage.Information);
 
@@ -699,7 +699,7 @@ where TChild : DependencyObject
                 }
 
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMakerSortFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.TempBalancingAccountsCheckMakerSortFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("メーカー名,卸VANコード,帳合先名称");
                     sw.WriteLine(string.Format("その他のメーカー,{0},{1}", その他のメーカーVANコード, その他のメーカー帳合先名称));
@@ -748,10 +748,10 @@ where TChild : DependencyObject
                     sw.Flush();
                 }
 
-                UploadCenter.Upload帳合先チェックマスタ_メーカー別(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMakerSortFilePath);
+                UploadCenter.Upload帳合先チェックマスタ_メーカー別(OASystem.Common.Settings.TempBalancingAccountsCheckMakerSortFilePath);
 
                 // ローカルも更新
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.TempBalancingAccountsCheckMakerSortFilePath, OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath, true);
+                System.IO.File.Copy(OASystem.Common.Settings.TempBalancingAccountsCheckMakerSortFilePath, OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath, true);
 
                 MessageBox.Show("帳合先チェックマスタ_メーカー別データを更新しました。", "確認", MessageBoxButton.OK, MessageBoxImage.Information);
 

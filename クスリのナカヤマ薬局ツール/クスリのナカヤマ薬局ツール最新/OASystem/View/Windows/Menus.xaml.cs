@@ -53,7 +53,7 @@ namespace OASystem.View.Windows
 
         void Menus_Closed(object sender, EventArgs e)
         {
-            //ControlProgram.EndProgram(OASystem.Properties.Settings.Default.OASystemProcessName);
+            //ControlProgram.EndProgram(OASystem.Common.Settings.OASystemProcessName);
             ControlProgram.EndProgram(Process.GetCurrentProcess().ProcessName);
         }
 
@@ -67,7 +67,7 @@ namespace OASystem.View.Windows
             }
             else
             {
-                var sendList = SEND01DATAnalyzer.DoAnalyze(OASystem.Properties.Settings.Default.SENDO1DATFilePath);
+                var sendList = SEND01DATAnalyzer.DoAnalyze(OASystem.Common.Settings.SENDO1DATFilePath);
                 if (sendList.Count == 0)
                 {
                     MessageBox.Show("発注する医薬品がありません。", "確認", MessageBoxButton.OK, MessageBoxImage.Exclamation);
@@ -302,14 +302,14 @@ namespace OASystem.View.Windows
 
         private void btnMediWebOpen_Click(object sender, RoutedEventArgs e)
         {
-            //var str = ControlProgram.StartProgram(OASystem.Properties.Settings.Default.MediWebProgramPath, OASystem.Properties.Settings.Default.MediWebProcessName);
+            //var str = ControlProgram.StartProgram(OASystem.Common.Settings.MediWebProgramPath, OASystem.Common.Settings.MediWebProcessName);
             if (OASystem.Model.DI.MEDICODEWebSRFIlePath == null)
             {
                 MessageBox.Show("MEDICODE-WebSRのパスが設定されてません。設定画面より設定してください。", "エラー", MessageBoxButton.OK, MessageBoxImage.Error);
                 return;
             }
 
-            var str = ControlProgram.StartProgram(OASystem.Model.DI.MEDICODEWebSRFIlePath, OASystem.Properties.Settings.Default.MediWebProcessName);
+            var str = ControlProgram.StartProgram(OASystem.Model.DI.MEDICODEWebSRFIlePath, OASystem.Common.Settings.MediWebProcessName);
             if (str != null)
             {
                 MessageBox.Show(str, "エラー", MessageBoxButton.OK, MessageBoxImage.Error);

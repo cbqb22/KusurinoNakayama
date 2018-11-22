@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using OASystem.Properties;
+using OASystem.Common;
 
 namespace OASystem.ViewModel.File
 {
@@ -11,9 +12,9 @@ namespace OASystem.ViewModel.File
     {
         public static void FolderCheck()
         {
-            if (!Directory.Exists(Settings.Default.TempFilesFolderPath))
+            if (!Directory.Exists(Settings.TempFilesFolderPath))
             {
-                Directory.CreateDirectory(Settings.Default.TempFilesFolderPath);
+                Directory.CreateDirectory(Settings.TempFilesFolderPath);
             }
         }
     }

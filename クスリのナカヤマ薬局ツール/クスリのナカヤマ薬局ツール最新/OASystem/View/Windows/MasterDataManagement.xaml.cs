@@ -49,7 +49,7 @@ namespace OASystem.View.Windows
         {
             // 帳合先マスタ読み込み
             List<BalancingAccountsEntity> list = new List<BalancingAccountsEntity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download帳合先マスタFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download帳合先マスタFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";
@@ -155,7 +155,7 @@ namespace OASystem.View.Windows
                     }
                 }
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.TempBlancingAccountsFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.TempBlancingAccountsFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("卸VANコード,帳合先名称,表示順");
 
@@ -167,11 +167,11 @@ namespace OASystem.View.Windows
                 }
 
 
-                string uri = OASystem.Properties.Settings.Default.UploadPath帳合先マスタCSV;
-                string myFile = OASystem.Properties.Settings.Default.TempBlancingAccountsFilePath;
+                string uri = OASystem.Common.Settings.UploadPath帳合先マスタCSV;
+                string myFile = OASystem.Common.Settings.TempBlancingAccountsFilePath;
 
                 WebRequest req = WebRequest.Create(uri);
-                NetworkCredential nc = new NetworkCredential("a10254880", "hxzn9jXQ");
+                NetworkCredential nc = new NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 req.Credentials = nc;
                 req.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -189,7 +189,7 @@ namespace OASystem.View.Windows
                 }
 
                 // ローカルも更新
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.TempBlancingAccountsFilePath,OASystem.Properties.Settings.Default.Download帳合先マスタFilePath,true);
+                System.IO.File.Copy(OASystem.Common.Settings.TempBlancingAccountsFilePath,OASystem.Common.Settings.Download帳合先マスタFilePath,true);
                 // DI更新
                 Model.DI.帳合先マスタ = lvBalancingAccountsMaster.ItemsSource as List<BalancingAccountsEntity>;
 
@@ -262,7 +262,7 @@ namespace OASystem.View.Windows
                     }
                 }
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.TempIndividualBasedMedicineFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.TempIndividualBasedMedicineFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("JANコード,医薬品名称,包装形態,包装単位,包装単位数,包装総量,剤形区分,製薬会社,販売会社");
 
@@ -274,11 +274,11 @@ namespace OASystem.View.Windows
                 }
 
 
-                string uri = OASystem.Properties.Settings.Default.UploadPath個別管理医薬品マスタCSV;
-                string myFile = OASystem.Properties.Settings.Default.TempIndividualBasedMedicineFilePath;
+                string uri = OASystem.Common.Settings.UploadPath個別管理医薬品マスタCSV;
+                string myFile = OASystem.Common.Settings.TempIndividualBasedMedicineFilePath;
 
                 WebRequest req = WebRequest.Create(uri);
-                NetworkCredential nc = new NetworkCredential("a10254880", "hxzn9jXQ");
+                NetworkCredential nc = new NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 req.Credentials = nc;
                 req.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -296,7 +296,7 @@ namespace OASystem.View.Windows
                 }
 
                 // ローカルも更新
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.TempIndividualBasedMedicineFilePath, OASystem.Properties.Settings.Default.Download個別管理医薬品マスタFilePath, true);
+                System.IO.File.Copy(OASystem.Common.Settings.TempIndividualBasedMedicineFilePath, OASystem.Common.Settings.Download個別管理医薬品マスタFilePath, true);
                 // DI更新
                 Model.DI.個別管理医薬品マスタ = lvIndividualBasedManagementMedicine.ItemsSource as List<IndividualBasedManagementMedicineEntity>;
                 DownloadCenter.Setメーカー名リスト(); // メーカー名が追加されているかもしれないので再セット

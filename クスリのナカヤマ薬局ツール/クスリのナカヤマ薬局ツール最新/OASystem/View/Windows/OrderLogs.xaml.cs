@@ -57,7 +57,7 @@ namespace OASystem.View.Windows
 
         private void Init()
         {
-            var paths = Directory.GetFiles(OASystem.Properties.Settings.Default.OrderLogsFolderPath).OrderByDescending(x => x).ToList();
+            var paths = Directory.GetFiles(OASystem.Common.Settings.OrderLogsFolderPath).OrderByDescending(x => x).ToList();
 
             Dictionary<DateTime, List<OrderLogListEntity>> sl = new Dictionary<DateTime, List<OrderLogListEntity>>();
 
@@ -458,14 +458,14 @@ namespace OASystem.View.Windows
         {
             try
             {
-                var existsLogFilepaths = System.IO.Directory.GetFiles(OASystem.Properties.Settings.Default.OrderLogsFolderPath);
+                var existsLogFilepaths = System.IO.Directory.GetFiles(OASystem.Common.Settings.OrderLogsFolderPath);
                 var modifyFilePath = new List<string>();
 
                 foreach (KeyValuePair<DateTime, List<OrderLogListEntity>> logdata in lvOrderLogs.ItemsSource)
                 {
                     //var selecteditem = (KeyValuePair<DateTime, List<OrderLogListEntity>>)lvOrderLogs.SelectedItem;
 
-                    var savepath = System.IO.Path.Combine(OASystem.Properties.Settings.Default.OrderLogsFolderPath, logdata.Key.ToString("yyyyMMddHHmmss.fff") + ".csv");
+                    var savepath = System.IO.Path.Combine(OASystem.Common.Settings.OrderLogsFolderPath, logdata.Key.ToString("yyyyMMddHHmmss.fff") + ".csv");
                     using (StreamWriter sw = new StreamWriter(savepath, false, Encoding.GetEncoding(932)))
                     {
                         sw.WriteLine(string.Format("自店舗名,発注先店舗名,レセプト電算コード,医薬品名,包装形態,包装単位,包装単位数,包装総量,剤形区分,注文数,期限切迫,デッド"));
@@ -530,7 +530,7 @@ namespace OASystem.View.Windows
 
             if (MessageBox.Show(string.Format("【{0}】の発注履歴を削除します。\r\n\r\n削除を実行しますか？", val.Key.ToString("yyyy/MM/dd HH:mm:ss")), "確認", MessageBoxButton.OK, MessageBoxImage.Information) == MessageBoxResult.OK)
             {
-                var deletepath = System.IO.Path.Combine(OASystem.Properties.Settings.Default.OrderLogsFolderPath, val.Key.ToString("yyyyMMddHHmmss.fff") + ".csv");
+                var deletepath = System.IO.Path.Combine(OASystem.Common.Settings.OrderLogsFolderPath, val.Key.ToString("yyyyMMddHHmmss.fff") + ".csv");
 
 
                 if (!File.Exists(deletepath))

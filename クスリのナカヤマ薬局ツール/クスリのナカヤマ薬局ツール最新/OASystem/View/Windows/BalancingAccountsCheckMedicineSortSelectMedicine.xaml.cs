@@ -86,7 +86,7 @@ namespace OASystem.View.Windows
             List<BalancingAccountsCheckMedicineSortEntity> entlist = new List<BalancingAccountsCheckMedicineSortEntity>();
 
 
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
             {
                 string line = "";
                 int counter = 0;

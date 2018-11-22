@@ -47,7 +47,7 @@ namespace OASystem
 
 
             DateTime startDate = DateTime.Now;
-            string savePath = Path.Combine(OASystem.Properties.Settings.Default.UpdateLocalFolder, startDate.ToString("yyyy.MM.dd.HHmmss"));
+            string savePath = Path.Combine(OASystem.Common.Settings.UpdateLocalFolder, startDate.ToString("yyyy.MM.dd.HHmmss"));
 
             try
             {

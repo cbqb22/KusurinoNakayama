@@ -547,7 +547,7 @@ namespace OASystem.ViewModel.OrderCenter
         public static List<現在庫Entity> Load現在庫Total()
         {
             List<現在庫Entity> 現在庫list = new List<現在庫Entity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download現在庫TotalFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download現在庫TotalFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";
@@ -731,7 +731,7 @@ namespace OASystem.ViewModel.OrderCenter
         public static List<不動品Entity> Load不動品Total()
         {
             List<不動品Entity> 不動品list = new List<不動品Entity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download不動品TotalFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download不動品TotalFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";
@@ -902,7 +902,7 @@ namespace OASystem.ViewModel.OrderCenter
         public static List<MEDIS_HOT13Entity> LoadMEDIS_HOT13()
         {
             List<MEDIS_HOT13Entity> MEDIS_HOT13list = new List<MEDIS_HOT13Entity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";

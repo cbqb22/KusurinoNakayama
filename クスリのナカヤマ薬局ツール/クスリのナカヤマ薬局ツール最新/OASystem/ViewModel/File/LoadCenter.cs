@@ -6,6 +6,7 @@ using System.IO;
 using OASystem.Model.Entity;
 using OASystem.Model.Enum;
 using OASystem.ViewModel.Common.DataConvert;
+using OASystem.Common;
 
 
 namespace OASystem.ViewModel.File
@@ -19,7 +20,7 @@ namespace OASystem.ViewModel.File
 
             List<BalancingAccountsCheckMedicineSortEntity> bacmselist = new List<BalancingAccountsCheckMedicineSortEntity>();
 
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download帳合先チェックマスタ医薬品別FilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(Settings.Download帳合先チェックマスタ医薬品別FilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 var line = "";
@@ -83,7 +84,7 @@ namespace OASystem.ViewModel.File
             var dic = new Dictionary<string, BalancingAccountsEntity>();
             List<BalancingAccountsEntity> baelist = Model.DI.帳合先マスタ;
 
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 var line = "";
@@ -137,7 +138,7 @@ namespace OASystem.ViewModel.File
             var dic = new Dictionary<string, BalancingAccountsEntity>();
             List<BalancingAccountsEntity> baelist = Model.DI.帳合先マスタ;
 
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 var line = "";
@@ -186,7 +187,7 @@ namespace OASystem.ViewModel.File
         public static List<BalancingAccountsEntity> Load帳合先マスタ()
         {
             List<BalancingAccountsEntity> baelist = new List<BalancingAccountsEntity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download帳合先マスタFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download帳合先マスタFilePath, Encoding.GetEncoding(932)))
             {
                 int rowcounter = 0;
                 int counter = 0;
@@ -226,7 +227,7 @@ namespace OASystem.ViewModel.File
         public static List<IndividualBasedManagementMedicineEntity> Load個別管理医薬品マスタ()
         {
             List<IndividualBasedManagementMedicineEntity> ibmmEnt = new List<IndividualBasedManagementMedicineEntity>();
-            using (StreamReader sr = new StreamReader(OASystem.Properties.Settings.Default.Download個別管理医薬品マスタFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.Download個別管理医薬品マスタFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 var line = "";
@@ -283,7 +284,7 @@ namespace OASystem.ViewModel.File
 
             List<ProtectEntity> protectlist = new List<ProtectEntity>();
 
-            string パス = Path.Combine(OASystem.Properties.Settings.Default.Download保護リストFolderPath, 自店舗名 + ".csv");
+            string パス = Path.Combine(OASystem.Common.Settings.Download保護リストFolderPath, 自店舗名 + ".csv");
 
             if (!System.IO.File.Exists(パス))
             {
@@ -340,7 +341,7 @@ namespace OASystem.ViewModel.File
 
             List<ProtectEntity> protectlist = new List<ProtectEntity>();
 
-            var filesPath = System.IO.Directory.GetFiles(OASystem.Properties.Settings.Default.Download保護リストFolderPath);
+            var filesPath = System.IO.Directory.GetFiles(OASystem.Common.Settings.Download保護リストFolderPath);
 
 
             foreach (var file in filesPath)
@@ -428,7 +429,7 @@ namespace OASystem.ViewModel.File
 
             List<PriorityMoveEntity> prioritymovelist = new List<PriorityMoveEntity>();
 
-            string パス = Path.Combine(OASystem.Properties.Settings.Default.Download優先移動リストFolderPath, 自店舗名 + ".csv");
+            string パス = Path.Combine(OASystem.Common.Settings.Download優先移動リストFolderPath, 自店舗名 + ".csv");
 
             if (!System.IO.File.Exists(パス))
             {
@@ -484,7 +485,7 @@ namespace OASystem.ViewModel.File
 
             List<PriorityMoveEntity> prioritymovelist = new List<PriorityMoveEntity>();
 
-            var filesPath = System.IO.Directory.GetFiles(OASystem.Properties.Settings.Default.Download優先移動リストFolderPath);
+            var filesPath = System.IO.Directory.GetFiles(OASystem.Common.Settings.Download優先移動リストFolderPath);
 
 
             foreach (var file in filesPath)

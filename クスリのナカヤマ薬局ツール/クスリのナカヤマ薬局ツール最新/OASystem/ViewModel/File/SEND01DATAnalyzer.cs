@@ -4,6 +4,7 @@ using System.Text;
 using IO = System.IO;
 using System.Text.RegularExpressions;
 using OASystem.Model.Entity;
+using OASystem.Common;
 
 namespace OASystem.ViewModel.File
 {
@@ -134,13 +135,13 @@ namespace OASystem.ViewModel.File
         /// <returns>全て削除された場合はtrue</returns>
         public static bool DeleteMedicineFromList(List<SEND01DATEntity> deleteList)
         {
-            if (!IO.File.Exists(OASystem.Properties.Settings.Default.SENDO1DATFilePath))
+            if (!IO.File.Exists(Settings.SENDO1DATFilePath))
             {
                 throw new Exception("SEND01.DATが存在しない為、卸の注文データを削除できませんでした。");
             }
 
             string data = "";
-            using (IO.StreamReader sr = new IO.StreamReader(OASystem.Properties.Settings.Default.SENDO1DATFilePath, Encoding.GetEncoding(932)))
+            using (IO.StreamReader sr = new IO.StreamReader(Settings.SENDO1DATFilePath, Encoding.GetEncoding(932)))
             {
                 data = sr.ReadToEnd();
             }
@@ -246,7 +247,7 @@ namespace OASystem.ViewModel.File
                 writedata += dat;
             }
 
-            using (IO.StreamWriter sw = new IO.StreamWriter(OASystem.Properties.Settings.Default.SENDO1DATFilePath, false, Encoding.GetEncoding(932)))
+            using (IO.StreamWriter sw = new IO.StreamWriter(OASystem.Common.Settings.SENDO1DATFilePath, false, Encoding.GetEncoding(932)))
             {
                 sw.Write(writedata);
                 sw.Flush();

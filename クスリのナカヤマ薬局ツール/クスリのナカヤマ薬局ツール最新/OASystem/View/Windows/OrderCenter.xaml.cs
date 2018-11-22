@@ -486,7 +486,7 @@ namespace OASystem.View.Windows
 
         private void SaveToOrderLog(Dictionary<string, List<ExpDeadListEntity>> orderdic)
         {
-            var savepath = System.IO.Path.Combine(OASystem.Properties.Settings.Default.OrderLogsFolderPath, DateTime.Now.ToString("yyyyMMddHHmmss.fff") + ".csv");
+            var savepath = System.IO.Path.Combine(OASystem.Common.Settings.OrderLogsFolderPath, DateTime.Now.ToString("yyyyMMddHHmmss.fff") + ".csv");
             using (StreamWriter sw = new StreamWriter(savepath, false, Encoding.GetEncoding(932)))
             {
                 sw.WriteLine(string.Format("自店舗名,発注先店舗名,レセプト電算コード,医薬品名,包装形態,包装単位,包装単位数,包装総量,剤形区分,注文数,期限切迫,デッド,薬価,優先移動"));

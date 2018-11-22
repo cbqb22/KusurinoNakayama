@@ -6,6 +6,7 @@ using SIO = System.IO;
 using System.Diagnostics;
 using OASystem.ViewModel.File;
 using OASystem.Properties;
+using OASystem.Common;
 
 
 namespace OASystem.ViewModel.Updater
@@ -88,12 +89,12 @@ namespace OASystem.ViewModel.Updater
                     {
                         var sepa = file.Split('\\');
                         var filename = sepa[sepa.Count() - 1];
-                        System.IO.File.Copy(file, SIO.Path.Combine(Settings.Default.OASystemRootPath, filename), true);
+                        System.IO.File.Copy(file, SIO.Path.Combine(Settings.OASystemRootPath, filename), true);
                     }
                 }
 
                 // Version.datを適用
-                System.IO.File.Copy(downloadVersiondat, SIO.Path.Combine(Settings.Default.OASystemRootPath, "Version.dat"), true);
+                System.IO.File.Copy(downloadVersiondat, SIO.Path.Combine(Settings.OASystemRootPath, "Version.dat"), true);
 
             }
             catch (Exception ex)
@@ -112,10 +113,10 @@ namespace OASystem.ViewModel.Updater
 
             try
             {
-                DownloadCenter.DownloadFile(Settings.Default.VersionDatServerPath, downloadVersionDatLocalPath);
+                DownloadCenter.DownloadFile(OASystem.Common.Settings.VersionDatServerPath, downloadVersionDatLocalPath);
 
                 using (SIO.StreamReader sr = new SIO.StreamReader(downloadVersionDatLocalPath, Encoding.GetEncoding(932)))
-                using (SIO.StreamReader sr2 = new SIO.StreamReader(Settings.Default.VersionDatLocalPath, Encoding.GetEncoding(932)))
+                using (SIO.StreamReader sr2 = new SIO.StreamReader(OASystem.Common.Settings.VersionDatLocalPath, Encoding.GetEncoding(932)))
                 {
                     string line = "";
                     while ((line = sr.ReadLine()) != null)
@@ -158,12 +159,12 @@ namespace OASystem.ViewModel.Updater
             try
             {
                 // バックアップの作成
-                if (!System.IO.Directory.Exists(Settings.Default.OASystemBackUpPath))
+                if (!System.IO.Directory.Exists(OASystem.Common.Settings.OASystemBackUpPath))
                 {
-                    System.IO.Directory.CreateDirectory(Settings.Default.OASystemBackUpPath);
+                    System.IO.Directory.CreateDirectory(OASystem.Common.Settings.OASystemBackUpPath);
                 }
-                bkPath = System.IO.Path.Combine(Settings.Default.OASystemBackUpPath, DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss"));
-                File.GeneralMethods.CopyDirectory(Settings.Default.OASystemRootPath, bkPath);
+                bkPath = System.IO.Path.Combine(OASystem.Common.Settings.OASystemBackUpPath, DateTime.Now.ToString("yyyy.MM.dd.HH.mm.ss"));
+                File.GeneralMethods.CopyDirectory(OASystem.Common.Settings.OASystemRootPath, bkPath);
 
                 // 一旦、別アプリへ名前変更
                 var baseDir = AppDomain.CurrentDomain.BaseDirectory;
@@ -191,7 +192,7 @@ namespace OASystem.ViewModel.Updater
         {
             try
             {
-                List<string> fileListInfo = DownloadCenter.DownloadFileList(OASystem.Properties.Settings.Default.UpdateFolderServerPath);
+                List<string> fileListInfo = DownloadCenter.DownloadFileList(OASystem.Common.Settings.UpdateFolderServerPath);
                 if (fileListInfo.Count == 0)
                 {
                     throw new Exception("サーバーOASystemのUpdateフォルダー内が空です。");
@@ -213,7 +214,7 @@ namespace OASystem.ViewModel.Updater
 
                     // それ以外はフォルダしかないことが前提
 
-                    string downloadFolder = OASystem.Properties.Settings.Default.UpdateFolderServerPath + "/" + folder;
+                    string downloadFolder = OASystem.Common.Settings.UpdateFolderServerPath + "/" + folder;
                     List<string> fli = DownloadCenter.DownloadFileList(downloadFolder);
 
                     foreach (var f in fli)
@@ -249,7 +250,7 @@ namespace OASystem.ViewModel.Updater
         {
             try
             {
-                var proc = Process.Start(SIO.Path.Combine(Settings.Default.OASystemRootPath, "OASystem.exe"), "/up " + Process.GetCurrentProcess().Id);
+                var proc = Process.Start(SIO.Path.Combine(OASystem.Common.Settings.OASystemRootPath, "OASystem.exe"), "/up " + Process.GetCurrentProcess().Id);
                 if (proc == null)
                 {
                     return false;

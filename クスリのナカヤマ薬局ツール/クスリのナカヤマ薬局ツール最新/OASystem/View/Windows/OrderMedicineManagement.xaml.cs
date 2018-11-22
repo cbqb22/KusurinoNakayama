@@ -289,7 +289,7 @@ where TChild : DependencyObject
             //UploadCenter.Upload帳合先チェックマスタ_医薬品別(ofd.FileName);
 
             //// ローカルも更新
-            //System.IO.File.Copy(ofd.FileName, OASystem.Properties.Settings.Default.Download帳合先チェックマスタ医薬品別FilePath, true);
+            //System.IO.File.Copy(ofd.FileName, OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath, true);
 
             //SetPriorityMoveListView();
 
@@ -360,7 +360,7 @@ where TChild : DependencyObject
             //UploadCenter.Upload帳合先チェックマスタ_メーカー別(ofd.FileName);
 
             //// ローカルも更新
-            //System.IO.File.Copy(ofd.FileName, OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath, true);
+            //System.IO.File.Copy(ofd.FileName, OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath, true);
 
             //SetProtectListView();
 
@@ -375,7 +375,7 @@ where TChild : DependencyObject
                 // TempFileをつくる
                 TempFilesManager.FolderCheck();
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.Temp優先移動リストFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.Temp優先移動リストFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("レセプト電算コード,医薬品名称,コメント");
                     sw.WriteLine(OASystem.Model.DI.自店舗名);
@@ -392,11 +392,11 @@ where TChild : DependencyObject
                     sw.Flush();
                 }
 
-                UploadCenter.Upload優先移動リスト(OASystem.Properties.Settings.Default.Temp優先移動リストFilePath, OASystem.Model.DI.自店舗名);
+                UploadCenter.Upload優先移動リスト(OASystem.Common.Settings.Temp優先移動リストFilePath, OASystem.Model.DI.自店舗名);
 
                 // ローカルも更新
-                string localDownload優先移動リストパス = System.IO.Path.Combine(OASystem.Properties.Settings.Default.Download優先移動リストFolderPath, OASystem.Model.DI.自店舗名 + ".csv");
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.Temp優先移動リストFilePath, localDownload優先移動リストパス, true);
+                string localDownload優先移動リストパス = System.IO.Path.Combine(OASystem.Common.Settings.Download優先移動リストFolderPath, OASystem.Model.DI.自店舗名 + ".csv");
+                System.IO.File.Copy(OASystem.Common.Settings.Temp優先移動リストFilePath, localDownload優先移動リストパス, true);
 
                 MessageBox.Show("優先移動リストを更新しました。", "確認", MessageBoxButton.OK, MessageBoxImage.Information);
 
@@ -415,7 +415,7 @@ where TChild : DependencyObject
                 // TempFileをつくる
                 TempFilesManager.FolderCheck();
 
-                using (StreamWriter sw = new StreamWriter(OASystem.Properties.Settings.Default.Temp保護リストFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.Temp保護リストFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("レセプト電算コード,医薬品名称");
                     sw.WriteLine(OASystem.Model.DI.自店舗名);
@@ -432,11 +432,11 @@ where TChild : DependencyObject
                     sw.Flush();
                 }
 
-                UploadCenter.Upload保護リスト(OASystem.Properties.Settings.Default.Temp保護リストFilePath,OASystem.Model.DI.自店舗名);
+                UploadCenter.Upload保護リスト(OASystem.Common.Settings.Temp保護リストFilePath,OASystem.Model.DI.自店舗名);
 
                 // ローカルも更新
-                string localDownload保護リストパス = System.IO.Path.Combine(OASystem.Properties.Settings.Default.Download保護リストFolderPath, OASystem.Model.DI.自店舗名 + ".csv");
-                System.IO.File.Copy(OASystem.Properties.Settings.Default.Temp保護リストFilePath, localDownload保護リストパス, true);
+                string localDownload保護リストパス = System.IO.Path.Combine(OASystem.Common.Settings.Download保護リストFolderPath, OASystem.Model.DI.自店舗名 + ".csv");
+                System.IO.File.Copy(OASystem.Common.Settings.Temp保護リストFilePath, localDownload保護リストパス, true);
 
                 MessageBox.Show("保護リストを更新しました。", "確認", MessageBoxButton.OK, MessageBoxImage.Information);
 

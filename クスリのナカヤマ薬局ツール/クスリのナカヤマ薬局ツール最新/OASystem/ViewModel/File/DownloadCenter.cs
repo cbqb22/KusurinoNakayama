@@ -6,6 +6,8 @@ using IO = System.IO;
 using OASystem.Properties;
 using System.Windows;
 using OASystem.View.UserControls;
+using OASystem.Common;
+using System.Net;
 
 namespace OASystem.ViewModel.File
 {
@@ -21,20 +23,12 @@ namespace OASystem.ViewModel.File
                 //ファイル一覧を取得するディレクトリのURI
                 Uri u = new Uri(UrlFolderPath);
 
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.ListDirectoryDetails("LIST")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.ListDirectory;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-
-                //FtpWebResponseを取得
-
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
 
                 //FTPサーバーから送信されたデータを取得
                 using (System.Net.FtpWebResponse ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse())
@@ -68,25 +62,15 @@ namespace OASystem.ViewModel.File
                 //ダウンロードしたファイルの保存先
                 string saveFile = savePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -104,13 +88,14 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
             }
         }
 
@@ -123,61 +108,33 @@ namespace OASystem.ViewModel.File
             System.Net.FtpWebResponse ftpRes2 = null;
             try
             {
-                // バックグラウンドワーカーのキャンセル処理をチェック
-                //if (!CheckBackgroundWorkerCanncelation())
-                //    return new DeadStockException(true, "処理を中断しました。");
+                Uri u = new Uri(OASystem.Common.Settings.ServerDeadStockTotalPath);
 
+                string saveFile = OASystem.Common.Settings.Download不動品TotalFilePath;
 
-                ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/不動品/total.csv");
-
-                //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download不動品TotalFilePath;
-
-
-
-
-                //ファイルダウンロード
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
-                //ファイルサイズを取得
-                ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
-                ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
-                ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
-                ftpReq.Timeout = 60000;
-                ftpRes =
-                        (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
+                ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
+                ftpReq.KeepAlive = false;
+                ftpReq.UseBinary = false;
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
+                ftpReq.Timeout = 60000;
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 //ファイルサイズ取得
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq2 = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq2.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
-                //ファイルサイズを取得
+                ftpReq2.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq2.Method = System.Net.WebRequestMethods.Ftp.GetFileSize;
-                //要求の完了後に接続を閉じる
                 ftpReq2.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq2.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq2.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq2.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq2.Timeout = 60000;
                 ftpRes2 =
                         (System.Net.FtpWebResponse)ftpReq2.GetResponse();
                 var filesize = ftpRes2.ContentLength;
-
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -192,23 +149,23 @@ namespace OASystem.ViewModel.File
                             break;
                         totalReadSize += readSize;
                         fs.Write(buffer, 0, readSize);
-
-                        //int d = ((int)(totalReadSize * 100 / filesize));
-                        //ProgressEvent(d);
                     }
                 }
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
+                if (ftpRes2 != null) ((IDisposable)ftpRes).Dispose();
+            }
         }
+
         public static void DownloadTotal現在庫CSV()
         {
             System.Net.FtpWebResponse ftpRes = null;
@@ -216,30 +173,20 @@ namespace OASystem.ViewModel.File
             {
 
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/現在庫/total.csv");
+                Uri u = new Uri(OASystem.Common.Settings.ServerCurrentStockTotalPath);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download現在庫TotalFilePath;
+                string saveFile = OASystem.Common.Settings.Download現在庫TotalFilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -257,16 +204,18 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
+            }
 
         }
+
         public static void DownloadTotalMEDIS_HOT13TXT()
         {
             System.Net.FtpWebResponse ftpRes = null;
@@ -274,30 +223,20 @@ namespace OASystem.ViewModel.File
             {
 
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/MEDIS/MEDIS_HOT13.TXT");
+                Uri u = new Uri(OASystem.Common.Settings.UploadMEDIS_HOT13FilePath);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.DownloadMEDIS_HOT13lFilePath;
+                string saveFile = OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -315,47 +254,38 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
+            }
 
         }
+
         public static void DownloadTotal帳合先マスタCSV()
         {
             System.Net.FtpWebResponse ftpRes = null;
             try
             {
-
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先マスタ.csv");
+                Uri u = new Uri(OASystem.Common.Settings.UploadPath帳合先マスタCSV);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download帳合先マスタFilePath;
+                string saveFile = OASystem.Common.Settings.Download帳合先マスタFilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -373,16 +303,18 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
             }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
+            }
 
         }
+
         public static void DownloadTotal帳合先チェックマスタ医薬品別CSV()
         {
             System.Net.FtpWebResponse ftpRes = null;
@@ -390,28 +322,19 @@ namespace OASystem.ViewModel.File
             {
 
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先チェックマスタ医薬品別.csv");
+                Uri u = new Uri(OASystem.Common.Settings.UploadPath帳合先チェックマスタ医薬品別CSV);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download帳合先チェックマスタ医薬品別FilePath;
+                string saveFile = OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
                 ftpRes =
                     (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
@@ -431,7 +354,6 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
 
 
             }
@@ -439,39 +361,33 @@ namespace OASystem.ViewModel.File
             {
                 throw ex;
             }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
+            }
 
         }
+
         public static void DownloadTotal帳合先チェックマスタメーカー別CSV()
         {
             System.Net.FtpWebResponse ftpRes = null;
             try
             {
-
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/帳合先チェックマスタメーカー別.csv");
+                Uri u = new Uri(OASystem.Common.Settings.UploadPath帳合先チェックマスタメーカー別CSV);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download帳合先チェックマスタメーカー別FilePath;
+                string saveFile = OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -489,13 +405,14 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
             }
 
         }
@@ -504,12 +421,12 @@ namespace OASystem.ViewModel.File
         {
 
 
-            List<string> fli = DownloadCenter.DownloadFileList(Settings.Default.UploadFolderPath優先移動リスト);
-            string sfolderpath = Settings.Default.Download優先移動リストFolderPath;
+            List<string> fli = DownloadCenter.DownloadFileList(Settings.UploadFolderPath優先移動リスト);
+            string sfolderpath = Settings.Download優先移動リストFolderPath;
 
             foreach (var f in fli)
             {
-                string downloadFile = Settings.Default.UploadFolderPath優先移動リスト + "/" + f;
+                string downloadFile = Settings.UploadFolderPath優先移動リスト + "/" + f;
                 if (!System.IO.Directory.Exists(sfolderpath))
                 {
                     System.IO.Directory.CreateDirectory(sfolderpath);
@@ -522,12 +439,12 @@ namespace OASystem.ViewModel.File
 
         public static void DownloadTotal保護リスト()
         {
-            List<string> fli = DownloadCenter.DownloadFileList(Settings.Default.UploadFolderPath保護リスト);
-            string sfolderpath = Settings.Default.Download保護リストFolderPath;
+            List<string> fli = DownloadCenter.DownloadFileList(Settings.UploadFolderPath保護リスト);
+            string sfolderpath = Settings.Download保護リストFolderPath;
 
             foreach (var f in fli)
             {
-                string downloadFile = Settings.Default.UploadFolderPath保護リスト + "/" + f;
+                string downloadFile = OASystem.Common.Settings.UploadFolderPath保護リスト + "/" + f;
                 if (!System.IO.Directory.Exists(sfolderpath))
                 {
                     System.IO.Directory.CreateDirectory(sfolderpath);
@@ -538,7 +455,6 @@ namespace OASystem.ViewModel.File
 
         }
 
-
         public static void DownloadTotal個別管理医薬品マスタCSV()
         {
             System.Net.FtpWebResponse ftpRes = null;
@@ -546,30 +462,20 @@ namespace OASystem.ViewModel.File
             {
 
                 ////ダウンロードするファイルのURI
-                Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/発注支援システムマスタ/個別管理医薬品マスタ.csv");
+                Uri u = new Uri(OASystem.Common.Settings.UploadPath個別管理医薬品マスタCSV);
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = OASystem.Properties.Settings.Default.Download個別管理医薬品マスタFilePath;
+                string saveFile = OASystem.Common.Settings.Download個別管理医薬品マスタFilePath;
 
-
-                //FtpWebRequestの作成
                 System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
                     System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                ftpReq.Credentials = new System.Net.NetworkCredential(OASystem.Common.Settings.FtpId, OASystem.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = OASystem.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -587,20 +493,21 @@ namespace OASystem.ViewModel.File
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
                 throw ex;
+            }
+            finally
+            {
+                if (ftpRes != null) ((IDisposable)ftpRes).Dispose();
             }
 
         }
         public static void Setメーカー名リスト()
         {
             List<string> makerlist = new List<string>();
-            using (IO.StreamReader sr = new IO.StreamReader(OASystem.Properties.Settings.Default.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
+            using (IO.StreamReader sr = new IO.StreamReader(OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";
@@ -657,23 +564,23 @@ namespace OASystem.ViewModel.File
 
         public static void FolderCheck()
         {
-            if (!IO.Directory.Exists(Settings.Default.DownloadFilesPath))
+            if (!IO.Directory.Exists(OASystem.Common.Settings.DownloadFilesPath))
             {
-                IO.Directory.CreateDirectory(Settings.Default.DownloadFilesPath);
+                IO.Directory.CreateDirectory(OASystem.Common.Settings.DownloadFilesPath);
             }
 
-            if (!IO.Directory.Exists(Settings.Default.Download保護リストFolderPath))
+            if (!IO.Directory.Exists(OASystem.Common.Settings.Download保護リストFolderPath))
             {
-                IO.Directory.CreateDirectory(Settings.Default.Download保護リストFolderPath);
+                IO.Directory.CreateDirectory(OASystem.Common.Settings.Download保護リストFolderPath);
                 // 初回フォルダ作成時に、保護リストをダウンロードしてくれるように、LastWriteTimeをMinimumにしておく。
-                IO.Directory.SetLastWriteTime(Settings.Default.Download保護リストFolderPath, new DateTime(1900, 01, 01));
+                IO.Directory.SetLastWriteTime(OASystem.Common.Settings.Download保護リストFolderPath, new DateTime(1900, 01, 01));
             }
 
-            if (!IO.Directory.Exists(Settings.Default.Download優先移動リストFolderPath))
+            if (!IO.Directory.Exists(OASystem.Common.Settings.Download優先移動リストFolderPath))
             {
-                IO.Directory.CreateDirectory(Settings.Default.Download優先移動リストFolderPath);
+                IO.Directory.CreateDirectory(OASystem.Common.Settings.Download優先移動リストFolderPath);
                 // 初回フォルダ作成時に、保護リストをダウンロードしてくれるように、LastWriteTimeをMinimumにしておく。
-                IO.Directory.SetLastWriteTime(Settings.Default.Download優先移動リストFolderPath, new DateTime(1900, 01, 01));
+                IO.Directory.SetLastWriteTime(OASystem.Common.Settings.Download優先移動リストFolderPath, new DateTime(1900, 01, 01));
             }
 
         }
@@ -705,9 +612,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 不動品Total
-                    if (IO.File.Exists(Settings.Default.Download不動品TotalFilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download不動品TotalFilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download不動品TotalFilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download不動品TotalFilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -724,9 +631,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 現在庫Total
-                    if (IO.File.Exists(Settings.Default.Download現在庫TotalFilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download現在庫TotalFilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download現在庫TotalFilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download現在庫TotalFilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -746,9 +653,9 @@ namespace OASystem.ViewModel.File
 
                     // MEDIS_HOT13
                     // MEDISは月１回のダウンロード
-                    if (IO.File.Exists(Settings.Default.DownloadMEDIS_HOT13lFilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.DownloadMEDIS_HOT13lFilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.DownloadMEDIS_HOT13lFilePath);
 
                         DateTime add1month = lastdownloadday.AddMonths(1);
                         // １ヶ月以上経っていたらダウンロードする
@@ -767,9 +674,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 帳合先マスタ
-                    if (IO.File.Exists(Settings.Default.Download帳合先マスタFilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download帳合先マスタFilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download帳合先マスタFilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download帳合先マスタFilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -786,9 +693,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 帳合先チェックマスタ医薬品別
-                    if (IO.File.Exists(Settings.Default.Download帳合先チェックマスタ医薬品別FilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download帳合先チェックマスタ医薬品別FilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download帳合先チェックマスタ医薬品別FilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -807,9 +714,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 帳合先チェックマスタメーカー別
-                    if (IO.File.Exists(Settings.Default.Download帳合先チェックマスタメーカー別FilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download帳合先チェックマスタメーカー別FilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download帳合先チェックマスタメーカー別FilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -828,9 +735,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 個別管理医薬品マスタ
-                    if (IO.File.Exists(Settings.Default.Download個別管理医薬品マスタFilePath))
+                    if (IO.File.Exists(OASystem.Common.Settings.Download個別管理医薬品マスタFilePath))
                     {
-                        DateTime lastdownloadday = IO.File.GetLastWriteTime(Settings.Default.Download個別管理医薬品マスタFilePath);
+                        DateTime lastdownloadday = IO.File.GetLastWriteTime(OASystem.Common.Settings.Download個別管理医薬品マスタFilePath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -849,9 +756,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 保護リストはLastWriteTimeはディレクトリを調べる
-                    if (IO.Directory.Exists(Settings.Default.Download保護リストFolderPath))
+                    if (IO.Directory.Exists(OASystem.Common.Settings.Download保護リストFolderPath))
                     {
-                        DateTime lastdownloadday = IO.Directory.GetLastWriteTime(Settings.Default.Download保護リストFolderPath);
+                        DateTime lastdownloadday = IO.Directory.GetLastWriteTime(OASystem.Common.Settings.Download保護リストFolderPath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))
@@ -868,9 +775,9 @@ namespace OASystem.ViewModel.File
 
 
                     // 優先移動リストはLastWriteTimeはディレクトリを調べる
-                    if (IO.Directory.Exists(Settings.Default.Download優先移動リストFolderPath))
+                    if (IO.Directory.Exists(OASystem.Common.Settings.Download優先移動リストFolderPath))
                     {
-                        DateTime lastdownloadday = IO.Directory.GetLastWriteTime(Settings.Default.Download優先移動リストFolderPath);
+                        DateTime lastdownloadday = IO.Directory.GetLastWriteTime(OASystem.Common.Settings.Download優先移動リストFolderPath);
 
                         // 最終ダウンロードが今日より前のデータならば
                         if (new DateTime(lastdownloadday.Year, lastdownloadday.Month, lastdownloadday.Day) < new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day))

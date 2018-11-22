@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using OASystem.Properties;
+using OASystem.Common;
 
 namespace OASystem.ViewModel.File
 {
@@ -11,9 +12,9 @@ namespace OASystem.ViewModel.File
     {
         public static void DoLoad()
         {
-            if (!System.IO.File.Exists(Settings.Default.SettingsIniFilePath))
+            if (!System.IO.File.Exists(Settings.SettingsIniFilePath))
             {
-                using (StreamWriter sw = new StreamWriter(Settings.Default.SettingsIniFilePath, false, Encoding.GetEncoding(932)))
+                using (StreamWriter sw = new StreamWriter(Settings.SettingsIniFilePath, false, Encoding.GetEncoding(932)))
                 {
                     sw.WriteLine("[自店舗名]=");
                     sw.WriteLine("[使用するプリンタ名]=");
@@ -24,7 +25,7 @@ namespace OASystem.ViewModel.File
                 }
             }
 
-            using (StreamReader sr = new StreamReader(Settings.Default.SettingsIniFilePath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(Settings.SettingsIniFilePath, Encoding.GetEncoding(932)))
             {
                 int counter = 0;
                 string line = "";
@@ -53,7 +54,7 @@ namespace OASystem.ViewModel.File
 
         public static void SetVersionNameToDI()
         {
-            using (StreamReader sr = new StreamReader(Settings.Default.VersionDatLocalPath, Encoding.GetEncoding(932)))
+            using (StreamReader sr = new StreamReader(OASystem.Common.Settings.VersionDatLocalPath, Encoding.GetEncoding(932)))
             {
                 string line = "";
                 string version = "";
@@ -71,7 +72,7 @@ namespace OASystem.ViewModel.File
 
         public static void DoWrite(string 自店舗名, string 使用するプリンタ名,string 選択トレイ, string MEDICODEFilePath)
         {
-            using (StreamWriter sw = new StreamWriter(Settings.Default.SettingsIniFilePath, false, Encoding.GetEncoding(932)))
+            using (StreamWriter sw = new StreamWriter(OASystem.Common.Settings.SettingsIniFilePath, false, Encoding.GetEncoding(932)))
             {
                 sw.WriteLine(string.Format("[自店舗名]={0}", 自店舗名));
                 sw.WriteLine(string.Format("[使用するプリンタ名]={0}", 使用するプリンタ名));
