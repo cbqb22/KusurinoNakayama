@@ -66,7 +66,6 @@ namespace OASystem.Common
 
         #endregion
 
-
         #region Ftps
 
         // From exe.config
