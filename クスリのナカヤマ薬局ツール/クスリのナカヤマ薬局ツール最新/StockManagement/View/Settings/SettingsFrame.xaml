@@ -4,19 +4,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:settings="clr-namespace:StockManagement.View.Settings"
-             Width="600" Height="450">
-    <Grid Background="#FFF5CBF5">
+             Width="600" Height="530">
 
+    <Grid Background="#FFF5CBF5">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" MinHeight="40"/>
-            <RowDefinition Height="*" MinHeight="50"/>
-            <RowDefinition Height="*" MinHeight="50"/>
-            <RowDefinition Height="Auto" MinHeight="40"/>
-            <RowDefinition Height="Auto" MinHeight="40"/>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="104" />
+            <RowDefinition Height="104" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
-            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -43,13 +44,19 @@
         </Grid>
         <Grid Grid.Row="2" Grid.Column="1">
             <StackPanel Orientation="Vertical" Background="#FFDCD26D">
-
-                <Button x:Name="btnデッド品管理対象店舗追加" Content="店舗追加" Click="btnデッド品管理対象店舗追加_Click" Width="100" Height="20" HorizontalAlignment="Left" Background="#FFFFF609" Foreground="#FFC24B4B" />
-
-                <ScrollViewer x:Name="svデッド品管理対象店舗" Height="120">
+                <Button x:Name="btnデッド品管理対象店舗追加" 
+                        Content="店舗追加" 
+                        Click="btnデッド品管理対象店舗追加_Click" 
+                        Width="100" 
+                        Height="24"
+                        HorizontalAlignment="Left" 
+                        Background="#FFFFF609" 
+                        Foreground="#FFC24B4B" />
+                <ScrollViewer x:Name="svデッド品管理対象店舗" 
+                              VerticalScrollBarVisibility="Auto"
+                              Height="80">
                     <StackPanel x:Name="spデッド品管理対象店舗" Orientation="Vertical" />
                 </ScrollViewer>
-
             </StackPanel>
         </Grid>
 
@@ -58,16 +65,19 @@
         </Grid>
         <Grid Grid.Row="3" Grid.Column="1" >
             <StackPanel Orientation="Vertical" Background="#FF86DBFF">
-
-                <Button x:Name="btn全店舗リスト追加" Content="店舗追加" Click="btn全店舗リスト追加_Click"  Width="100" Height="20" HorizontalAlignment="Left" Background="#FF789FFF" Foreground="#FFF9F8F9"/>
-
-                <ScrollViewer x:Name="sv全店舗リスト"  Height="120">
-
+                <Button x:Name="btn全店舗リスト追加" 
+                        Content="店舗追加" 
+                        Click="btn全店舗リスト追加_Click"  
+                        Width="100" 
+                        Height="24"
+                        HorizontalAlignment="Left"
+                        Background="#FF789FFF" 
+                        Foreground="#FFF9F8F9" />
+                <ScrollViewer x:Name="sv全店舗リスト"  
+                              VerticalScrollBarVisibility="Auto"
+                              Height="80">
                     <StackPanel x:Name="sp全店舗リスト" Orientation="Vertical" />
-
                 </ScrollViewer>
-
-
             </StackPanel>
         </Grid>
 
@@ -141,15 +151,13 @@
         </Grid>
 
 
-
-
-        <Grid Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="0,10,0,0">
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+        <Grid Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2">
+            <StackPanel Orientation="Horizontal" 
+                        VerticalAlignment="Bottom"
+                        HorizontalAlignment="Center" >
                 <Button x:Name="btnSave" Content="設定を保存"  Width="100" Click="btnSave_Click" Height="30" Background="#FFED7E7E" Foreground="White" FontWeight="Bold"/>
                 <Button x:Name="btnClose" Content="閉じる" Width="100" Margin="10,0,0,0" Click="btnClose_Click" Height="30" Foreground="White" Background="#FF3465C6"/>
             </StackPanel>
-
         </Grid>
-
     </Grid>
 </UserControl>
