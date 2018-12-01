@@ -102,8 +102,7 @@ namespace StockManagement.ViewModel
                 return false;
             }
 
-
-            string expFilePath = SIO.Path.Combine(SMConst.downloadFolder, string.Format(@"{0}\現在庫\現在庫.csv", _folderDateStr));
+            string expFilePath = SIO.Path.Combine(SMConst.downloadFolder, string.Format(@"{0}\{1}\{2}", _folderDateStr, StockManagement.Common.Settings.LocalStockFolderName, StockManagement.Common.Settings.LocalStockCsvFileName));
             List<ExpStockEntity> expEntList = FileController.現在庫CSVLoader(expFilePath, _期限切迫設定期間月);
 
             _controlledBackgroundWorker.ReportProgress(10);  // 10% 

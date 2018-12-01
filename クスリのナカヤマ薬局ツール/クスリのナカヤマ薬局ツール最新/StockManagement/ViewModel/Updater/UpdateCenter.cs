@@ -14,23 +14,19 @@ namespace StockManagement.ViewModel.Updater
     {
         public static bool StartUpdateProcess(string savePath)
         {
-
             //WPFToolKit.dllをアップデート中に上書きすると、使用中のプロセスでエラーになる。
             //原因は不明だが、WPFToolKit.dllを更新することはない。
 
-
             //Version.datのコピーを取る
-            string tempversiondatpath = SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder,"TempVersion.dat");
+            string tempversiondatpath = SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, StockManagement.Common.Settings.TempVersionFileName);
             System.IO.File.Copy(StockManagement.Const.SMConst.VersionDatLocalPath,tempversiondatpath, true);
-
-
 
             if (!SIO.Directory.Exists(savePath))
             {
                 SIO.Directory.CreateDirectory(savePath);
             }
 
-            string downloadVersionDatLocalPath = SIO.Path.Combine(savePath, "Version.dat");
+            string downloadVersionDatLocalPath = SIO.Path.Combine(savePath, StockManagement.Common.Settings.VersionFileName);
             List<string> needApplyVersionList = new List<string>();
 
             try
@@ -124,10 +120,8 @@ namespace StockManagement.ViewModel.Updater
                     }
                 }
 
-
                 // Version.datを適用
-                System.IO.File.Copy(downloadVersiondat, SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, "Version.dat"), true);
-
+                System.IO.File.Copy(downloadVersiondat, SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, StockManagement.Common.Settings.VersionFileName), true);
 
             }
             catch (Exception ex)
@@ -146,19 +140,19 @@ namespace StockManagement.ViewModel.Updater
 
             try
             {
-                DownloadCenter.DownloadFile(StockManagement.Properties.Settings.Default.VersionDatServerPath, downloadVersionDatLocalPath);
+                DownloadCenter.DownloadFile(StockManagement.Common.Settings.VersionDatServerPath, downloadVersionDatLocalPath);
 
                 using (SIO.StreamReader sr = new SIO.StreamReader(downloadVersionDatLocalPath, Encoding.GetEncoding(932)))
                 using (SIO.StreamReader sr2 = new SIO.StreamReader(StockManagement.Const.SMConst.VersionDatLocalPath, Encoding.GetEncoding(932)))
                 {
-                    string line = "";
+                    string line = string.Empty;
                     while ((line = sr.ReadLine()) != null)
                     {
                         serverVersions.Add(line);
                     }
 
 
-                    string line2 = "";
+                    string line2 = string.Empty;
                     while ((line2 = sr2.ReadLine()) != null)
                     {
                         applyVersions.Add(line2);
@@ -201,8 +195,8 @@ namespace StockManagement.ViewModel.Updater
 
                 // 一旦、別アプリへ名前変更
                 var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                System.IO.File.Delete(System.IO.Path.Combine(baseDir, "デッド品管理ツール.old"));
-                System.IO.File.Move(System.IO.Path.Combine(baseDir, "デッド品管理ツール.exe"), System.IO.Path.Combine(baseDir, "デッド品管理ツール.old"));
+                System.IO.File.Delete(System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.OldExeName));
+                System.IO.File.Move(System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.ExeName), System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.OldExeName));
             }
             catch (Exception ex)
             {
@@ -215,11 +209,11 @@ namespace StockManagement.ViewModel.Updater
         public static void RollBackPrepair()
         {
             var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-            System.IO.File.Delete(System.IO.Path.Combine(baseDir, "デッド品管理ツール.exe"));
-            System.IO.File.Move(System.IO.Path.Combine(baseDir, "デッド品管理ツール.old"), System.IO.Path.Combine(baseDir, "デッド品管理ツール.exe"));
+            System.IO.File.Delete(System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.ExeName));
+            System.IO.File.Move(System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.OldExeName), System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.ExeName));
 
             //もとのVersion.datへもどす
-            string tempversiondatpath = SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, "TempVersion.dat");
+            string tempversiondatpath = SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, StockManagement.Common.Settings.TempVersionFileName);
             System.IO.File.Copy(tempversiondatpath, StockManagement.Const.SMConst.VersionDatLocalPath, true);
 
 
@@ -230,7 +224,7 @@ namespace StockManagement.ViewModel.Updater
         {
             try
             {
-                List<string> fileListInfo = DownloadCenter.DownloadFileList(StockManagement.Properties.Settings.Default.UpdateFolderServerPath);
+                List<string> fileListInfo = DownloadCenter.DownloadFileList(StockManagement.Common.Settings.UpdateFolderServerPath);
                 if (fileListInfo.Count == 0)
                 {
                     throw new Exception("サーバーStockManagementのUpdateフォルダー内が空です。");
@@ -239,20 +233,15 @@ namespace StockManagement.ViewModel.Updater
                 foreach (var folder in fileListInfo)
                 {
                     // datファイルは飛ばす
-                    if (folder == "Version.dat")
-                    {
+                    if (folder == StockManagement.Common.Settings.VersionFileName)
                         continue;
-                    }
 
                     // 警告ファイルも飛ばす
-                    if (folder == "ここはdatとこのファイル以外は全てフォルダ.txt")
-                    {
+                    if (folder == StockManagement.Common.Settings.SuggestFileName)
                         continue;
-                    }
 
                     // それ以外はフォルダしかないことが前提
-
-                    string downloadFolder = StockManagement.Properties.Settings.Default.UpdateFolderServerPath + "/" + folder;
+                    string downloadFolder = StockManagement.Common.Settings.UpdateFolderServerPath + "/" + folder;
                     List<string> fli = DownloadCenter.DownloadFileList(downloadFolder);
 
                     foreach (var f in fli)
@@ -288,17 +277,14 @@ namespace StockManagement.ViewModel.Updater
         {
             try
             {
-                var proc = Process.Start(SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, "デッド品管理ツール.exe"), "/up " + Process.GetCurrentProcess().Id);
+                var proc = Process.Start(SIO.Path.Combine(StockManagement.Const.SMConst.rootFolder, StockManagement.Common.Settings.ExeName), "/up " + Process.GetCurrentProcess().Id);
                 if (proc == null)
-                {
                     return false;
-                }
             }
             catch (Exception ex)
             {
                 throw ex;
             }
-
 
             return true;
         }
@@ -322,7 +308,7 @@ namespace StockManagement.ViewModel.Updater
                     try
                     {
                         var baseDir = AppDomain.CurrentDomain.BaseDirectory;
-                        System.IO.File.Delete(System.IO.Path.Combine(baseDir, "デッド品管理ツール.old"));
+                        System.IO.File.Delete(System.IO.Path.Combine(baseDir, StockManagement.Common.Settings.OldExeName));
                     }
                     catch
                     {

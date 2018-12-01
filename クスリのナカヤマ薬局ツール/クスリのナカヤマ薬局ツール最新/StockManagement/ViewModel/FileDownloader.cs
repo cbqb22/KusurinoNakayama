@@ -84,27 +84,11 @@ namespace StockManagement.ViewModel
                      }
                     );
             _downloadList = ret; // 自店舗 + デッド品管理対象店舗
-
-            //_downloadList = Settings.InitialData.DeadMangementSourceStoreAndDeadStockManagementStoresList;
-            //_downloadList = new List<string>();
-
-            //_downloadList.Add(Settings.InitialData.DeadMangementSourceStore); // 自店舗
-            //Settings.InitialData.DeadStockManagementStoresList.ForEach
-            //    (
-            //         delegate(string x)
-            //         {
-            //             // 自店舗と重複しないようにする。
-            //             if (!_downloadList.Contains(x))
-            //             {
-            //                 _downloadList.Add(x);
-            //             }
-            //         }
-            //        );
-
-            //Settings.InitialData.AllShopList.ForEach(x => _downloadList.Add(x));
-
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
         public void FolderCheck()
         {
             if (!Directory.Exists(SMConst.rootFolder))
@@ -146,164 +130,6 @@ namespace StockManagement.ViewModel
 
         }
 
-        /// <summary>
-        /// ※※こっちはもう使わない※※
-        /// 使用量.CSVのダウンロード (=裏画面の在庫使用量.CSV)
-        /// </summary>
-        /// <param name="downloadShopList"></param>
-        /// <param name="from"></param>
-        /// <param name="to"></param>
-        /// <returns></returns>
-        public Exception StartDownloadUsedData(List<string> downloadShopList, DateTime from, DateTime to)
-        {
-            downloadShopList = _downloadList;
-
-            foreach (var shop in downloadShopList)
-            {
-
-                for (DateTime d = from; d <= to; d = d.AddMonths(1))
-                {
-
-                    // バックグラウンドワーカーのキャンセル処理をチェック
-                    if (!CheckBackgroundWorkerCanncelation())
-                        return new DeadStockException(true, "処理を中断しました。");
-
-
-                    System.IO.FileStream fs = null;
-                    System.IO.Stream resStrm = null;
-                    System.Net.FtpWebResponse ftpRes = null;
-
-                    try
-                    {
-
-
-                        ////ダウンロードするファイルのURI
-                        Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量/" + shop + string.Format("/{0}年/{1}月.csv", d.Year, d.Month));
-
-
-                        //ダウンロードしたファイルの保存先
-                        string makeFoler = Path.Combine(SMConst.downloadFolder, FolderDate.ToString("yyyyMMddHHmmss"));
-                        if (!Directory.Exists(makeFoler))
-                        {
-                            Directory.CreateDirectory(makeFoler);
-                        }
-
-                        string deadFoler = Path.Combine(makeFoler, "使用量");
-
-                        string shopFolder = Path.Combine(deadFoler, shop);
-                        if (!Directory.Exists(shopFolder))
-                        {
-                            Directory.CreateDirectory(shopFolder);
-                        }
-                        string yearFolder = Path.Combine(shopFolder, string.Format("{0}年", d.Year));
-                        if (!Directory.Exists(yearFolder))
-                        {
-                            Directory.CreateDirectory(yearFolder);
-                        }
-
-                        string downFile = Path.Combine(yearFolder, string.Format("{0}月.csv", d.Month));
-                        //string downFile = Path.Combine(@"C:\Users\poohace\Desktop\outputFile", shop) + @"_不動品データ.csv";
-
-                        //FtpWebRequestの作成
-                        System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
-                            System.Net.WebRequest.Create(u);
-                        //ログインユーザー名とパスワードを設定
-                        ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                        //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
-                        ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                        //要求の完了後に接続を閉じる
-                        ftpReq.KeepAlive = false;
-                        //ASCIIモードで転送する
-                        ftpReq.UseBinary = false;
-                        //PASSIVEモードを無効にする
-                        ftpReq.UsePassive = false;
-                        // タイムアウトは６０秒とする
-                        ftpReq.Timeout = 60000;
-
-                        //FtpWebResponseを取得
-                        ftpRes =
-                            (System.Net.FtpWebResponse)ftpReq.GetResponse();
-
-                        //ファイルをダウンロードするためのStreamを取得
-                        //ダウンロードしたファイルを書き込むためのFileStreamを作成
-                        using (resStrm = ftpRes.GetResponseStream())
-                        using (fs = new System.IO.FileStream(
-                            downFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))
-                        {
-                            //ダウンロードしたデータを書き込む
-                            byte[] buffer = new byte[1024];
-                            while (true)
-                            {
-                                // バックグラウンドワーカーのキャンセル処理をチェック
-                                if (!CheckBackgroundWorkerCanncelation())
-                                    return new DeadStockException(true, "処理を中断しました。");
-
-
-                                int readSize = resStrm.Read(buffer, 0, buffer.Length);
-                                if (readSize == 0)
-                                    break;
-                                fs.Write(buffer, 0, readSize);
-                            }
-                        }
-
-                        //FTPサーバーから送信されたステータスを表示
-                        System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                        //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-                        CompletedCount++;
-                        _controlledBackgroundWorker.ReportProgress(CompletedCount * 100 / TotalCount);
-
-
-                    }
-                    catch (Exception ex)
-                    {
-
-                        //エラー発生より先に中断ボタンが押されたら、中断として処理。
-                        // バックグラウンドワーカーのキャンセル処理をチェック
-                        if (!CheckBackgroundWorkerCanncelation())
-                            return new DeadStockException(true, "処理を中断しました。");
-
-
-                        // ファイルがない場合でも使用量は継続する
-                        if (ex.Message.Contains("リモート サーバーがエラーを返しました: (550) ファイルが使用できません (例: ファイルが見つからない、ファイルへのアクセスがない)"))
-                        {
-                            continue;
-                        }
-
-
-                        return new Exception(string.Format("使用量データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
-                    }
-                    finally
-                    {
-                        try
-                        {
-                            //閉じる
-                            if (ftpRes != null)
-                            {
-                                ftpRes.Close();
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            //エラー発生より先に中断ボタンが押されたら、中断として処理。
-                            // バックグラウンドワーカーのキャンセル処理をチェック
-                            if (!CheckBackgroundWorkerCanncelation())
-                                throw new DeadStockException(true, "処理を中断しました。");
-
-                            throw new Exception(string.Format("使用量データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
-                        }
-                    }
-
-
-
-
-                }
-
-            }
-            return null;
-
-        }
-
 
         /// <summary>
         /// 使用量2.CSVのダウンロード (=表画面の使用量.CSV)
@@ -333,61 +159,41 @@ namespace StockManagement.ViewModel
 
                     try
                     {
+                        // ダウンロードするファイルのURI
+                        Uri u = new Uri(StockManagement.Common.Settings.Ftp使用量2Path + "/" + shop + string.Format("/{0}年/{1}月.csv", d.Year, d.Month));
+                        //Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量2/" + shop + string.Format("/{0}年/{1}月.csv", d.Year, d.Month));
 
 
-                        ////ダウンロードするファイルのURI
-                        Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/使用量2/" + shop + string.Format("/{0}年/{1}月.csv", d.Year, d.Month));
-
-
-                        //ダウンロードしたファイルの保存先
+                        // ダウンロードしたファイルの保存先
                         string makeFoler = Path.Combine(SMConst.downloadFolder, FolderDate.ToString("yyyyMMddHHmmss"));
                         if (!Directory.Exists(makeFoler))
-                        {
                             Directory.CreateDirectory(makeFoler);
-                        }
 
-                        string deadFoler = Path.Combine(makeFoler, "使用量");
+                        string deadFoler = Path.Combine(makeFoler, StockManagement.Common.Settings.LocalUsageFolderName);
 
                         string shopFolder = Path.Combine(deadFoler, shop);
                         if (!Directory.Exists(shopFolder))
-                        {
                             Directory.CreateDirectory(shopFolder);
-                        }
+
                         string yearFolder = Path.Combine(shopFolder, string.Format("{0}年", d.Year));
                         if (!Directory.Exists(yearFolder))
-                        {
                             Directory.CreateDirectory(yearFolder);
-                        }
 
                         string downFile = Path.Combine(yearFolder, string.Format("{0}月.csv", d.Month));
-                        //string downFile = Path.Combine(@"C:\Users\poohace\Desktop\outputFile", shop) + @"_不動品データ.csv";
 
+                        System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)System.Net.WebRequest.Create(u);
 
-                        //FtpWebRequestの作成
-                        System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
-                            System.Net.WebRequest.Create(u);
-                        //ログインユーザー名とパスワードを設定
-                        ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                        //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                        ftpReq.Credentials = new System.Net.NetworkCredential(StockManagement.Common.Settings.FtpId, StockManagement.Common.Settings.FtpCredential);
                         ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                        //要求の完了後に接続を閉じる
                         ftpReq.KeepAlive = false;
-                        //ASCIIモードで転送する
                         ftpReq.UseBinary = false;
-                        //PASSIVEモードを無効にする
-                        ftpReq.UsePassive = false;
-                        // タイムアウトは６０秒とする
+                        ftpReq.UsePassive = StockManagement.Common.Settings.UsePassive;
                         ftpReq.Timeout = 60000;
 
-                        //FtpWebResponseを取得
-                        ftpRes =
-                            (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                        ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
-                        //ファイルをダウンロードするためのStreamを取得
-                        //ダウンロードしたファイルを書き込むためのFileStreamを作成
                         using (resStrm = ftpRes.GetResponseStream())
-                        using (fs = new System.IO.FileStream(
-                            downFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))
+                        using (fs = new System.IO.FileStream(downFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))
                         {
                             //ダウンロードしたデータを書き込む
                             byte[] buffer = new byte[1024];
@@ -405,9 +211,7 @@ namespace StockManagement.ViewModel
                             }
                         }
 
-                        //FTPサーバーから送信されたステータスを表示
                         System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                        //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
 
                         CompletedCount++;
                         _controlledBackgroundWorker.ReportProgress(CompletedCount * 100 / TotalCount);
@@ -416,7 +220,6 @@ namespace StockManagement.ViewModel
                     }
                     catch (Exception ex)
                     {
-
                         //エラー発生より先に中断ボタンが押されたら、中断として処理。
                         // バックグラウンドワーカーのキャンセル処理をチェック
                         if (!CheckBackgroundWorkerCanncelation())
@@ -436,11 +239,8 @@ namespace StockManagement.ViewModel
                     {
                         try
                         {
-                            //閉じる
                             if (ftpRes != null)
-                            {
                                 ftpRes.Close();
-                            }
                         }
                         catch (Exception ex)
                         {
@@ -452,18 +252,17 @@ namespace StockManagement.ViewModel
                             throw new Exception(string.Format("使用量データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
                         }
                     }
-
-
-
-
                 }
 
             }
-            return null;
 
+            return null;
         }
 
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         public Exception StartDownloadDeadStockData()
         {
             System.Net.FtpWebResponse ftpRes = null;
@@ -478,46 +277,34 @@ namespace StockManagement.ViewModel
                     if (!CheckBackgroundWorkerCanncelation())
                         return new DeadStockException(true, "処理を中断しました。");
 
+                    // ダウンロードするファイルのURI
+                    Uri u = new Uri(StockManagement.Common.Settings.Ftp不動品Path + "/" + shop + "/" + StockManagement.Common.Settings.LocalDeadStockCsvFileName);
+                    //Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/不動品/" + shop + "/不動品データ.csv");
 
-                    ////ダウンロードするファイルのURI
-                    Uri u = new Uri("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/不動品/" + shop + "/不動品データ.csv");
-
-                    //ダウンロードしたファイルの保存先
+                    // ダウンロードしたファイルの保存先
                     string makeFoler = Path.Combine(SMConst.downloadFolder, FolderDate.ToString("yyyyMMddHHmmss"));
                     if (!Directory.Exists(makeFoler))
                     {
                         Directory.CreateDirectory(makeFoler);
                     }
 
-                    string deadFoler = Path.Combine(makeFoler, "不動品");
-
+                    string deadFoler = Path.Combine(makeFoler, StockManagement.Common.Settings.LocalDeadStockFolderName);
                     string shopFolder = Path.Combine(deadFoler, shop);
                     if (!Directory.Exists(shopFolder))
                     {
                         Directory.CreateDirectory(shopFolder);
                     }
 
-                    string downFile = Path.Combine(shopFolder, "不動品データ.csv");
-                    //string downFile = Path.Combine(@"C:\Users\poohace\Desktop\outputFile", shop) + @"_不動品データ.csv";
+                    string downFile = Path.Combine(shopFolder, StockManagement.Common.Settings.LocalDeadStockCsvFileName);
 
-                    //FtpWebRequestの作成
-                    System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
-                        System.Net.WebRequest.Create(u);
-                    //ログインユーザー名とパスワードを設定
-                    ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                    //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                    System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)System.Net.WebRequest.Create(u);
+                    ftpReq.Credentials = new System.Net.NetworkCredential(StockManagement.Common.Settings.FtpId, StockManagement.Common.Settings.FtpCredential);
                     ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                    //要求の完了後に接続を閉じる
                     ftpReq.KeepAlive = false;
-                    //ASCIIモードで転送する
                     ftpReq.UseBinary = false;
-                    //PASSIVEモードを無効にする
-                    ftpReq.UsePassive = false;
-                    // タイムアウトは６０秒とする
+                    ftpReq.UsePassive = StockManagement.Common.Settings.UsePassive;
                     ftpReq.Timeout = 60000;
-                    //FtpWebResponseを取得
-                    ftpRes =
-                        (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                    ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                     using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                     using (System.IO.FileStream fs = new System.IO.FileStream(downFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -540,7 +327,6 @@ namespace StockManagement.ViewModel
 
                     //FTPサーバーから送信されたステータスを表示
                     System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                    //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
 
                     CompletedCount++;
                     _controlledBackgroundWorker.ReportProgress(CompletedCount * 100 / TotalCount);
@@ -555,13 +341,9 @@ namespace StockManagement.ViewModel
                 if (!CheckBackgroundWorkerCanncelation())
                     return new DeadStockException(true, "処理を中断しました。");
 
-
                 // 不動品データの場合はデータがない場合は処理を中断する。
                 if (ex.Message.Contains("リモート サーバーがエラーを返しました: (550) ファイルが使用できません (例: ファイルが見つからない、ファイルへのアクセスがない)"))
-                {
                     return new Exception(string.Format("不動品データが存在しない為、ダウンロードに失敗しました。処理を中断します。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
-                }
-
 
                 return new Exception(string.Format("不動品データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
 
@@ -572,9 +354,7 @@ namespace StockManagement.ViewModel
                 {
                     //閉じる
                     if (ftpRes != null)
-                    {
                         ftpRes.Close();
-                    }
                 }
                 catch (Exception ex)
                 {
@@ -594,53 +374,42 @@ namespace StockManagement.ViewModel
         }
 
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="baseshopname"></param>
+        /// <returns></returns>
         public Exception StartDownloadStockAllData(string baseshopname)
         {
             System.Net.FtpWebResponse ftpRes = null;
             try
             {
 
-                ////ダウンロードするファイルのURI
-                Uri u = new Uri(string.Format("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/現在庫/{0}/現在庫データ.csv", baseshopname));
-
+                // ダウンロードするファイルのURI
+                Uri u = new Uri(string.Format(StockManagement.Common.Settings.Ftp現在庫Path + "/{0}/" + StockManagement.Common.Settings.LocalStockCsvFileName, baseshopname));
+                //Uri u = new Uri(string.Format("ftp://ftp.kusurinonakayama.jp/httpdocs/PharmacyTool/ClientBin/在庫関連/現在庫/{0}/現在庫データ.csv", baseshopname));
 
                 //ダウンロードしたファイルの保存先
                 string makeFolder = Path.Combine(SMConst.downloadFolder, FolderDate.ToString("yyyyMMddHHmmss"));
 
                 if (Directory.Exists(makeFolder) == false)
-                {
                     Directory.CreateDirectory(makeFolder);
-                }
 
-                string makeFolder2 = Path.Combine(makeFolder, "現在庫");
+                string makeFolder2 = Path.Combine(makeFolder, StockManagement.Common.Settings.LocalStockFolderName);
                 if (Directory.Exists(makeFolder2) == false)
-                {
                     Directory.CreateDirectory(makeFolder2);
-                }
-
 
                 //ダウンロードしたファイルの保存先
-                string saveFile = Path.Combine(makeFolder2, "現在庫.csv");
+                string saveFile = Path.Combine(makeFolder2, StockManagement.Common.Settings.LocalStockCsvFileName);
 
-
-                //FtpWebRequestの作成
-                System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)
-                    System.Net.WebRequest.Create(u);
-                //ログインユーザー名とパスワードを設定
-                ftpReq.Credentials = new System.Net.NetworkCredential("a10254880", "hxzn9jXQ");
-                //MethodにWebRequestMethods.Ftp.DownloadFile("RETR")を設定
+                System.Net.FtpWebRequest ftpReq = (System.Net.FtpWebRequest)System.Net.WebRequest.Create(u);
+                ftpReq.Credentials = new System.Net.NetworkCredential(StockManagement.Common.Settings.FtpId, StockManagement.Common.Settings.FtpCredential);
                 ftpReq.Method = System.Net.WebRequestMethods.Ftp.DownloadFile;
-                //要求の完了後に接続を閉じる
                 ftpReq.KeepAlive = false;
-                //ASCIIモードで転送する
                 ftpReq.UseBinary = false;
-                //PASSIVEモードを無効にする
-                ftpReq.UsePassive = false;
-                // タイムアウトは６０秒とする
+                ftpReq.UsePassive = StockManagement.Common.Settings.UsePassive;
                 ftpReq.Timeout = 60000;
-                //FtpWebResponseを取得
-                ftpRes =
-                    (System.Net.FtpWebResponse)ftpReq.GetResponse();
+                ftpRes = (System.Net.FtpWebResponse)ftpReq.GetResponse();
 
                 using (System.IO.Stream resStrm = ftpRes.GetResponseStream()) //ファイルをダウンロードするためのStreamを取得
                 using (System.IO.FileStream fs = new System.IO.FileStream(saveFile, System.IO.FileMode.Create, System.IO.FileAccess.Write))   //ダウンロードしたファイルを書き込むためのFileStreamを作成
@@ -658,9 +427,6 @@ namespace StockManagement.ViewModel
 
                 //FTPサーバーから送信されたステータスを表示
                 System.Diagnostics.Debug.WriteLine(string.Format("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription));
-                //System.Diagnostics.Debug.WriteLine("{0}: {1}", ftpRes.StatusCode, ftpRes.StatusDescription);
-
-
             }
             catch (Exception ex)
             {
@@ -669,13 +435,9 @@ namespace StockManagement.ViewModel
                 if (!CheckBackgroundWorkerCanncelation())
                     return new DeadStockException(true, "処理を中断しました。");
 
-
                 // 不動品データの場合はデータがない場合は処理を中断する。
                 if (ex.Message.Contains("リモート サーバーがエラーを返しました: (550) ファイルが使用できません (例: ファイルが見つからない、ファイルへのアクセスがない)"))
-                {
                     return new Exception(string.Format("現在庫データが存在しない為、ダウンロードに失敗しました。処理を中断します。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
-                }
-
 
                 return new Exception(string.Format("現在庫データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
 
@@ -686,9 +448,7 @@ namespace StockManagement.ViewModel
                 {
                     //閉じる
                     if (ftpRes != null)
-                    {
                         ftpRes.Close();
-                    }
                 }
                 catch (Exception ex)
                 {
@@ -697,15 +457,11 @@ namespace StockManagement.ViewModel
                     if (!CheckBackgroundWorkerCanncelation())
                         throw new DeadStockException(true, "処理を中断しました。");
 
-
                     throw new Exception(string.Format("現在庫データをダウンロード中にエラーが発生した為、処理を中断しました。\r\nエラーメッセージ:{0}\r\nスタックトレース:{1}", ex.Message, ex.StackTrace));
-
                 }
             }
 
-
             return null;
-
         }
 
     }
