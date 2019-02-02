@@ -41,7 +41,7 @@ namespace OASystem.ViewModel.File
 
                 foreach (Match Dmatch in Dmatches)
                 {
-                    var JANPattern = @"14987\d{9}"; //JANコード 医薬品は4987+xxxxxxxxx　で1がSEND用で頭につく 14桁
+                    var JANPattern = @"14987\d{9}"; // (4987はJAN、14987はGS-1)
 
                     var NextDmatch = Dmatch.NextMatch();
                     var Dstartindex = Dmatch.Index;
@@ -110,23 +110,6 @@ namespace OASystem.ViewModel.File
             return list;
 
         }
-
-        //private static void TestData()
-        //{
-        //List<SEND01DATEntity> list = new List<SEND01DATEntity>();
-        //SEND01DATEntity ent = new SEND01DATEntity();
-        //ent.レセ発注伝票No = "1011";
-        //ent.JANコード = "4987042353201";
-        //list.Add(ent);
-
-        //SEND01DATEntity ent2 = new SEND01DATEntity();
-        //ent2.レセ発注伝票No = "1016";
-        //ent2.JANコード = "4987155077070";
-        //list.Add(ent2);
-
-        //SEND01DATAnalyzer.DeleteMedicineFromList(list);
-
-        //}
 
         /// <summary>
         /// 指定のレセ伝票Noとレセプト電算コードに該当する医薬品をSEND01.DATから削除する

@@ -245,3 +245,4 @@ C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クス
 C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\StockManagement.csproj.GenerateResource.Cache
 C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール.exe
 C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\obj\x86\Debug\デッド品管理ツール.pdb
+C:\Users\poohace\Documents\GitHub\クスリのナカヤマ薬局ツール\クスリのナカヤマ薬局ツール最新\StockManagement\bin\Debug\デッド品管理ツール.exe.config
