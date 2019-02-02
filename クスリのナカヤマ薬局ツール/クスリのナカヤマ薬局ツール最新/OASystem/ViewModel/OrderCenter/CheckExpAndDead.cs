@@ -38,7 +38,7 @@ namespace OASystem.ViewModel.OrderCenter
 
 
             // JANコード13桁一致の旧ロジック
-            // SEND01にはJANまたはCS-1 Dataが入ってくることがあるので新ロジックへ
+            // SEND01にはJANコードまたはGS-1コードが入ってくることがあるので新ロジックへ
             //var SENDとMEDIS結合2 =
             //                    (from x in sendList
             //                     join y in MEDIS_HOT13And個別管理医薬品list
@@ -252,7 +252,8 @@ namespace OASystem.ViewModel.OrderCenter
 
                      (from x in order全て
                       join y in checkresult
-                         on x.JANコード equals y.JANコード
+                         on x.JANコード.Substring(0, 12) equals y.JANコード.Substring(0, 12)
+                         //on x.JANコード equals y.JANコード
                       select x).ToList();
 
                 insertcheckresult.ForEach(x => x.Is帳合一致 = false);
@@ -959,7 +960,8 @@ namespace OASystem.ViewModel.OrderCenter
 
         public static List<BalancingAccountsCheckResultEntity> CheckBalancingAccounts(List<SEND01DATEntity> sendList)
         {
-            var MEDIS_HOT13listAnd個別管理 = LoadMEDIS_HOT13And個別管理医薬品マスタ();
+            var MEDIS_HOT13listAnd個別管理 = LoadMEDIS_HOT13And個別管理医薬品マスタ()
+                .Where(x => 12 <= x.JANコード.Length).ToArray();
 
             // 個別管理医薬品マスタをMEDIS_HOT13listに加える
 
@@ -968,8 +970,10 @@ namespace OASystem.ViewModel.OrderCenter
             var order全て = (
                 from x in sendList
                 join y in MEDIS_HOT13listAnd個別管理
-                on
-                    x.JANコード equals y.JANコード
+                    on
+                    x.JANコード.Substring(0, 12) equals y.JANコード.Substring(0, 12)
+                    //on
+                //    x.JANコード equals y.JANコード
                 select new BalancingAccountsCheckResultEntity
                 {
                     JANコード = y.JANコード,
